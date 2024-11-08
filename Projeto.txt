@@ -1,0 +1,14 @@
+meu-site/
+│
+├── index.html             # Página inicial
+├── css/
+│   ├── estilo-global.css  # CSS global para estilos comuns
+│   ├── cv.css             # CSS específico para a página CV
+│   ├── servicos.css       # CSS específico para a página Serviços
+│   ├── portifolio.css     # CSS específico para a página Portfólio
+│   └── contato.css        # CSS específico para a página Contato
+└── paginas/
+    ├── cv.html            # Página do Curriculum Vitae
+    ├── servicos.html      # Página de Serviços
+    ├── portifolio.html    # Página do Portfólio
+    └── contato.html       # Página de Contato

@@ -1,0 +1,22 @@
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: #f9f9f9;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: #3f51b5;
+    color: white;
+}
+
+#cv-content h2 {
+    color: #3f51b5;
+    font-size: 1.4em;
+}
+
+#cv-content p {
+    font-size: 1em;
+    margin: 10px 0;
+}
