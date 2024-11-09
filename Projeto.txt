@@ -12,3 +12,22 @@ meu-site/
     ├── servicos.html      # Página de Serviços
     ├── portifolio.html    # Página do Portfólio
     └── contato.html       # Página de Contato
+
+
+    1- Site Portifolio
+    
+inicio(head)- nav bar com nome centralizado, e botoes a direita: CV, Portifolio, Serviços, Contaco
+
+meio(body)- Sobre mim logo abaixo do nav bar, com uma foto minha não muito a esquerda, e um texto sobre um pouco a esquerda
+
+abaixo terá uma linha do tempo com minhas experiencias
+
+abaixo tera cards com meus projetos e cada card vai ter um botao saber mais qque direciona a uma pagina com conteudo mais detalhado sobre o projeto
+
+abaixo um uma aba serviços sobre os serviços que ofereço e em cada um terá um botão com: contratar que direciona o cliente a pagina aba contacto
+
+abaixo terã um box com um formulario para contacto
+
+por ultimo uma footer com botoes de redes sociais
+
+
