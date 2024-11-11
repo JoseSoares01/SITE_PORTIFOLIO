@@ -20,10 +20,9 @@ h1 {
 
 /* Seção Sobre */
 #about .img-fluid {
-    width: 90%;
-    max-width: 170px;
-    height: auto;
-    border-radius: 16%;
+    width: 600px; /* Adjust the width as needed */
+    height: px;
+    border-radius: 50%;
     border: 5px solid #cdcbcb;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
@@ -35,9 +34,10 @@ h1 {
 
 /* Classes de Imagem */
 .img-circular {
-    border-radius: 50%;
+    border-radius: 10%;
     max-width: 250px;
     height: auto;
+    width: 100px;
 }
 
 .img-square {
@@ -75,7 +75,7 @@ h1 {
 
 /* Footer Social */
 .social-footer {
-    background-color: #333;
+    background-color: #343A40;
     padding: 20px;
     color: #ffffff;
     margin-top: auto;
