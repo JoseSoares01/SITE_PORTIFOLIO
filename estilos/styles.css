@@ -20,12 +20,13 @@ h1 {
 
 /* Seção Sobre */
 #about .img-fluid {
-    width: 600px; /* Adjust the width as needed */
-    height: px;
+    width: 350PX; /* Adjust the width as needed */
+    height: 300px;
     border-radius: 50%;
     border: 5px solid #cdcbcb;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 8px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
+    border-color: white;
 }
 
 #about .img-fluid:hover {
@@ -38,6 +39,7 @@ h1 {
     max-width: 250px;
     height: auto;
     width: 100px;
+
 }
 
 .img-square {
@@ -56,6 +58,13 @@ h1 {
     border: 5px solid #ddd;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
+
+/* logo-princial */
+logo-principal{
+    width: 10px;
+    height: 20px;
+}
+
 
 /* Seção Portfólio */
 .portfolio-card {
