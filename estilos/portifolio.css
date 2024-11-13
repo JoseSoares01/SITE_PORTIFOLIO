@@ -45,11 +45,9 @@ h1 {
 
 h1::after {
     content: '';
-    position: absolute;
     width: 6rem;
     height: 2px;
     background-color: hsl(0, 0%, 80%);
-    top: 0;
     left: 0;
 }
 
