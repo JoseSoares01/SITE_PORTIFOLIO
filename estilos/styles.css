@@ -32,6 +32,14 @@ main {
 .nav-link {
     text-decoration: none; /* Remove qualquer sublinhado padrão */
     position: relative;
+    
+
+}
+
+.nav-item {
+
+    padding-left: -15px;
+    
 }
 
 .nav-link::after {
