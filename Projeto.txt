@@ -31,3 +31,5 @@ abaixo terã um box com um formulario para contacto
 por ultimo uma footer com botoes de redes sociais
 
 
+dominio: 
+zedosdados.pt
