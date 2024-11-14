@@ -96,15 +96,16 @@ h1 {
     text-align: center;
     z-index: 1;
 }
+/* secção de alterção de ponto */
 
 .evento .ponto {
     width: 12px;
     height: 12px;
-    background-color: #a7f2f2;
+    background-color: #002147;
     border-radius: 50%;
     position: absolute;
     left: 50%;
-    top: 50%;
+    top: 37%;
     transform: translate(-50%, -50%);
 }
 
