@@ -18,14 +18,40 @@ main {
     --primary-color: #002147; /* Azul marinho */
 }
 
-/* Navbar */
+/* Navbar Inicial */
 .navbar {
     background-color: var(--primary-color) !important;
+    
 }
 
 .navbar .nav-link {
     color: #ffffff !important; /* Altere #ffffff para a cor desejada */
+    
 }
+
+.nav-link {
+    text-decoration: none; /* Remove qualquer sublinhado padrão */
+    position: relative;
+}
+
+.nav-link::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px; /* Ajuste a espessura da linha */
+    background-color: rgb(9, 231, 183); /* Cor da linha */
+    transform: scaleX(0); /* Começa invisível */
+    transition: transform 0.3s ease; /* Transição suave */
+    transform-origin: bottom right;
+}
+
+.nav-link:hover::after {
+    transform: scaleX(1); /* A linha aparece ao passar o mouse */
+    transform-origin: bottom left;
+}
+
 
 
 .logo-principal {
@@ -43,6 +69,8 @@ h1 {
     font-size: 2em;
     color: var(--hover-color);
 }
+
+
 
 /* Seção Sobre */
 #about .img-fluid {
