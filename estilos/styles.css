@@ -176,6 +176,13 @@ h1 {
     margin-top: 8px;
 }
 
+.ano-2 {
+    font-weight: bold;
+    color: #333;
+    font-size: 1em;
+    margin-top: 50px;
+}
+
 .cargo {
     font-size: 0.9em;
     font-weight: bold;
@@ -188,6 +195,13 @@ h1 {
     color: #999;
     font-size: 0.9em;
     margin-top: 4px;
+}
+
+.empresa-2 {
+    font-style: italic;
+    color: #999;
+    font-size: 0.9em;
+    margin-top: 10px;
 }
 
 
