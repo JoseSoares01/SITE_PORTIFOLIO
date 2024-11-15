@@ -38,6 +38,8 @@ h1 {
     margin: 0 0 1rem;
     font-family: serif;
     position: relative;
+    right: -350px;
+    top: 30px;
 }
 
 
@@ -95,11 +97,11 @@ section::after {
     box-shadow: 0 0.2em 2em hsla(227, 91%, 43%, 0.2);
 }
 
-.portifolio-1{
- box-shadow: 0 10px color(srgb red green blue);
- transition: 2s;
-
+.portifolio-1 {
+    box-shadow: 0 10px color(srgb red green blue);
+    transition: 2s;
 }
+
 
 /* Estilos para o Conteúdo */
 
@@ -151,27 +153,33 @@ section::after {
 .unsplash-link {
     position: absolute;
     bottom: 0;
-    right: 0;
-    background-color: #ea4c89;
+    right: -350px;
+    background-color: #135272;
     /* cor do Dribbble */
     color: white;
     padding: 0.5em 1em;
     font-size: 0.8em;
     text-decoration: none;
     border-radius: 4px 0 0 0;
+    box-shadow: 0, 01px #000000;
 }
 
 
 /* Estilo do Footer */
+
 footer {
     display: flex;
     justify-content: center;
-    margin-top: auto; /* Empurra o footer para o final da página */
+    margin-top: auto;
+    /* Empurra o footer para o final da página */
     padding: 10px;
-    background-color: #f8f8f8; /* Cor de fundo opcional */
+    background-color: #f8f8f8;
+    /* Cor de fundo opcional */
 }
 
+
 /* Estilo de Atribuição */
+
 .attribution {
     font-size: 0.9em;
     color: #ea4c89;
@@ -225,18 +233,24 @@ footer {
     padding: 20px;
     color: #ffffff;
     margin-top: auto;
-    text-align: center; /* Centraliza o conteúdo do footer */
+    text-align: center;
+    /* Centraliza o conteúdo do footer */
 }
 
 .social {
     margin: 0 auto;
-    text-align: center; /* Centraliza os ícones dentro da div */
+    text-align: center;
+    /* Centraliza os ícones dentro da div */
+    top: 30px;
 }
 
 .social-icon {
-    display: inline-flex; /* Altera para inline-flex para melhor centralização */
-    justify-content: center; /* Centraliza horizontalmente */
-    align-items: center; /* Centraliza verticalmente */
+    display: inline-flex;
+    /* Altera para inline-flex para melhor centralização */
+    justify-content: center;
+    /* Centraliza horizontalmente */
+    align-items: center;
+    /* Centraliza verticalmente */
     width: 60px;
     height: 38px;
     color: #000000;
@@ -246,7 +260,6 @@ footer {
     border-radius: 3px;
     transition: background-color 0.5s ease;
 }
-
 
 
 /* Cores dos ícones sociais no hover */
