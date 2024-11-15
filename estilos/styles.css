@@ -1,5 +1,5 @@
-
 /* Estilos Gerais */
+
 body {
     font-family: 'Lato', Arial, sans-serif;
     text-align: center;
@@ -15,31 +15,30 @@ main {
 }
 
 :root {
-    --primary-color: #002147; /* Azul marinho */
+    --primary-color: #002147;
+    /* Azul marinho */
 }
 
+
 /* Navbar Inicial */
+
 .navbar {
     background-color: var(--primary-color) !important;
-    
 }
 
 .navbar .nav-link {
-    color: #ffffff !important; /* Altere #ffffff para a cor desejada */
-    
+    color: #ffffff !important;
+    /* Altere #ffffff para a cor desejada */
 }
 
 .nav-link {
-    text-decoration: none; /* Remove qualquer sublinhado padrão */
+    text-decoration: none;
+    /* Remove qualquer sublinhado padrão */
     position: relative;
-    
-
 }
 
 .nav-item {
-
     padding-left: -15px;
-    
 }
 
 .nav-link::after {
@@ -48,30 +47,35 @@ main {
     left: 0;
     bottom: 0;
     width: 100%;
-    height: 2px; /* Ajuste a espessura da linha */
-    background-color: rgb(9, 231, 183); /* Cor da linha */
-    transform: scaleX(0); /* Começa invisível */
-    transition: transform 0.3s ease; /* Transição suave */
+    height: 2px;
+    /* Ajuste a espessura da linha */
+    background-color: rgb(9, 231, 183);
+    /* Cor da linha */
+    transform: scaleX(0);
+    /* Começa invisível */
+    transition: transform 0.3s ease;
+    /* Transição suave */
     transform-origin: bottom right;
 }
 
 .nav-link:hover::after {
-    transform: scaleX(1); /* A linha aparece ao passar o mouse */
+    transform: scaleX(1);
+    /* A linha aparece ao passar o mouse */
     transform-origin: bottom left;
 }
 
-
-
 .logo-principal {
-    width: 120px; /* Ajuste o tamanho conforme necessário */
+    width: 120px;
+    /* Ajuste o tamanho conforme necessário */
     height: auto;
-    margin-right: 10px; /* Espaço entre logo e itens da navbar */
+    margin-right: 10px;
+    /* Espaço entre logo e itens da navbar */
 }
 
 .masthead-heading {
-    margin-top: 20px; /* Ajuste o espaço para evitar sobreposição */
+    margin-top: 20px;
+    /* Ajuste o espaço para evitar sobreposição */
 }
-
 
 h1 {
     font-size: 2em;
@@ -79,41 +83,48 @@ h1 {
 }
 
 
-
 /* Seção Sobre */
+
 #about .img-fluid {
     width: 300px;
-    height: 300px; /* Certifique-se de que altura e largura são iguais para manter a forma circular */
-    border-radius: 50%; /* Deixa a imagem redonda */
+    height: 300px;
+    /* Certifique-se de que altura e largura são iguais para manter a forma circular */
+    border-radius: 50%;
+    /* Deixa a imagem redonda */
     transition: transform 0.3s ease;
     /* Remova qualquer estilo de borda */
     border: none;
 }
 
-.image-perfil{
-
+.image-perfil {
     width: 200px;
     height: 200px;
     border-radius: 50%;
     object-fit: cover;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
     flex-shrink: 0;
-    margin-top: 40px; /* Ajuste o valor conforme necessário */
+    margin-top: 40px;
+    /* Ajuste o valor conforme necessário */
 }
 
+
 /* Linha do Tempo Horizontal */
+
 .linha-do-tempo {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin: 3rem auto;
     padding: 20px 0;
-    max-width: 1000px; /* Ajuste conforme necessário */
+    max-width: 1000px;
+    /* Ajuste conforme necessário */
     position: relative;
     overflow-x: auto;
 }
 
+
 /* Linha horizontal conectora */
+
 .linha-do-tempo::before {
     content: '';
     position: absolute;
@@ -132,6 +143,8 @@ h1 {
     text-align: center;
     z-index: 1;
 }
+
+
 /* secção de alterção de ponto */
 
 .evento .ponto {
@@ -168,6 +181,7 @@ h1 {
 
 
 /* Alternância de conteúdo acima/abaixo da linha */
+
 .evento:nth-child(odd) {
     margin-top: 30px;
 }
@@ -176,7 +190,9 @@ h1 {
     margin-top: -30px;
 }
 
+
 /* Seção Portfólio */
+
 .portfolio-card {
     height: 100%;
     transition: transform 0.3s ease;
@@ -187,16 +203,16 @@ h1 {
 .portfolio-card:hover {
     transform: scale(1.02);
     box-shadow: 0 20px 18px rgba(6, 74, 192, 0.15);
-
 }
-
 
 .card-img-top {
     height: 200px;
     object-fit: cover;
 }
 
+
 /* Footer Social */
+
 .social-footer {
     background-color: var(--footer-color);
     padding: 20px;
@@ -225,7 +241,9 @@ h1 {
     background-color: var(--hover-color);
 }
 
+
 /* Tooltip */
+
 [data-tooltip] {
     position: relative;
 }
@@ -270,7 +288,9 @@ h1 {
     opacity: 1;
 }
 
+
 /* Footer */
+
 footer.bg-dark {
     padding: 1rem 0;
     background-color: var(--footer-color);
