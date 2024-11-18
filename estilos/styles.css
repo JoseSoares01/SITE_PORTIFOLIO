@@ -26,8 +26,7 @@ main {
     background-color: var(--primary-color) !important;
 }
 
-.btn-btn-primary{
-
+.btn-btn-primary {
     background-color: #002147;
 }
 
@@ -261,26 +260,26 @@ html {
     font-weight: bold;
     color: #333;
     text-align: center;
-    top:auto;
+    top: auto;
 }
 
 .service-button {
     text-align: center;
-
 }
 
 .service-button .btn-circle {
     width: 150px;
     height: 100px;
-    border-radius: 50%;
     background-color: #007bff00;
-    color: #000000;
     border: none;
     font-size: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
     transition: background-color 0.3s ease, transform 0.2s ease;
+    outline: none;
+    position: relative;
+    left: 100px;
 }
 
 .service-button .btn-circle:hover {
@@ -295,29 +294,34 @@ html {
 }
 
 .service-button .btn-icon {
-    width: 100px; /* Tamanho da imagem */
+    width: 100px;
+    /* Tamanho da imagem */
     height: 100px;
-    margin-bottom: 5px; /* Espaçamento entre o ícone e o texto */
+    margin-bottom: 5px;
+    /* Espaçamento entre o ícone e o texto */
     border-radius: 50px;
 }
 
 .service-button .btn-circle {
-    flex-direction: column; /* Permite alinhar a imagem e o texto verticalmente */
-    gap: 5px; /* Espaçamento entre a imagem e o texto */
+    flex-direction: column;
+    /* Permite alinhar a imagem e o texto verticalmente */
+    gap: 5px;
+    /* Espaçamento entre a imagem e o texto */
     text-align: center;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.mb-4{
+.mb-4 {
     top: 50px;
 }
-.mt-3{
 
-    text-align:center;
+.mt-3 {
+    text-align: center;
     top: -20px;
 }
+
 
 /* Footer Social */
 
