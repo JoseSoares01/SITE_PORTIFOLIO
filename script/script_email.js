@@ -7,7 +7,7 @@ document.getElementById('contact-form').addEventListener('submit', function(even
     var userMessage = document.getElementById('user-message').value;
 
     // Envia o e-mail usando EmailJS
-    emailjs.send('service_avnu3n5', 'template_gcw9mmgg', {
+    emailjs.send('service_avnu3n5', 'template_gcw9mgg', {
             from_email: userEmail,
             message: userMessage
         })
