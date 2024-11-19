@@ -198,7 +198,6 @@
             </div>
         </section>
 
-
         <!-- Seção Contato -->
         <section id="contact" class="bg-light py-5">
             <div class="container">
@@ -206,12 +205,12 @@
                 <p class="text-center">Entre em contato para colaborações e oportunidades.</p>
                 <div class="row justify-content-center">
                     <div class="col-lg-6">
-                        <form>
+                        <form id="contact-form">
                             <div class="form-group">
-                                <input type="email" class="form-control" placeholder="Seu e-mail">
+                                <input type="email" id="user-email" class="form-control" placeholder="Seu e-mail" required>
                             </div>
                             <div class="form-group">
-                                <textarea class="form-control" rows="4" placeholder="Sua mensagem"></textarea>
+                                <textarea id="user-message" class="form-control" rows="4" placeholder="Sua mensagem" required></textarea>
                             </div>
                             <button type="submit" class="btn btn-primary btn-block">Enviar</button>
                         </form>
@@ -219,42 +218,47 @@
                 </div>
             </div>
         </section>
-    </main>
 
 
-    <!-- Footer -->
-    <footer class="bg-dark text-white">
-        <!-- Social Footer -->
-        <div class="social-footer">
-            <div class="social">
-                <a class="social-icon" data-tooltip="Facebook" href="https://www.facebook.com/profile.php?id=100082196296824">
-                    <i class="fa fa-facebook" aria-hidden="true"></i>
-                </a>
-                <a class="social-icon" data-tooltip="Twitter" href="https://twitter.com/colorlib">
-                    <i class="fa fa-twitter" aria-hidden="true"></i>
-                </a>
-                <a class="social-icon" data-tooltip="YouTube" href="https://www.youtube.com/@joseSoaresainvest">
-                    <i class="fa fa-youtube" aria-hidden="true"></i>
-                </a>
-                <a class="social-icon" data-tooltip="LinkedIn" href="https://www.linkedin.com/in/janyel-rodrigues-1b998a190/">
-                    <i class="fa fa-linkedin" aria-hidden="true"></i>
-                </a>
-                <a class="social-icon" data-tooltip="Instagram" href="https://www.instagram.com/janyel.rodrigues/">
-                    <i class="fa fa-instagram" aria-hidden="true"></i>
-                </a>
-                <a class="social-icon" data-tooltip="GitHub" href="https://github.com/JoseSoares01/">
-                    <i class="fa fa-github" aria-hidden="true"></i>
-                </a>
+        <!-- Footer -->
+        <footer class="bg-dark text-white">
+            <!-- Social Footer -->
+            <div class="social-footer">
+                <div class="social">
+                    <a class="social-icon" data-tooltip="Facebook" href="https://www.facebook.com/profile.php?id=100082196296824">
+                        <i class="fa fa-facebook" aria-hidden="true"></i>
+                    </a>
+                    <a class="social-icon" data-tooltip="Twitter" href="https://twitter.com/colorlib">
+                        <i class="fa fa-twitter" aria-hidden="true"></i>
+                    </a>
+                    <a class="social-icon" data-tooltip="YouTube" href="https://www.youtube.com/@joseSoaresainvest">
+                        <i class="fa fa-youtube" aria-hidden="true"></i>
+                    </a>
+                    <a class="social-icon" data-tooltip="LinkedIn" href="https://www.linkedin.com/in/janyel-rodrigues-1b998a190/">
+                        <i class="fa fa-linkedin" aria-hidden="true"></i>
+                    </a>
+                    <a class="social-icon" data-tooltip="Instagram" href="https://www.instagram.com/janyel.rodrigues/">
+                        <i class="fa fa-instagram" aria-hidden="true"></i>
+                    </a>
+                    <a class="social-icon" data-tooltip="GitHub" href="https://github.com/JoseSoares01/">
+                        <i class="fa fa-github" aria-hidden="true"></i>
+                    </a>
+                </div>
             </div>
-        </div>
-        <div class="container">
-            <p class="m-0">&copy; José Soares 2024</p>
-        </div>
-    </footer>
+            <div class="container">
+                <p class="m-0">&copy; José Soares 2024</p>
+            </div>
+        </footer>
 
-    <!-- Scripts -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Scripts -->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+        <script>
+            // Inicialize o EmailJS com sua public key logo após o carregamento do script
+            emailjs.init('saweEHa0a5OuWFF14');
+        </script>
+        <!-- Link do EmailJS -->
+        <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
 </body>
 
 </html>
