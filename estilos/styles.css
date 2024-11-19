@@ -315,6 +315,7 @@ html {
 
 .mb-4 {
     top: 50px;
+    content: "";
 }
 
 .mt-3 {
