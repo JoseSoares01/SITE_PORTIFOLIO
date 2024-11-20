@@ -1,5 +1,5 @@
-// Inicialize o EmailJS com sua public key logo após o carregamento do script
-emailjs.init('saweEHa0a5OuWFF14'); // Substitua pela sua Public Key
+// Inicializa o EmailJS com a public key logo após o carregamento do script
+emailjs.init('saweEHa0a5OuWFF14'); // adição da Public Key
 
 // Função para enviar o formulário
 document.getElementById('contact-form').addEventListener('submit', function(event) {
