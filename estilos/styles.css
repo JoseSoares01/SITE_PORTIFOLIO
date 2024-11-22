@@ -86,8 +86,14 @@ h1 {
     color: var(--hover-color);
 }
 
-.col-lg-8.h2 {
-    top: -100px;
+.col-lg-8 {
+    top: 60px;
+    text-align: left;
+}
+
+.col-lg-8 h1 {
+    text-align: left;
+    padding-bottom: 15px;
 }
 
 
@@ -320,7 +326,8 @@ html {
 
 .mt-3 {
     text-align: center;
-    top: -20px;
+    top: -25px;
+    padding: 15px;
 }
 
 
@@ -408,4 +415,66 @@ footer.bg-dark {
     background-color: var(--footer-color);
     color: var(--text-color);
     margin-top: 0;
+}
+
+
+/* Button Hamburguer */
+
+.button-hamburguer {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    width: 50px;
+}
+
+.button-hamburguer:before,
+.button-hamburguer:after,
+.button-hamburguer div {
+    background: #36be0d;
+    content: "";
+    display: block;
+    height: 6px;
+    border-radius: 3px;
+    margin: 7px 0;
+    transition: 0.5s;
+    position: relative;
+    left: 700px;
+}
+
+.button-hamburguer:hover:before {
+    transform: translateY(12px) rotate(135deg);
+}
+
+.button-hamburguer:hover:after {
+    transform: translateY(-12px) rotate(-135deg);
+}
+
+.button-hamburguer:hover div {
+    transform: scale(0);
+}
+
+
+/* Responsividade do botão hamburguer */
+
+
+/* Esconder o botão em telas maiores */
+
+.button-hamburguer {
+    display: none;
+}
+
+
+/* Mostrar o botão em telas menores (largura <= 768px) */
+
+@media (max-width: 768px) {
+    .button-hamburguer {
+        display: block;
+    }
+}
+
+@media (max-width: 480px) {
+    .button-hamburguer {
+        display: block;
+    }
 }
