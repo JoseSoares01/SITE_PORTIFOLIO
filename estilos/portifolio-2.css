@@ -360,3 +360,23 @@ footer.bg-dark {
     padding: 1rem 0;
     margin-top: 0;
 }
+
+
+/*Descrição da pagina */
+
+.descrição {
+    margin: 0 0 1rem;
+    font-family: serif;
+    position: relative;
+    text-align: justify;
+    left: auto;
+    top: -30px;
+    color: #135272;
+}
+
+
+/*botão direcional */
+
+html {
+    scroll-behavior: smooth;
+}
