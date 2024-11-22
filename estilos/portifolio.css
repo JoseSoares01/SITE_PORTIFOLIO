@@ -100,6 +100,8 @@ section::after {
 .portifolio-1 {
     box-shadow: 0 10px color(srgb red green blue);
     transition: 2s;
+    width: 80%;
+    border-radius: 16px;
 }
 
 
@@ -376,4 +378,79 @@ footer.bg-dark {
 
 html {
     scroll-behavior: smooth;
+}
+
+
+/*Formatação das imagens */
+
+.grafico-1 {
+    width: 100%;
+    max-width: 800px;
+    /* Ajusta ou limita o tamanho máximo */
+    height: auto;
+    /* Preserva a proporção da imagem */
+    margin: 0 auto;
+    /* Centraliza horizontalmente */
+    image-rendering: optimizeQuality;
+    /* Melhora a qualidade de renderização */
+    display: block;
+    /* Garante que o elemento seja tratado como bloco */
+}
+
+.grafico-2 {
+    width: 100%;
+    max-width: 800px;
+    /* Ajusta ou limita o tamanho máximo */
+    height: auto;
+    /* Preserva a proporção da imagem */
+    margin: 0 auto;
+    /* Centraliza horizontalmente */
+    image-rendering: optimizeQuality;
+    /* Melhora a qualidade de renderização */
+    display: block;
+    /* Garante que o elemento seja tratado como bloco */
+    border-radius: 9px;
+}
+
+.grafico-3 {
+    width: 100%;
+    max-width: 800px;
+    /* Ajusta ou limita o tamanho máximo */
+    height: auto;
+    /* Preserva a proporção da imagem */
+    margin: 0 auto;
+    /* Centraliza horizontalmente */
+    image-rendering: optimizeQuality;
+    /* Melhora a qualidade de renderização */
+    display: block;
+    /* Garante que o elemento seja tratado como bloco */
+}
+
+.grafico-4 {
+    width: 100%;
+    max-width: 800px;
+    /* Ajusta ou limita o tamanho máximo */
+    height: auto;
+    /* Preserva a proporção da imagem */
+    margin: 0 auto;
+    /* Centraliza horizontalmente */
+    image-rendering: optimizeQuality;
+    /* Melhora a qualidade de renderização */
+    display: block;
+    /* Garante que o elemento seja tratado como bloco */
+    border-radius: 9px;
+}
+
+.grafico-5 {
+    width: 100%;
+    max-width: 800px;
+    /* Ajusta ou limita o tamanho máximo */
+    height: auto;
+    /* Preserva a proporção da imagem */
+    margin: 0 auto;
+    /* Centraliza horizontalmente */
+    image-rendering: optimizeQuality;
+    /* Melhora a qualidade de renderização */
+    display: block;
+    /* Garante que o elemento seja tratado como bloco */
 }
