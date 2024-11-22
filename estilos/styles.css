@@ -282,7 +282,7 @@ html {
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: background-color 0.3s ease, transform 0.2s ease;
+    transition: background-color 0.4s ease, transform 0.2s ease;
     outline: none;
     position: relative;
     left: 100px;
