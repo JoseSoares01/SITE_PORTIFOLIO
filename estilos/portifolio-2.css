@@ -380,3 +380,11 @@ footer.bg-dark {
 html {
     scroll-behavior: smooth;
 }
+
+.up img {
+    width: 70px;
+    height: 70px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
