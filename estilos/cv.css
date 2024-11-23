@@ -174,7 +174,7 @@ header p {
 .cv-card {
     background: #0676ae;
     border-radius: 16px;
-    width: 300px;
+    width: 600px;
     overflow: hidden;
 }
 
@@ -224,6 +224,7 @@ header p {
     font-size: 16px;
     font-weight: 500;
 }
+
 
 .custom-icon {
     width: 100%;
