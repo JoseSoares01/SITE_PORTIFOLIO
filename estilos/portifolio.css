@@ -43,6 +43,32 @@ h1 {
 }
 
 
+/* Estilo do link - Botão "Ler Mais" */
+.content a.btn {
+    text-decoration: none;
+    color: #d6cfcf;
+    background-color: #ffffff88; /* Cor do botão */
+    padding: 10px 20px;
+    border-radius: 16px;
+    font-size: 16px;
+    display: inline-block;
+    transition: background-color 0.3s ease, transform 0.1s ease; /* Transições suaves */
+
+}
+
+/* Estilo quando o botão é clicado */
+.content a.btn:active {
+    transform: scale(0.98); /* Reduz um pouco o botão para simular um "click" */
+    background-color: #135272; /* Cor do botão ao clicar */
+    
+}
+
+/* Estilo ao passar o mouse */
+.content a.btn:hover {
+    background-color: #135272; /* Cor do botão quando o mouse passa sobre */
+    
+}
+
 /* Linha no topo do título */
 
 h1::after {
@@ -100,8 +126,14 @@ section::after {
 .portifolio-1 {
     box-shadow: 0 10px color(srgb red green blue);
     transition: 2s;
-    width: 80%;
     border-radius: 16px;
+    width: 400px;
+}
+
+.content href{
+
+box-shadow: #0e7037;
+
 }
 
 
@@ -174,7 +206,6 @@ footer {
     justify-content: center;
     margin-top: auto;
     /* Empurra o footer para o final da página */
-    padding: 10px;
     background-color: #f8f8f8;
     /* Cor de fundo opcional */
 }
@@ -361,8 +392,8 @@ footer {
     position: relative;
     text-align: justify;
     left: auto;
-    top: -30px;
-    color: #135272;
+    top: 85px;
+    color: #010101;
 }
 
 
@@ -454,3 +485,21 @@ html {
     display: block;
     /* Garante que o elemento seja tratado como bloco */
 }
+
+/*botão direcional */
+
+html {
+    scroll-behavior: smooth;
+}
+
+.up img {
+    width: 70px;
+    height: 70px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative; /* Agora fica no fluxo normal da página */
+    margin-top: 90px; /* Distância da descrição */
+    z-index: 10; /* Garante que o botão esteja acima da descrição */
+}
+

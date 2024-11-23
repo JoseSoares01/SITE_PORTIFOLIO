@@ -85,6 +85,116 @@ section {
 }
 
 
+/* Estilo do link - Botão "Ler Mais" */
+.content a.btn {
+    text-decoration: none;
+    color: #d6cfcf;
+    background-color: #ffffff88; /* Cor do botão */
+    padding: 10px 20px;
+    border-radius: 16px;
+    font-size: 16px;
+    display: inline-block;
+    transition: background-color 0.3s ease, transform 0.1s ease; /* Transições suaves */
+
+}
+
+/* Estilo quando o botão é clicado */
+.content a.btn:active {
+    transform: scale(0.98); /* Reduz um pouco o botão para simular um "click" */
+    background-color: #135272; /* Cor do botão ao clicar */
+    
+}
+
+/* Estilo ao passar o mouse */
+.content a.btn:hover {
+    background-color: #135272; /* Cor do botão quando o mouse passa sobre */
+    
+}
+
+
+.portifolio-2 {
+    box-shadow: 0 10px color(srgb red green blue);
+    transition: 2s;
+    width: 70%;
+    height: 30%;
+    border-radius: 16px;
+}
+
+/*Formatação das imagens */
+
+.grafico-1 {
+    width: 100%;
+    max-width: 800px;
+    /* Ajusta ou limita o tamanho máximo */
+    height: auto;
+    /* Preserva a proporção da imagem */
+    margin: 0 auto;
+    /* Centraliza horizontalmente */
+    image-rendering: optimizeQuality;
+    /* Melhora a qualidade de renderização */
+    display: block;
+    /* Garante que o elemento seja tratado como bloco */
+}
+
+.grafico-2 {
+    width: 100%;
+    max-width: 800px;
+    /* Ajusta ou limita o tamanho máximo */
+    height: auto;
+    /* Preserva a proporção da imagem */
+    margin: 0 auto;
+    /* Centraliza horizontalmente */
+    image-rendering: optimizeQuality;
+    /* Melhora a qualidade de renderização */
+    display: block;
+    /* Garante que o elemento seja tratado como bloco */
+    border-radius: 9px;
+}
+
+.grafico-3 {
+    width: 100%;
+    max-width: 800px;
+    /* Ajusta ou limita o tamanho máximo */
+    height: auto;
+    /* Preserva a proporção da imagem */
+    margin: 0 auto;
+    /* Centraliza horizontalmente */
+    image-rendering: optimizeQuality;
+    /* Melhora a qualidade de renderização */
+    display: block;
+    /* Garante que o elemento seja tratado como bloco */
+}
+
+.grafico-4 {
+    width: 100%;
+    max-width: 800px;
+    /* Ajusta ou limita o tamanho máximo */
+    height: auto;
+    /* Preserva a proporção da imagem */
+    margin: 0 auto;
+    /* Centraliza horizontalmente */
+    image-rendering: optimizeQuality;
+    /* Melhora a qualidade de renderização */
+    display: block;
+    /* Garante que o elemento seja tratado como bloco */
+    border-radius: 9px;
+}
+
+.grafico-5 {
+    width: 100%;
+    max-width: 800px;
+    /* Ajusta ou limita o tamanho máximo */
+    height: auto;
+    /* Preserva a proporção da imagem */
+    margin: 0 auto;
+    /* Centraliza horizontalmente */
+    image-rendering: optimizeQuality;
+    /* Melhora a qualidade de renderização */
+    display: block;
+    /* Garante que o elemento seja tratado como bloco */
+}
+
+
 /* Fundo branco atrás do conteúdo */
 
 section::after {
@@ -370,8 +480,8 @@ footer.bg-dark {
     position: relative;
     text-align: justify;
     left: auto;
-    top: -30px;
-    color: #135272;
+    top: 70px;
+    color: #000000;
 }
 
 
@@ -387,4 +497,7 @@ html {
     display: block;
     margin-left: auto;
     margin-right: auto;
+    position: relative; /* Agora fica no fluxo normal da página */
+    margin-top: 90px; /* Distância da descrição */
+    z-index: 10; /* Garante que o botão esteja acima da descrição */
 }
