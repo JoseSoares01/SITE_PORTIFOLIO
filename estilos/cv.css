@@ -30,6 +30,7 @@ body {
     user-select: none;
     -webkit-user-select: none;
     touch-action: manipulation;
+    float: left;
 }
 
 .button-home:hover,
@@ -159,4 +160,74 @@ header p {
     .education-item {
         padding: 10px;
     }
+}
+
+/* secção cv */
+
+.cv-section {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.cv-card {
+    background: #0676ae;
+    border-radius: 16px;
+    width: 300px;
+    overflow: hidden;
+}
+
+.cv-link {
+    display: flex;
+    align-items: center;
+    padding: 15px 20px;
+    text-decoration: none;
+    color: white;
+    transition: background-color 0.3s ease;
+}
+
+.cv-link:hover {
+    background-color: rgba(255, 255, 255, 0.256);
+}
+
+/* informações */
+
+.text-info{
+
+
+    text-align: center;
+}
+
+.text-cv{
+
+    text-align: center;
+
+
+}
+
+.cv-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-right: 15px;
+}
+
+.icon-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.cv-text {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.custom-icon {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* ou 'contain' dependendo de como você quer que a imagem se ajuste */
+    border-radius: 4px; /* mantém o arredondamento das bordas */
 }
