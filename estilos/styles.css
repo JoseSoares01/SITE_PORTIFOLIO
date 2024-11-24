@@ -483,64 +483,55 @@ footer.bg-dark {
     margin-top: 0;
 }
 
-
-/* Button Hamburguer */
-
+/* Button Hamburguer */ 
 .button-hamburguer {
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    position: absolute;
-    width: 50px;
-}
-
-.button-hamburguer:before,
-.button-hamburguer:after,
-.button-hamburguer div {
-    background: #36be0d;
-    content: "";
-    display: block;
-    height: 6px;
-    border-radius: 3px;
-    margin: 7px 0;
-    transition: 0.5s;
+    width: 30px;
+    height: 25px;
     position: relative;
-    left: 700px;
+    cursor: pointer;
 }
 
-.button-hamburguer:hover:before {
-    transform: translateY(12px) rotate(135deg);
+.button-hamburguer .hamburguer-line,
+.button-hamburguer .hamburguer-line:before,
+.button-hamburguer .hamburguer-line:after {
+    width: 100%;
+    height: 3px;
+    background-color: #36be0d;
+    position: absolute;
+    transition: all 0.3s ease;
 }
 
-.button-hamburguer:hover:after {
-    transform: translateY(-12px) rotate(-135deg);
+.button-hamburguer .hamburguer-line {
+    top: 50%;
+    transform: translateY(-50%);
 }
 
-.button-hamburguer:hover div {
-    transform: scale(0);
+.button-hamburguer .hamburguer-line:before {
+    content: '';
+    top: -8px;
 }
 
-
-/* Responsividade do botão hamburguer */
-
-
-/* Esconder o botão em telas maiores */
-
-.button-hamburguer {
-    display: none;
+.button-hamburguer .hamburguer-line:after {
+    content: '';
+    bottom: -8px;
 }
 
-
-/* Mostrar o botão em telas menores (largura <= 768px) */
-
-@media (max-width: 768px) {
-    .button-hamburguer {
-        display: block;
-    }
+/* Animação quando ativo */
+.button-hamburguer.active .hamburguer-line {
+    background-color: transparent;
 }
 
-@media (max-width: 480px) {
-    .button-hamburguer {
-        display: block;
+.button-hamburguer.active .hamburguer-line:before {
+    transform: translateY(8px) rotate(45deg);
+}
+
+.button-hamburguer.active .hamburguer-line:after {
+    transform: translateY(-8px) rotate(-45deg);
+}
+
+/* Responsividade */
+@media (min-width: 992px) {
+    .navbar-toggler {
+        display: none;
     }
 }

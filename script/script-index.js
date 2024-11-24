@@ -1,26 +1,18 @@
-// Função para responsividade do botão hamburguer
-
-function checkScreenSize() {
+/* JavaScript */
+document.addEventListener('DOMContentLoaded', function() {
     const buttonHamburguer = document.querySelector('.button-hamburguer');
+    const navbarCollapse = document.querySelector('#navbarResponsive');
 
-    if (window.innerWidth <= 480) {
-        // Mostra o botão apenas para smartphones pequenos
-        buttonHamburguer.style.display = 'block';
-        console.log('Dispositivo pequeno detectado');
-    } else if (window.innerWidth <= 768) {
-        // Mostra o botão para tablets e smartphones maiores
-        buttonHamburguer.style.display = 'block';
-        console.log('Tablet ou smartphone maior detectado');
-    } else {
-        // Esconde o botão em dispositivos maiores
-        buttonHamburguer.style.display = 'none';
-        console.log('Dispositivo maior detectado');
-    }
-}
+    buttonHamburguer.addEventListener('click', function() {
+        this.classList.toggle('active');
+        navbarCollapse.classList.toggle('show');
+    });
 
-
-// Verifica o tamanho da tela ao carregar a página
-checkScreenSize();
-
-// Adiciona um evento para reagir ao redimensionamento da janela
-window.addEventListener('resize', checkScreenSize);
+    // Fechar menu ao clicar em um link
+    document.querySlectorAll('.nav-link').forEach(link => {
+        link.addEventListener('click', () => {
+            navbarCollapse.classList.remove('show');
+            buttonHamburguer.classList.remove('active');
+        });
+    });
+});
