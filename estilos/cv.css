@@ -162,6 +162,7 @@ header p {
     }
 }
 
+
 /* secção cv */
 
 .cv-section {
@@ -172,7 +173,7 @@ header p {
 }
 
 .cv-card {
-    background: #0676ae;
+    background: #002147;
     border-radius: 16px;
     width: 600px;
     overflow: hidden;
@@ -191,19 +192,15 @@ header p {
     background-color: rgba(255, 255, 255, 0.256);
 }
 
+
 /* informações */
 
-.text-info{
-
-
+.text-info {
     text-align: center;
 }
 
-.text-cv{
-
+.text-cv {
     text-align: center;
-
-
 }
 
 .cv-icon {
@@ -216,8 +213,9 @@ header p {
 
 .icon-image {
     width: 100%;
-    height: 100%;
+    height: 130%;
     object-fit: cover;
+    /* Cor de fundo correta */
 }
 
 .cv-text {
@@ -225,10 +223,11 @@ header p {
     font-weight: 500;
 }
 
-
 .custom-icon {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* ou 'contain' dependendo de como você quer que a imagem se ajuste */
-    border-radius: 4px; /* mantém o arredondamento das bordas */
+    object-fit: cover;
+    /* ou 'contain' dependendo de como você quer que a imagem se ajuste */
+    border-radius: 4px;
+    /* mantém o arredondamento das bordas */
 }
