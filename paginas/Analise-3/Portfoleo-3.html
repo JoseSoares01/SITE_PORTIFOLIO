@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfoleo-3</title>
+    <link rel="stylesheet" href="/estilos/portifoleo-3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/fontawesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/brands.min.css">
+</head>
+
+<body>
+    <button class="button-home" onclick="location.href = '/index.html';">Home</button>
+    <section>
+        <h1 id="topo"> Análise Funcionarios IBM</h1>
+        <div class="content">
+            <p>A análise do dataset de rotatividade (attrition) de funcionários da IBM (A análise do dataset de rotatividade (attrition) de funcionários foi realizada com o objetivo de identificar padrões, tendências e fatores que contribuem para a saída
+                de colaboradores.) foi realizada com o objetivo de identificar padrões, tendências e fatores que contribuem para a saída de colaboradores.</p>
+            <a href="#desc" class="btn">Ler Mais</a>
+        </div>
+        </div>
+        <div class="img">
+            <img class="portifolio-2" src="/Dados-Portifoleo/Projeto-3/capa-IBM.jpg" alt="Analise-Vendas">
+            <a href="https://www.kaggle.com/datasets/pavansubhasht/ibm-hr-analytics-attrition-dataset" target="_blank" class="unsplash-link" title="Análise Realizada em 10/10/2024">
+                <span>Fonte: Kaggle.com</span>
+            </a>
+        </div>
+    </section>
+
+    <div id="desc" class="descrição">
+        <h3>Resumo das Análises de Dados de Rotatividade de Funcionários</h3>
+        <p>
+            A análise do dataset de rotatividade (attrition) de funcionários foi realizada com o objetivo de identificar padrões, tendências e fatores que contribuem para a saída de colaboradores. Este estudo considerou informações como idade, departamento, renda
+            mensal, satisfação no trabalho, viagens a trabalho e outros aspectos organizacionais, fornecendo insights valiosos para estratégias de retenção e gestão de pessoas.
+        </p>
+
+        <hr>
+
+        <h3>Principais Resultados</h3>
+
+        <h4>1. Distribuição Demográfica</h4>
+        <ul>
+            <div class="grafico"></div>
+            <img class="grafico-1" src="/Dados-Portifoleo/Projeto-3/distr-idades-rotatividade.png" alt="grafico-temporal">
+            <li><strong>Idade:</strong> Funcionários na faixa etária de 25 a 35 anos possuem uma maior probabilidade de rotatividade, destacando a necessidade de políticas de retenção para jovens talentos.</li>
+            <li><strong>Rotatividade:</strong>Colaboradores mais velhos tendem a apresentar maior estabilidade na empresa.</li>
+            <li><strong>Gênero e Rotatividade:</strong> Não foram observadas diferenças significativas entre gêneros no que diz respeito à rotatividade.</li>
+        </ul>
+
+        <h4>2. Taxa de Rotatividade por Departamento</h4>
+        <ul>
+            <div class="grafico"></div>
+            <img class="grafico-1" src="/Dados-Portifoleo/Projeto-3/taxa-rotavidade.png" alt="grafico-temporal">
+            <li><strong>O departamento de Vendas:</strong> apresenta a maior taxa de rotatividade, seguido por Pesquisa e Desenvolvimento (P&D).</li>
+            <li><strong>O departamento de Recursos Humanos (RH):</strong> embora menor em tamanho, possui uma taxa proporcionalmente alta.</li>
+        </ul>
+
+        <h4>3. Distribuição de Idades</h4>
+        <ul>
+            <div class="grafico"></div>
+            <img class="grafico-1" src="/Dados-Portifoleo/Projeto-3/distr.-idades.png" alt="grafico-temporal">
+            <li><strong>Funcionários com Maior Rotatividade:</strong> A faixa etária mais afetada pela rotatividade é entre 25 e 35 anos, indicando desafios em reter funcionários jovens.</li>
+            <li><strong>Funcionários mais experientes:</strong> apresentam menor propensão a deixar a empresa.</li>
+        </ul>
+
+        <h4>4. Satisfação no Trabalho e Rotatividade</h4>
+        <ul>
+            <div class="grafico"></div>
+            <img class="grafico-1" src="/Dados-Portifoleo/Projeto-3/satisfacao-trabalho.png" alt="grafico-temporal">
+            <li><strong>Impacto da Satisfação no Trabalho::</strong> Funcionários com baixo nível de satisfação (níveis 1 ou 2) são significativamente mais propensos a rotatividade.</li>
+            <li><strong>Melhoria do ambiente:</strong> Melhorar o ambiente de trabalho e oferecer incentivos pode reduzir as taxas de saída.</li>
+            <li><strong>Preferências:</strong> Consumidores demonstraram maior interesse por produtos sustentáveis e marcas locais, evidenciando uma tendência de conscientização ambiental.</li>
+        </ul>
+
+        <hr>
+
+        <h4>5. Correlação entre Renda Mensal e Rotatividade</h4>
+        <ul>
+            <div class="grafico"></div>
+            <img class="grafico-1" src="/Dados-Portifoleo/Projeto-3/renda mensal.png" alt="grafico-temporal">
+            <li><strong>Impacto da Renda no Comportamento dos Funcionários:</strong> Funcionários com salários mais baixos apresentam maior probabilidade de rotatividade, sugerindo insatisfação com remuneração.</li>
+            <li><strong>Profissionais com renda elevada:</strong> tendem a apresentar maior estabilidade na empresa.</li>
+            <li><strong>Preferências:</strong> Consumidores demonstraram maior interesse por produtos sustentáveis e marcas locais, evidenciando uma tendência de conscientização ambiental.</li>
+        </ul>
+
+        <hr>
+
+        <h3>Conclusões e Recomendações</h3>
+        <p>
+            A análise revelou que a rotatividade é mais comum em departamentos como Vendas e entre funcionários mais jovens e de baixa renda. Fatores como satisfação no trabalho e viagens frequentes desempenham papéis importantes na decisão de deixar a empresa:
+        </p>
+        <ol>
+            <li><strong>1- Políticas de Retenção para Jovens Talentos:</strong> Implementar programas de desenvolvimento e mentoria para profissionais na faixa de 25 a 35 anos.</li>
+            <li><strong>2-Melhoria da Satisfação no Trabalho:</strong> Realizar pesquisas regulares para identificar fatores de insatisfação e agir rapidamente para resolvê-los.</li>
+            <li><strong>3-Ajustes nas Políticas de Viagens:</strong> Reduzir viagens excessivas ou oferecer condições mais flexíveis para colaboradores que viajam frequentemente.</li>
+            <li><strong>4- Revisão da Política de Remuneração:</strong> Garantir que os salários estejam alinhados ao mercado e oferecer bônus baseados em desempenho.</li>
+            <li><strong>5- Foco em Departamentos Críticos:</strong> Priorizar iniciativas de retenção e melhoria do ambiente de trabalho em departamentos como Vendas e P&D.</li>
+        </ol>
+        <p>
+            Essa análise reforça a importância de intervenções estratégicas para reduzir a rotatividade e promover maior estabilidade e satisfação no ambiente corporativo.
+        </p>
+    </div>
+    <div class="up">
+        <a href="#topo">
+            <img src="/imagens-globais/upp.png" alt="Subir">
+        </a>
+    </div>
+    <!-- Footer Social -->
+    <div class="social-footer">
+        <div class="social">
+            <a class="social-icon" data-tooltip="Facebook" href="https://www.facebook.com/profile.php?id=100082196296824">
+                <i class="fa fa-facebook" aria-hidden="true"></i>
+            </a>
+            <a class="social-icon" data-tooltip="Twitter" href="https://twitter.com/colorlib">
+                <i class="fa fa-twitter" aria-hidden="true"></i>
+            </a>
+            <a class="social-icon" data-tooltip="YouTube" href="https://www.youtube.com/@joseSoaresainvest">
+                <i class="fa fa-youtube" aria-hidden="true"></i>
+            </a>
+            <a class="social-icon" data-tooltip="LinkedIn" href="https://www.linkedin.com/in/janyel-rodrigues-1b998a190/">
+                <i class="fa fa-linkedin" aria-hidden="true"></i>
+            </a>
+            <a class="social-icon" data-tooltip="Instagram" href="https://www.instagram.com/janyel.rodrigues/">
+                <i class="fa fa-instagram" aria-hidden="true"></i>
+            </a>
+            <a class="social-icon" data-tooltip="GitHub" href="https://github.com/JoseSoares01/">
+                <i class="fa fa-github" aria-hidden="true"></i>
+            </a>
+        </div>
+    </div>
+
+    <!-- Rodapé -->
+    <footer class="bg-dark text-white">
+        <p class="m-0">&copy; José Soares 2024</p>
+    </footer>
+</body>
+
+</html>
