@@ -72,8 +72,7 @@ main {
     width: 120px;
     /* Ajuste o tamanho conforme necessário */
     height: auto;
-    margin-right: 10px;
-    /* Espaço entre logo e itens da navbar */
+    margin-right: auto;
 }
 
 .masthead-heading {
@@ -117,7 +116,7 @@ h1 {
     object-fit: cover;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
     flex-shrink: 0;
-    margin-top: 40px;
+    margin-top: 45px;
     /* Ajuste o valor conforme necessário */
 }
 
@@ -303,7 +302,9 @@ h1 {
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
     border-radius: 16px;
     height: 100%;
-    background-color: #bcc0b94e;
+    width: 350px;
+    background-color: #bcc0b937;
+    margin: 5px;
 }
 
 .portfolio-card:hover {
@@ -312,7 +313,8 @@ h1 {
 }
 
 .card-img-top {
-    height: 200px;
+    height: 300px;
+    width: 350px;
     object-fit: cover;
 }
 
@@ -484,7 +486,9 @@ footer.bg-dark {
     margin-top: 0;
 }
 
-/* Button Hamburguer */ 
+
+/* Button Hamburguer */
+
 .button-hamburguer {
     width: 30px;
     height: 25px;
@@ -517,7 +521,9 @@ footer.bg-dark {
     bottom: -8px;
 }
 
+
 /* Animação quando ativo */
+
 .button-hamburguer.active .hamburguer-line {
     background-color: transparent;
 }
@@ -530,7 +536,9 @@ footer.bg-dark {
     transform: translateY(-8px) rotate(-45deg);
 }
 
+
 /* Responsividade */
+
 @media (min-width: 992px) {
     .navbar-toggler {
         display: none;
