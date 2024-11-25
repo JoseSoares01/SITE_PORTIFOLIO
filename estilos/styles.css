@@ -3,7 +3,7 @@
 body {
     font-family: "Roboto";
     text-align: center;
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     padding-top: 56px;
     min-height: 100vh;
     display: flex;
@@ -309,7 +309,7 @@ h1 {
 
 .portfolio-card:hover {
     transform: scale(1.02);
-    box-shadow: 0 20px 18px rgba(6, 74, 192, 0.15);
+    box-shadow: 0 30px 18px rgba(6, 74, 192, 0.15);
 }
 
 .card-img-top {
@@ -544,3 +544,4 @@ footer.bg-dark {
         display: none;
     }
 }
+
