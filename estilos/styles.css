@@ -313,14 +313,28 @@ h1 {
 }
 
 .portfolio-card:hover {
-    transform: scale(1.02);
-    box-shadow: 0 30px 18px rgba(6, 74, 192, 0.15);
+    transform: translateY(-10px);
+    box-shadow: 0 10px 25px var(--green-shadow);
 }
 
 .card-img-top {
     height: 300px;
     width: 350px;
     object-fit: cover;
+}
+
+.btn-primary {
+    background-color: transparent;
+    border: 2px solid var(--accent-green);
+    color: var(--accent-green);
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: rgba(0, 255, 157, 0.1);
+    border-color: var(--accent-green);
+    color: var(--accent-green);
+    box-shadow: 0 0 15px var(--green-shadow);
 }
 
 html {
@@ -509,9 +523,11 @@ html {
 
 footer.bg-dark {
     padding: 1rem 0;
-    background-color: var(--footer-color);
+    background-color: #002147 !important;
     color: var(--text-color);
     margin-top: 0;
+    box-shadow: 0 4px 20px var(--green-shadow);
+    transition: all 0.3s ease-in-out;
 }
 
 
