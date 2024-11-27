@@ -223,71 +223,6 @@ h1 {
 }
 
 
-/* responsividade a linha do tempo*/
-
-
-/* Responsividade para dispositivos menores (até 768px) */
-
-@media (max-width: 768px) {
-    .linha-do-tempo {
-        flex-direction: column;
-        align-items: flex-start;
-        overflow-x: visible;
-    }
-    .linha-do-tempo::before {
-        height: 100%;
-        width: 2px;
-        left: 50%;
-        top: 0;
-        bottom: 0;
-        transform: translateX(-50%);
-    }
-    .evento {
-        flex: unset;
-        margin: 1rem 0;
-        text-align: left;
-        position: relative;
-    }
-    .evento .ponto {
-        top: 50%;
-        left: 0;
-        transform: translateY(-50%);
-    }
-    .evento .ponto-2 {
-        top: 50%;
-        left: 0;
-        transform: translateY(-50%);
-    }
-    .ano,
-    .ano-2 {
-        text-align: left;
-        margin-left: 2rem;
-    }
-    .cargo,
-    .empresa,
-    .empresa-2 {
-        margin-left: 2rem;
-    }
-}
-
-
-/* Responsividade para telas muito pequenas (até 480px) */
-
-@media (max-width: 480px) {
-    .ano,
-    .ano-2 {
-        font-size: 0.9em;
-    }
-    .cargo {
-        font-size: 0.8em;
-    }
-    .empresa,
-    .empresa-2 {
-        font-size: 0.8em;
-    }
-}
-
-
 /* Alternância de conteúdo acima/abaixo da linha */
 
 .evento:nth-child(odd) {
@@ -586,5 +521,70 @@ footer.bg-dark {
 @media (min-width: 992px) {
     .navbar-toggler {
         display: none;
+    }
+}
+
+
+/* responsividade a linha do tempo*/
+
+
+/* Responsividade para dispositivos menores (até 768px) */
+
+@media (max-width: 768px) {
+    .linha-do-tempo {
+        flex-direction: column;
+        align-items: flex-start;
+        overflow-x: visible;
+    }
+    .linha-do-tempo::before {
+        height: 100%;
+        width: 2px;
+        left: 50%;
+        top: 0;
+        bottom: 0;
+        transform: translateX(-50%);
+    }
+    .evento {
+        flex: unset;
+        margin: 1rem 0;
+        text-align: left;
+        position: relative;
+    }
+    .evento .ponto {
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
+    }
+    .evento .ponto-2 {
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
+    }
+    .ano,
+    .ano-2 {
+        text-align: left;
+        margin-left: 2rem;
+    }
+    .cargo,
+    .empresa,
+    .empresa-2 {
+        margin-left: 2rem;
+    }
+}
+
+
+/* Responsividade para telas muito pequenas (até 480px) */
+
+@media (max-width: 480px) {
+    .ano,
+    .ano-2 {
+        font-size: 0.9em;
+    }
+    .cargo {
+        font-size: 0.8em;
+    }
+    .empresa,
+    .empresa-2 {
+        font-size: 0.8em;
     }
 }
