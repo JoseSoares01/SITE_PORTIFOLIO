@@ -11,7 +11,7 @@ body {
 }
 
 :root {
-    --primary-dark: #000000;
+    --primary-dark: #002147;
     --secondary-dark: #111111;
     --accent-green: #00ff9d;
     --text-white: #ffffff;
@@ -22,58 +22,38 @@ main {
     flex: 1 0 auto;
 }
 
-:root {
-    --primary-color: #002147;
-    /* Azul marinho */
-}
 
-
-/* Navbar Inicial */
+/* Navbar */
 
 .navbar {
-    background-color: var(--primary-color) !important;
+    background-color: var(--primary-dark) !important;
+    box-shadow: 0 4px 20px var(--green-shadow);
+    transition: all 0.3s ease-in-out;
 }
 
-.btn-btn-primary {
-    background-color: #002147;
-}
-
-.navbar .nav-link {
-    color: #ffffff !important;
-    /* Altere #ffffff para a cor desejada */
-}
-
-.nav-link {
-    text-decoration: none;
-    /* Remove qualquer sublinhado padrão */
+.navbar-light .navbar-nav .nav-link {
+    color: var(--text-white) !important;
     position: relative;
+    transition: color 0.3s ease;
 }
 
-.nav-item {
-    padding-left: -15px;
+.navbar-light .navbar-nav .nav-link:hover {
+    color: var(--accent-green) !important;
 }
 
-.nav-link::after {
-    content: "";
+.navbar-light .navbar-nav .nav-link::after {
+    content: '';
     position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 100%;
+    width: 0;
     height: 2px;
-    /* Ajuste a espessura da linha */
-    background-color: rgb(9, 231, 183);
-    /* Cor da linha */
-    transform: scaleX(0);
-    /* Começa invisível */
-    transition: transform 0.3s ease;
-    /* Transição suave */
-    transform-origin: bottom right;
+    bottom: 0;
+    left: 0;
+    background-color: var(--accent-green);
+    transition: width 0.3s ease;
 }
 
-.nav-link:hover::after {
-    transform: scaleX(1);
-    /* A linha aparece ao passar o mouse */
-    transform-origin: bottom left;
+.navbar-light .navbar-nav .nav-link:hover::after {
+    width: 100%;
 }
 
 
@@ -440,8 +420,8 @@ html {
 
 .social-icon {
     display: inline-block;
-    width: 60px;
-    height: 38px;
+    width: 100px;
+    height: 100px;
     color: var(--text-color);
     text-align: center;
     padding: 9px 0;
@@ -451,7 +431,13 @@ html {
 }
 
 .social-icon:hover {
-    background-color: var(--hover-color);
+    color: var(--accent-green);
+    transform: translateY(-5px);
+    text-shadow: 0 0 10px var(--accent-green);
+}
+
+.social-icon::after {
+    background-color: rgba(255, 0, 0, 0) !important;
 }
 
 
@@ -499,6 +485,23 @@ html {
 [data-tooltip]:hover:after {
     visibility: visible;
     opacity: 1;
+}
+
+.form-control {
+    background-color: #fff border: 1px solid var(--accent-green);
+    color: var(--text-white);
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 10px var(--green-shadow);
+}
+
+.form-control:focus {
+    background-color: var(--secondary-dark);
+    box-shadow: 0 0 15px var(--accent-green);
+    color: var(--text-white);
+    border-color: var(--accent-green);
 }
 
 
@@ -569,4 +572,3 @@ footer.bg-dark {
         display: none;
     }
 }
-
