@@ -10,6 +10,14 @@ body {
     flex-direction: column;
 }
 
+:root {
+    --primary-dark: #000000;
+    --secondary-dark: #111111;
+    --accent-green: #00ff9d;
+    --text-white: #ffffff;
+    --green-shadow: rgba(0, 255, 157, 0.3);
+}
+
 main {
     flex: 1 0 auto;
 }
@@ -68,11 +76,17 @@ main {
     transform-origin: bottom left;
 }
 
+
+/* Logo */
+
 .logo-principal {
-    width: 120px;
-    /* Ajuste o tamanho conforme necessário */
-    height: auto;
-    margin-right: auto;
+    transition: all 0.3s ease;
+    width: 110px;
+    text-align: left;
+}
+
+.logo-principal:hover {
+    filter: drop-shadow(0 0 10px var(--accent-green));
 }
 
 .masthead-heading {
@@ -161,25 +175,36 @@ h1 {
 /* secção de alterção de ponto */
 
 .evento .ponto {
-    width: 12px;
-    height: 12px;
+    width: 15px;
+    height: 15px;
     background-color: #002147;
     border-radius: 50%;
     position: absolute;
     left: 50%;
-    top: 37%;
-    transform: translate(-50%, -50%);
+    top: 30%;
+    transform: translateX(-50%);
+    transition: all 0.3s ease;
+    box-shadow: 0 0 10px var(--green-shadow);
 }
 
-.evento .ponto-2 {
-    width: 12px;
-    height: 12px;
+.ponto,
+.ponto-2 {
+    width: 15px;
+    height: 15px;
     background-color: #002147;
     border-radius: 50%;
     position: absolute;
     left: 50%;
-    top: 112px;
-    transform: translate(-50%, -50%);
+    top: 53%;
+    transform: translateX(-50%);
+    transition: all 0.3s ease;
+    box-shadow: 0 0 10px var(--green-shadow);
+}
+
+.evento:hover .ponto,
+.evento:hover .ponto-2 {
+    transform: translateX(-50%) scale(1.5);
+    box-shadow: 0 0 20px var(--accent-green);
 }
 
 .ano {
