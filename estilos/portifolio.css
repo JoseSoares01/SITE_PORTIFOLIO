@@ -1,4 +1,4 @@
-/* Variables */
+/*****************************Cores globais variaveis ************************************************/
 
 :root {
     --color-primary: #002147;
@@ -11,7 +11,7 @@
 }
 
 
-/* Base Styles */
+/*****************************************Base Styles ****************************************************/
 
 * {
     margin: 0;
@@ -31,7 +31,7 @@ body {
 }
 
 
-/* Home Button */
+/***************************************Botão-Home*************************************************************/
 
 .button-home {
     position: fixed;
@@ -54,7 +54,7 @@ body {
 }
 
 
-/* Main Section */
+/*****************************************SELECTION CARD ****************************************************/
 
 section {
     max-width: 1200px;
@@ -70,11 +70,13 @@ h1 {
     margin-bottom: 30px;
 }
 
-
 .content {
     color: var(--color-text);
     max-width: 800px;
 }
+
+
+/*****************************************BOTAO-LER MAIS ****************************************************/
 
 .botao-ler {
     display: inline-block;
@@ -95,7 +97,7 @@ h1 {
 }
 
 
-/* Portfolio Image Container */
+/*****************************************PORTIFOLIO CARD ****************************************************/
 
 .img {
     position: relative;
@@ -107,9 +109,11 @@ h1 {
 }
 
 
-/* Responsividade para dispositivos específicos */
+/*************************************** Responsividade para dispositivos específicos *******************************/
 
-/* Base CSS */
+
+/*************************** Base CSS ******************************/
+
 .portifolio-1 {
     position: relative;
     width: auto;
@@ -122,9 +126,12 @@ h1 {
 }
 
 .unsplash-link {
-    position: absolute; /* Absoluto em relação à imagem */
-    bottom: 10px; /* Fixa no canto inferior */
-    right: 15px; /* Fixa no canto direito */
+    position: absolute;
+    /* Absoluto em relação à imagem */
+    bottom: 10px;
+    /* Fixa no canto inferior */
+    right: 15px;
+    /* Fixa no canto direito */
     background: var(--color-secondary);
     color: var(--color-text);
     padding: 8px 16px;
@@ -143,9 +150,12 @@ h1 {
     transform: translateY(-2px);
 }
 
-/* Responsividade */
+
+/**************************************************** Responsividade ********************************************************/
+
 
 /* iPhone 14 Pro (393x852) */
+
 @media (max-width: 393px) {
     .portifolio-1 {
         max-width: 90%;
@@ -156,7 +166,9 @@ h1 {
     }
 }
 
+
 /* Pixel 7 Pro (480x1040) */
+
 @media (max-width: 480px) {
     .portifolio-1 {
         max-width: 95%;
@@ -167,7 +179,9 @@ h1 {
     }
 }
 
+
 /* iPhone 14 Pro Max (430x932) */
+
 @media (max-width: 430px) {
     .portifolio-1 {
         max-width: 90%;
@@ -178,7 +192,9 @@ h1 {
     }
 }
 
+
 /* iPad Air 5 (820x1180) */
+
 @media (max-width: 820px) {
     .portifolio-1 {
         max-width: 80%;
@@ -189,7 +205,9 @@ h1 {
     }
 }
 
+
 /* MacBook Air (1559x975) */
+
 @media (max-width: 1559px) {
     .portifolio-1 {
         max-width: 70%;
@@ -200,22 +218,21 @@ h1 {
     }
 }
 
+.portifolio-1 {
+    border-radius: 16px;
+}
 
-    .portifolio-1 {
-        border-radius: 16px;
-    }
-    .unsplash-link {
-        position: relative;
-        bottom: auto;
-        right: auto;
-        margin-top: 32rem;
-        left: -45%;
-        transform: none;
-        padding: 3px 6px;
-        /* bem menor para telas pequenas */
-        font-size: 0.75rem;
-    }
-
+.unsplash-link {
+    position: relative;
+    bottom: auto;
+    right: auto;
+    margin-top: 32rem;
+    left: -45%;
+    transform: none;
+    padding: 3px 6px;
+    /* bem menor para telas pequenas */
+    font-size: 0.75rem;
+}
 
 .unsplash-link:hover {
     background: var(--color-accent);
@@ -223,7 +240,7 @@ h1 {
 }
 
 
-/* Description Section */
+/*********************************************SEÇÃO DE DESCRIÇÃO****************************************/
 
 .descrição {
     max-width: 1200px;
@@ -250,7 +267,7 @@ h1 {
 }
 
 
-/* Graphics */
+/*********************************************SEÇÃO DE GRAFICOS****************************************/
 
 .grafico-1,
 .grafico-2,
@@ -274,7 +291,7 @@ h1 {
 }
 
 
-/* Up Button */
+/*********************************************BOTÃO- UP****************************************/
 
 .up {
     position: fixed;
@@ -296,8 +313,7 @@ h1 {
 }
 
 
-
-/* Responsive Design */
+/*********************************************RESPONSIVIDADE DOS GRAFICOS E H1****************************************/
 
 @media (max-width: 768px) {
     section {
@@ -330,8 +346,7 @@ h1 {
 }
 
 
-
-/* Footer Social */
+/*********************************************FOOTER COM SOCIAL****************************************/
 
 .social-footer {
     background-color: var(--footer-color);
@@ -347,15 +362,16 @@ h1 {
 .social-icon {
     display: inline-block;
     width: 50px;
-    height: 50px; /* Ajustado para tamanhos menores */
+    height: 50px;
+    /* Ajustado para tamanhos menores */
     color: var(--text-color);
     text-align: center;
     padding: 9px;
     margin: 5px;
-    border-radius: 50%; /* Aparência circular */
+    border-radius: 50%;
+    /* Aparência circular */
     transition: background-color 0.5s ease;
 }
-
 
 .social-icon:hover {
     color: var(--accent-green);
@@ -368,7 +384,7 @@ h1 {
 }
 
 
-/* Tooltip */
+/*********************************************TOOLTIP****************************************/
 
 [data-tooltip] {
     position: relative;
@@ -432,7 +448,7 @@ h1 {
 }
 
 
-/* Footer */
+/*********************************************FOOTER****************************************/
 
 footer.bg-dark {
     padding: 1rem 0;
