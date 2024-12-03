@@ -63,7 +63,7 @@ main {
 .logo-principal {
     transition: all 0.3s ease;
     width: 110px;
-    left: -220%;
+    left: -170%;
     position: relative;
 }
 
