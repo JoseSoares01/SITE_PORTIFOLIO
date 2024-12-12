@@ -125,8 +125,8 @@ h1 {
     align-items: center;
     margin: 3rem auto;
     padding: 20px 0;
-    max-width: 1000px;
-    /* Ajuste conforme necessário */
+    max-width: 1200px;
+    /* Aumente este valor para alongar a linha */
     position: relative;
     overflow-x: auto;
 }
@@ -247,16 +247,19 @@ h1 {
     font-size: 3rem;
 }
 
-#header p {
+S #header p {
     font-size: 1.5rem;
     font-style: italic;
 }
+
+
+/*TAMANHO DA FAIXA HEADER*/
 
 .container {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    padding: 25px;
+    padding: -5px;
 }
 
 .card {
@@ -284,13 +287,14 @@ h1 {
 }
 
 .card-text {
-    margin: -30px auto;
-    margin-bottom: -50px;
+    margin: -70px auto;
+    margin-bottom: -60px;
     height: 300px;
-    width: 300px;
+    width: 320px;
     background-color: #1D1C20;
     color: #fff;
     padding: 20px;
+    border-radius: 16px;
 }
 
 .card-title {
@@ -415,12 +419,16 @@ html {
 
 .social-icon {
     display: inline-block;
-    width: 100px;
-    height: 100px;
+    width: 120px;
+    /* Aumente o tamanho da largura do ícone */
+    height: 120px;
+    /* Aumente o tamanho da altura do ícone */
     color: var(--text-color);
     text-align: center;
-    padding: 9px 0;
-    margin: 5px;
+    padding: 15px 0;
+    /* Ajuste o padding se necessário */
+    margin: 10px;
+    /* Espaçamento entre os ícones */
     border-radius: 3px;
     transition: background-color 0.5s ease;
 }
@@ -633,4 +641,80 @@ footer.bg-dark {
     .empresa-2 {
         font-size: 0.8em;
     }
+}
+
+
+/* Alinhamento da seção de contato */
+
+#contact {
+    display: flex;
+    justify-content: center;
+    /* Centraliza horizontalmente */
+    align-items: flex-start;
+    /* Mantém o conteúdo na parte superior da seção */
+    min-height: 50vh;
+    /* Altura mínima para a seção */
+    padding: 50px 20px;
+    /* Espaçamento interno */
+    margin-top: 50px;
+    /* Adiciona um espaço superior opcional */
+}
+
+
+/* Estilização do contêiner do formulário */
+
+#contact .container {
+    max-width: 700px;
+    /* Limita a largura máxima */
+    width: 150%;
+    /* Garante que ocupe a largura total disponível */
+    text-align: center;
+    /* Centraliza o texto */
+}
+
+
+/* Estilização do formulário */
+
+#contact-form {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    /* Adiciona sombra ao formulário */
+    text-align: center;
+    align-items: center;
+}
+
+
+/* Inputs e textarea */
+
+#contact-form .form-control {
+    font-size: 16px;
+    /* Aumenta o tamanho da fonte */
+    padding: 15px;
+    /* Espaço interno maior */
+    margin-bottom: 20px;
+    /* Espaçamento entre os campos */
+}
+
+
+/* Botão de envio */
+
+#contact-form button {
+    font-size: 18px;
+    /* Aumenta o tamanho do texto do botão */
+    padding: 12px 20px;
+    /* Espaço interno do botão */
+    border-radius: 5px;
+    /* Borda arredondada */
+    background-color: #007bff;
+    /* Cor do botão */
+    color: #fff;
+    /* Cor do texto */
+    border: none;
+    /* Remove a borda do botão */
+    transition: background-color 0.3s ease;
+    /* Efeito de transição */
+}
+
+#contact-form button:hover {
+    background-color: #0056b3;
+    /* Cor do botão ao passar o mouse */
 }
