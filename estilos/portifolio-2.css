@@ -8,6 +8,8 @@
     --color-text: #f3f4f6;
     --color-text-muted: #9ca3af;
     --transition-speed: 0.3s;
+    --color-shadow: rgba(0, 255, 157, 0.3);
+    --color-accent: #00ff9d;
 }
 
 
@@ -108,20 +110,27 @@ p {
     padding: 1rem 0;
 }
 
-.home-button {
-    padding: 0.5rem 1.5rem;
-    background-color: var(--color-primary);
-    color: white;
-    border: none;
-    border-radius: 9999px;
-    font-size: 0.875rem;
-    font-weight: 500;
+.button-home {
+    width: 75px;
+    height: 30px;
+    text-align: center;
+    position: fixed;
+    top: 5px;
+    left: 40px;
+    padding: 12px 24px;
+    background: transparent;
+    border: 2px solid var(--color-accent);
+    color: var(--color-accent);
+    border-radius: 8px;
     cursor: pointer;
-    transition: background-color var(--transition-speed);
+    transition: all var(--transition-normal);
+    z-index: 100;
 }
 
-.home-button:hover {
-    background-color: var(--color-primary-dark);
+.button-home:hover {
+    background: rgba(0, 255, 157, 0.1);
+    box-shadow: 0 0 15px var(--color-shadow);
+    transform: translateY(-2px);
 }
 
 
