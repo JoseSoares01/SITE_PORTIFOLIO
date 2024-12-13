@@ -1,0 +1,91 @@
+
+
+
+                    A análise do dataset de acidentes em Porto Alegre, Rio Grande do Sul, foi conduzida com o objetivo de identificar padrões, tendências e fatores relacionados aos acidentes registrados na cidade. Este estudo abrangeu informações como data, horário, local,
+            gravidade, tipo de acidente e condições climáticas, fornecendo insights valiosos para a gestão pública e políticas de segurança viária.
+
+
+
+
+
+            <!-- Cards de Análise -->
+            <div class="analysis-cards">
+                <div class="card">
+                    <h3>1. Principais Resultados</h3>
+                    <h4>1. Distribuição Temporal</h4>
+                    <img src="/Dados-Portifoleo/Projeto-1/Analise_Acidentes.png" alt="Gráfico Tendências">
+                    <ul class="bullet-list">
+                        li><strong>Dias da Semana:</strong> A maioria dos acidentes ocorreu durante os dias úteis, com picos significativos nas sextas-feiras, indicando um aumento no fluxo de veículos devido ao final da semana.</li>
+                <li><strong>Horários:</strong> O maior volume de acidentes foi registrado nos horários de pico (entre 7h-9h e 17h-19h), alinhado ao deslocamento de trabalhadores e estudantes.</li>
+                <li><strong>Meses do Ano:</strong> O dataset indicou maior ocorrência de acidentes em meses de clima mais ameno, como setembro e outubro, possivelmente relacionados à maior movimentação nas ruas.</li>
+                    </ul>
+                </div>
+
+                <div class="card">
+                    <h3>2. Localização e Geografia</h3>
+                    <div class="grafico"></div>
+                    <img class="grafico-2" src="/Dados-Portifoleo/Projeto-1/Mapa_de_Distribuição.png" alt="grafico-calor">
+                    <ul class="bullet-list">
+                        <li><strong>Zonas Críticas:</strong> Áreas centrais e vias de alta velocidade, como avenidas movimentadas, apresentaram maior incidência de acidentes. Esses locais concentram alta densidade de veículos e pedestres.</li>
+                    <li><strong>Bairros:</strong> Os bairros com maior número de registros incluem Centro Histórico, Partenon e Menino Deus, evidenciando necessidade de intervenções específicas nestas regiões.</li>
+                    </ul>
+                </div>
+
+                <div class="card">
+                    <h3>3. Desempenho por Região</h3>
+                    <img class="grafico-3" src="/Dados-Portifoleo/Projeto-1/Distribuição-semanal.png" alt="distribuição-semanal">
+                    <li><strong>Acidentes Fatais:</strong> Embora em menor quantidade, as colisões fatais ocorreram com maior frequência em rodovias e durante a madrugada, frequentemente associadas ao consumo de álcool e alta velocidade.</li>
+                    <li><strong>Acidentes com Feridos:</strong> A maioria dos acidentes envolveu vítimas com ferimentos leves a moderados, destacando a importância do uso de dispositivos de segurança, como cintos e capacetes.</li>
+                    <li><strong>Acidentes Sem Vítimas:</strong> Batidas leves ou colisões sem feridos foram predominantes, refletindo a alta densidade do trânsito urbano.</li>
+                    </ul>
+                </div>
+
+                <div class="card">
+                    <h4>5. Tipo de Acidente</h4>
+                <ul>
+                    <img class="grafico-5" src="/Dados-Portifoleo/Projeto-1/distribuição_tipo.png" alt="distribuição-tipo">
+                    <li><strong>Colisões:</strong> Colisões traseiras e laterais foram as mais comuns, muitas vezes atribuídas à falta de atenção dos condutores e ao desrespeito à distância segura entre veículos.</li>
+                    <li><strong>Atropelamentos:</strong> Embora em menor número, destacaram-se como eventos graves, com maior incidência em cruzamentos sem sinalização adequada.</li>
+                    <li><strong>Capotamentos:</strong> Registrados em alta velocidade e em curvas, os capotamentos destacam a importância de campanhas educativas sobre direção defensiva.</li>
+                </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="social-icons">
+                <a href="https://www.facebook.com/profile.php?id=100082196296824" target="_blank" aria-label="Facebook">
+                    <i class="fab fa-facebook"></i>
+                </a>
+                <a href="https://twitter.com/colorlib" target="_blank" aria-label="Twitter">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="https://www.youtube.com/@joseSoaresainvest" target="_blank" aria-label="YouTube">
+                    <i class="fab fa-youtube"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/janyel-rodrigues-1b998a190/" target="_blank" aria-label="LinkedIn">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://www.instagram.com/janyel.rodrigues/" target="_blank" aria-label="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://github.com/JoseSoares01/" target="_blank" aria-label="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+            </div>
+            <p class="copyright">&copy; José Soares <span id="year"></span></p>
+        </div>
+    </footer>
+
+    <!-- Botão Voltar ao Topo -->
+    <button id="backToTop" class="back-to-top" aria-label="Voltar ao topo">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="/script/script_page02.js"></script>
+</body>
+
+</html>
