@@ -110,7 +110,7 @@ h1 {
     height: 200px;
     border-radius: 50%;
     object-fit: cover;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 20px var(--green-shadow);
     flex-shrink: 0;
     margin-top: 45px;
 }
@@ -259,6 +259,7 @@ S #header p {
     justify-content: space-around;
     flex-wrap: wrap;
     padding: -5px;
+    backdrop-filter: blur(8px);
 }
 
 .card {
@@ -648,15 +649,8 @@ footer.bg-dark {
 #contact {
     display: flex;
     justify-content: center;
-    /* Centraliza horizontalmente */
-    align-items: flex-start;
-    /* Mantém o conteúdo na parte superior da seção */
-    min-height: 50vh;
-    /* Altura mínima para a seção */
-    padding: 50px 20px;
-    /* Espaçamento interno */
-    margin-top: 50px;
-    /* Adiciona um espaço superior opcional */
+    min-height: 10vh;
+    padding: 10px 20px;
 }
 
 
@@ -665,10 +659,11 @@ footer.bg-dark {
 #contact .container {
     max-width: 700px;
     /* Limita a largura máxima */
-    width: 150%;
+    width: 100%;
     /* Garante que ocupe a largura total disponível */
     text-align: center;
     /* Centraliza o texto */
+    align-items: center;
 }
 
 
@@ -677,8 +672,8 @@ footer.bg-dark {
 #contact-form {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     /* Adiciona sombra ao formulário */
-    text-align: center;
-    align-items: center;
+    width: 600px;
+    align-self: center;
 }
 
 
@@ -716,4 +711,8 @@ footer.bg-dark {
 #contact-form button:hover {
     background-color: #0056b3;
     /* Cor do botão ao passar o mouse */
+}
+
+.texto-contacto {
+    bottom: 100px;
 }
