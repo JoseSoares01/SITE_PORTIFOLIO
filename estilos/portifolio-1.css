@@ -118,12 +118,12 @@ p {
 
 .button-home {
     width: 75px;
-    height: 30px;
+    height: 35px;
     text-align: center;
     position: fixed;
-    top: 5px;
-    left: 40px;
-    padding: 12px 24px;
+    top: 7px;
+    left: 25px;
+    padding: 12px -10px;
     background: transparent;
     border: 2px solid var(--color-accent);
     color: var(--color-accent);
