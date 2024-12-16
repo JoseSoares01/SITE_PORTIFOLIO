@@ -646,11 +646,27 @@ footer.bg-dark {
 
 /* Alinhamento da seção de contato */
 
-#contact {
+
+/* Seção de Contacto */
+
+#contacto {
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* Centraliza os elementos horizontalmente */
     justify-content: center;
-    min-height: 10vh;
-    padding: 10px 20px;
+    /* Centraliza os elementos verticalmente */
+    text-align: center;
+    /* Centraliza o texto dentro da seção */
+    margin: 50px 0;
+    /* Adiciona espaçamento superior e inferior */
+}
+
+#contacto h1 {
+    font-size: 2.5rem;
+    /* Tamanho do título */
+    margin-bottom: 20px;
+    /* Espaçamento abaixo do título */
 }
 
 
@@ -663,17 +679,23 @@ footer.bg-dark {
     /* Garante que ocupe a largura total disponível */
     text-align: center;
     /* Centraliza o texto */
-    align-items: center;
 }
 
-
-/* Estilização do formulário */
+.texto-contacto {
+    text-align: center;
+    /* Centraliza o texto horizontalmente */
+    margin: 20px 0;
+    /* Espaçamento acima e abaixo do texto */
+}
 
 #contact-form {
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    /* Adiciona sombra ao formulário */
-    width: 600px;
-    align-self: center;
+    margin: 0 auto;
+    /* Centraliza o formulário horizontalmente */
+    display: flex;
+    flex-direction: column;
+    /* Garante que os campos fiquem em coluna */
+    align-items: center;
+    /* Centraliza os itens do formulário */
 }
 
 
@@ -693,26 +715,16 @@ footer.bg-dark {
 
 #contact-form button {
     font-size: 18px;
-    /* Aumenta o tamanho do texto do botão */
-    padding: 12px 20px;
-    /* Espaço interno do botão */
-    border-radius: 5px;
-    /* Borda arredondada */
-    background-color: #007bff;
-    /* Cor do botão */
+    border-radius: 16px;
+    background-color: #16c2b9;
     color: #fff;
-    /* Cor do texto */
     border: none;
-    /* Remove a borda do botão */
     transition: background-color 0.3s ease;
-    /* Efeito de transição */
+    width: 200px;
+    height: 70px;
 }
 
 #contact-form button:hover {
     background-color: #0056b3;
     /* Cor do botão ao passar o mouse */
-}
-
-.texto-contacto {
-    bottom: 100px;
 }
