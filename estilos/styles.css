@@ -201,17 +201,21 @@ body {
 }
 
 .hero-image img {
+  position: relative; /* ou absolute, se necessário */
   width: 12rem;
   height: 12rem;
   border-radius: 50%;
   object-fit: cover;
   border: 4px solid var(--accent);
   box-shadow: 0 0 15px var(--accent);
+  bottom: -70px; /* Ajuste o valor negativo para descer mais */
 }
 
 .hero-text {
+  position: relative;
   max-width: 32rem;
   text-align: center;
+  bottom: -20px;
 }
 
 @media (min-width: 768px) {
