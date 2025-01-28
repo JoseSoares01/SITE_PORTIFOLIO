@@ -48,7 +48,7 @@ body {
 }
 
 .logo img{
-  height: 150px;
+  height: 100px;
   font-weight: bold;
   color: var(--text-light);
 }
