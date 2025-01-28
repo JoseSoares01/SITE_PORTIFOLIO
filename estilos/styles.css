@@ -18,7 +18,7 @@ html {
 
 body {
   font-family: system-ui, -apple-system, sans-serif;
-  background: linear-gradient(135deg, #050734 0%, #1e40af 50%, #1e3a8a 100%);
+  background: linear-gradient(135deg, #000000 0%, #1f4076 50%, #021448 100%);
   color: var(--text-light);
   line-height: 1.6;
 }
