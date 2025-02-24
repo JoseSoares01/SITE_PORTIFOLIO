@@ -393,6 +393,16 @@ body {
   background-color: #0891b2;
 }
 
+.btn-icon {
+  width: 50px; /* Ajuste conforme necessário */
+  height: auto;
+  background: transparent; /* Garante que o fundo do ícone permaneça transparente */
+}
+.btn-circle {
+  background: none; /* Remove fundo */
+  border: none; /* Remove borda se necessário */
+}
+
 /* Footer */
 footer {
   background-color: rgba(30, 58, 138, 0.9);
