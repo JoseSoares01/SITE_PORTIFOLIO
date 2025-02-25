@@ -54,3 +54,23 @@ document.querySelectorAll('.portfolio-card').forEach(card => {
   card.style.transition = 'all 0.5s ease-out';
   observer.observe(card);
 });
+
+// NEW EFFECT GRID BACKGROUD//-------------------------------------
+        for (var i = 0; i < 350; i++){
+    let box = document.createElement('span');
+    document.getElementById('container').appendChild(box);
+}
+
+window.onload = function () {
+    for (var i = 0; i < 350; i++) {
+        let box = document.createElement('span');
+        document.getElementById('container').appendChild(box);
+    }
+  
+    let cursor = document.getElementById('cursor');
+
+    window.onmousemove = function (e) {
+        cursor.style.left = e.clientX + 'px';
+        cursor.style.top = e.clientY + 'px';
+    };
+  }
