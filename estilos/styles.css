@@ -460,7 +460,7 @@ body {
   justify-content: center;
   gap: 0.5rem;
   padding: 0.5rem 1rem;
-  background-color: var(--accent);
+  background-color: #3b82f6;
   color: var(--text-light);
   border: none;
   border-radius: 0.25rem;
@@ -469,7 +469,7 @@ body {
 }
 
 .btn-primary:hover {
-  background-color: #fafafa;
+  background-color:  rgba(11, 171, 59, 0.9);;
 }
 
 /* Ícones dentro dos botões */
