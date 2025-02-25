@@ -453,14 +453,15 @@ body {
   box-shadow: 0 0 15px rgba(34, 211, 238, 0.3);
 }
 
-/* Buttons */
+/* Botões */
 .btn-primary {
   display: inline-flex;
   align-items: center;
+  justify-content: center;
   gap: 0.5rem;
   padding: 0.5rem 1rem;
   background-color: var(--accent);
-  color: var(--text-dark);
+  color: var(--text-light);
   border: none;
   border-radius: 0.25rem;
   cursor: pointer;
@@ -471,16 +472,37 @@ body {
   background-color: #fafafa;
 }
 
+/* Ícones dentro dos botões */
 .btn-icon {
-  width: 50px; /* Ajuste conforme necessário */
+  width: 70px; /* Reduzido para melhor encaixe */
   height: auto;
-  background: transparent; /* Garante que o fundo do ícone permaneça transparente */
+  background: transparent;
+  display: flex;
+  justify-content: center;
   align-items: center;
 }
+
+/* Botões circulares */
 .btn-circle {
-  background: none; /* Remove fundo */
-  border: none; /* Remove borda se necessário */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  background: none;
+  border: none;
+  padding: 10px;
+  border-radius: 50%;
+  color: var(--accent);
 }
+
+/* Container dos botões */
+.btn-group {
+  display: flex;
+  gap: 15px; /* Espaço entre os botões */
+  flex-wrap: wrap; /* Permite quebra se necessário */
+  justify-content: center;
+}
+
 
 /* Footer */
 footer {
