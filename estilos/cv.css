@@ -43,7 +43,6 @@ nav {
     position: relative;
     width: 80px; /* Aumentar a largura para acomodar o texto */
     height: 38px;
-    left: -50px;
 }
 
 .theme-switch input {
