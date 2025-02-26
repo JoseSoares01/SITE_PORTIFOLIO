@@ -122,9 +122,10 @@ body {
 }
 
 .logo img{
-  height: 120px;
+  height: 100px;
   font-weight: bold;
   color: var(--text-light);
+  
 }
 
 .desktop-menu {
@@ -161,14 +162,14 @@ body {
   left: 50%;
   width: 0;
   height: 2px;
-  background: var(--accent);
+  background: #092086cc;
   transform: translateX(-50%);
   transition: width 0.3s ease;
   box-shadow: 0 0 10px var(--accent);
 }
 
 .menu-items a:hover {
-  color: var(--accent);
+  color: #0e3dbe;
   text-shadow: 0 0 10px rgba(34, 211, 238, 0.5);
   background: rgba(34, 211, 238, 0.1);
 }
