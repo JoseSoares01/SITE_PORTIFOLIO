@@ -20,7 +20,7 @@ body {
   font-family: system-ui, -apple-system, sans-serif;
   color: var(--text-light);
   line-height: 1.6;
-  background: #000000;
+  background: #000000f5;
   overflow-x: hidden;
   position: relative;
   min-height: 100vh;
