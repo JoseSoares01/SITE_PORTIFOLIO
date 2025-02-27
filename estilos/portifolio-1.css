@@ -42,12 +42,18 @@ body {
 .container {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 1rem;
+    padding: 1rem;
 }
 
 
 /*************************************** LAYOUT E ESTRUTURA ******************************************************/
-
+.conclusoes
+{
+    text-align: justify;
+    position:relative;
+    left: 10px;
+    
+}
 .hero {
     padding: 8rem 0 4rem;
 }
