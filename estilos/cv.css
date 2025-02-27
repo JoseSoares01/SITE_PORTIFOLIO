@@ -41,8 +41,10 @@ nav {
     display: flex; /* Usar flexbox para alinhar o interruptor e o texto */
     align-items: center; /* Alinhar verticalmente */
     position: relative;
-    width: 80px; /* Aumentar a largura para acomodar o texto */
-    height: 38px;
+    width: 70px; /* Aumentar a largura para acomodar o texto */
+    height: 30px;
+    right: -10px;
+    
 }
 
 .theme-switch input {
@@ -64,13 +66,14 @@ nav {
 
 .slider:before {
     background-color: var(--switch-thumb);
-    bottom: 4px;
+    bottom: 2px;
     content: "";
-    height: 26px;
+    height: 20px;
+    width: 20px;
     left: 4px;
     position: absolute;
     transition: .4s;
-    width: 26px;
+    
     
     
 }
@@ -104,7 +107,7 @@ input:checked + .slider:before {
 .button-home, #theme-toggle {
     padding: 0.5rem 1rem;
     border: none;
-    border-radius: 10px;
+    border-radius: 12px;
     background-color: var(--secondary-color);
     color: white;
     cursor: pointer;
