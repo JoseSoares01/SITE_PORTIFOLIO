@@ -6,6 +6,7 @@
   --text-dark: #1f2937;
 }
 
+
 * {
   margin: 0;
   padding: 0;
@@ -186,6 +187,7 @@ body {
   padding: 1rem;
   background-color: rgba(30, 58, 138, 0.95);
   border-bottom: 1px solid rgba(34, 211, 238, 0.2);
+
 }
 
 .mobile-menu.active {
@@ -204,6 +206,8 @@ body {
   text-transform: uppercase;
   font-size: 0.875rem;
   letter-spacing: 0.05em;
+  transform: translateY(20px);
+  transition: opacity 0.8s ease, transform 0.8s ease, background 0.3s ease, color 0.3s ease, padding-left 0.3s ease;
   
 }
 
@@ -217,46 +221,68 @@ body {
 .mobile-menu-button {
   display: block;
   background: none;
-  border: block;
+  border: none; /* Corrigido: era "block" */
   cursor: pointer;
   padding: 0.5rem;
-  transition: transform 0.9s ease;
+  transition: transform 0.9s ease; /* Reduzido o tempo de transição para ser mais responsivo */
   border-radius: 16px;
-  
 }
 
 .mobile-menu-button:hover {
   transform: scale(1.1);
 }
-hamburger {
+
+.hamburger {
   width: 24px;
   height: 20px;
   position: relative;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  left: -25px;
-  background-color: #000;
-  padding: 16px;
-  border-radius: 16px;
-  border: 10px solid #060606;
-
+  left: -30px;
+  
 }
 
 .hamburger span {
   display: block;
-  width: 100%;
-  height: 2px;
-  background-color: var(--accent);
-  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-              opacity 0.55s ease;
-  box-shadow: 0 0 5px #c0dcc0;
-  border-radius: 16px;
+  width: 30px;
+  height: 3px;
+  background-color: var(--text-light);
+  transition: all 0.5s ease;
+  border-radius: 20px;
+
 }
 
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--primary-dark);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(34, 211, 238, 0.5);
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #f3f4f6;
+}
+
+  .hamburger span:first-child
+  {
+    transform-origin: 0% 0%;
+  }
+  .hamburger span:last-child
+  {
+    transform-origin: 0% 100%;
+  }
+
+
 .hamburger.active span:nth-child(1) {
-  transform: translateY(9px) rotate(45deg);
+  transform: translateY(6px) rotate(45deg); /* Ajustado valor */
 }
 
 .hamburger.active span:nth-child(2) {
@@ -264,7 +290,7 @@ hamburger {
 }
 
 .hamburger.active span:nth-child(3) {
-  transform: translateY(-9px) rotate(-45deg);
+  transform: translateY(-6px) rotate(-45deg); /* Ajustado valor */
 }
 
 /* Hero Section */
@@ -312,7 +338,8 @@ hamburger {
 }
 
 .hero-text h1 {
-  font-size: 2.5rem;
+  font-family: 'Poppins', sans-serif;
+  font-size: 5rem;
   margin-bottom: 1rem;
 }
 
@@ -380,8 +407,9 @@ hamburger {
 
 .portfolio h2 {
   text-align: center;
-  font-size: 2rem;
+  font-size: 3.5em;
   margin-bottom: 2rem;
+  font-family: 'Poppins', sans-serif;
 }
 
 .portfolio-grid {
@@ -415,8 +443,9 @@ hamburger {
 }
 
 .card-content h3 {
-  font-size: 1.25rem;
+  font-size: 1.50rem;
   margin-bottom: 0.5rem;
+  font-family: 'Poppins', sans-serif;
 }
 
 .card-content p {
@@ -432,8 +461,9 @@ hamburger {
 
 .contact h2 {
   text-align: center;
-  font-size: 2rem;
+  font-size: 3.5rem;
   margin-bottom: 2rem;
+  font-family: 'Poppins', sans-serif;
 }
 
 .contact-form {
@@ -467,6 +497,14 @@ hamburger {
   box-shadow: 0 0 15px rgba(34, 211, 238, 0.3);
 }
 
+.Services.title
+{
+  text-align: center;
+  font-size: 3.5rem;
+  margin-bottom: 2rem;
+  font-family: 'Poppins', sans-serif;
+}
+
 /* Botões */
 .btn-primary {
   display: inline-flex;
@@ -480,6 +518,8 @@ hamburger {
   border-radius: 2rem;
   cursor: pointer;
   transition: all 0.3s ease;
+  font-family: 'poppins' sans-serif;
+  text-decoration: none;
 }
 
 .btn-primary:hover {
@@ -525,6 +565,9 @@ footer {
   padding: 2rem 0;
 }
 
+.container p{
+  align-items: center;
+}
 .social-links {
   display: flex;
   justify-content: center;
@@ -533,59 +576,31 @@ footer {
 }
 
 .social-icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   color: rgba(243, 244, 246, 0.7);
   transition: all 0.3s ease;
+  text-decoration: none;
+  bottom: 10px;
 }
 
 .social-icon:hover {
   color: var(--accent);
 }
 
+.instagram-icon {
+  color: rgba(243, 244, 246, 0.7); /* Cor específica pro Instagram */
+  
+}
+
+.instagram-text {
+  color: rgba(243, 244, 246, 0.7); /* Cor específica pro Instagram */
+  
+}
+
+
 .copyright {
   text-align: center;
   color: rgba(243, 244, 246, 0.7);
-}
-
-/* Mobile menu button */
-.mobile-menu-button {
-  display: block;
-  background: none;
-  border: none;
-  cursor: pointer;
-  padding: 0.5rem;
-}
-
-.hamburger {
-  width: 24px;
-  height: 20px;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-.hamburger span {
-  display: block;
-  width: 100%;
-  height: 2px;
-  background-color: var(--text-light);
-  transition: all 0.3s ease;
-}
-
-/* Custom scrollbar */
-::-webkit-scrollbar {
-  width: 10px;
-}
-
-::-webkit-scrollbar-track {
-  background: var(--primary-dark);
-}
-
-::-webkit-scrollbar-thumb {
-  background: rgba(34, 211, 238, 0.5);
-  border-radius: 9999px;
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background: var(--accent);
 }

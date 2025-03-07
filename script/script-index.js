@@ -16,3 +16,11 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 });
+
+function toggleMenu() {
+    const hamburger = document.querySelector('.hamburger');
+    const mobileMenu = document.querySelector('.mobile-menu');
+    
+    hamburger.classList.toggle('active');
+    mobileMenu.classList.toggle('active');
+  }
