@@ -107,7 +107,7 @@ body {
   padding: 0 1rem;
 }
 
-/* Navbar */
+/***************** Navbar ****************************/
 .navbar {
   position: fixed;
   top: 0;
@@ -126,6 +126,7 @@ body {
   height: 4rem;
   
 }
+/***************************LOGOMARCA***********************************/
 
 .logo img{
   height: 110px;
@@ -228,7 +229,7 @@ body {
   cursor: pointer;
   padding: 0.5rem;
   transition: transform 0.9s ease; /* Reduzido o tempo de transição para ser mais responsivo */
-  border-radius: 16px;
+  border-radius: 20px;
 }
 
 .mobile-menu-button:hover {
@@ -329,7 +330,7 @@ body {
 
 .hero-text {
   position: relative;
-  max-width: 32rem;
+  max-width: 35rem;
   text-align: center;
   bottom: -50px;
 }
@@ -344,6 +345,10 @@ body {
   font-family: 'Poppins', sans-serif;
   font-size: 5rem;
   margin-bottom: 1rem;
+  font-size: 72px;
+  background: -webkit-linear-gradient(#c6ffbf, #afffa0, #00ff66);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent
 }
 
 /* Timeline */
@@ -413,6 +418,9 @@ body {
   font-size: 3.5em;
   margin-bottom: 2rem;
   font-family: 'Poppins', sans-serif;
+  background: -webkit-linear-gradient(#c6ffbf, #afffa0, #00ff66);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent
 }
 
 .portfolio-grid {
@@ -467,6 +475,9 @@ body {
   font-size: 3.5rem;
   margin-bottom: 2rem;
   font-family: 'Poppins', sans-serif;
+  background: -webkit-linear-gradient(#c6ffbf, #afffa0, #00ff66);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent
 }
 
 .contact-form {
@@ -506,6 +517,9 @@ body {
   font-size: 3.5rem;
   margin-bottom: 2rem;
   font-family: 'Poppins', sans-serif;
+  background: -webkit-linear-gradient(#c6ffbf, #afffa0, #00ff66);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent
 }
 
 /* Botões */
