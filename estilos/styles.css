@@ -112,7 +112,7 @@ body {
   position: fixed;
   top: 0;
   width: 100%;
-  background: -webkit-linear-gradient(90deg, rgb(46, 194, 137) 0%, rgb(8, 52, 100) 48%, rgb(0, 157, 255) 100%);
+  background: -webkit-linear-gradient(90deg, rgb(21, 131, 168) 0%, rgb(18, 43, 134) 48%, rgb(0, 0, 0) 100%);
   backdrop-filter: blur(20px);
   border-bottom: 1.2px solid rgb(255, 255, 255);
   z-index: 1000;
@@ -460,7 +460,7 @@ body {
 }
 
 .portfolio-card {
-  background-color: rgba(30, 58, 138, 0.5);
+  background-color: rgba(19, 30, 105, 0.885);
   border-radius: 24px;
   overflow: hidden;
   border: 2px solid rgba(34, 211, 238, 0.2);
@@ -494,54 +494,6 @@ body {
   margin-bottom: 1rem;
 }
 
-/* Contact Form */
-.contact {
-  padding: 4rem 0;
-  
-}
-
-.contact h2 {
-  text-align: center;
-  font-size: 3.5rem;
-  margin-bottom: 2rem;
-  font-family: 'Poppins', sans-serif;
-  background: linear-gradient(to right, #60a5fa, #2dd4bf);
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
-}
-
-.contact-form {
-  max-width: 32rem;
-  margin: 0 auto;
-}
-.text-center
-{
-  text-align: center;
-}
-
-.form-group {
-  margin-bottom: 1rem;
-}
-
-.form-group input,
-.form-group textarea {
-  width: 100%;
-  padding: 0.75rem 1rem;
-  background-color: rgba(30, 58, 138, 0.5);
-  border: 1px solid rgba(34, 211, 238, 0.3);
-  border-radius: 1rem;
-  color: var(--text-light);
-  transition: all 0.3s ease;
-}
-
-.form-group input:focus,
-.form-group textarea:focus {
-  outline: none;
-  border-color: var(--accent);
-  box-shadow: 0 0 15px rgba(34, 211, 238, 0.3);
-}
-
 .Services.title
 {
   text-align: center;
@@ -553,7 +505,6 @@ body {
     background-clip: text;
     color: transparent;
 }
-
 /* Botões */
 .btn-primary {
   display: inline-flex;
@@ -605,7 +556,53 @@ body {
   flex-wrap: wrap; /* Permite quebra se necessário */
   justify-content: center;
 }
+/* Contact Form */
+.contact {
+  padding: 4rem 0;
+  
+}
 
+.contact h2 {
+  text-align: center;
+  font-size: 3.5rem;
+  margin-bottom: 2rem;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(to right, #60a5fa, #2dd4bf);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.contact-form {
+  max-width: 32rem;
+  margin: 0 auto;
+}
+.text-center
+{
+  text-align: center;
+}
+
+.form-group {
+  margin-bottom: 1rem;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  background-color: rgba(30, 59, 138, 0.826);
+  border: 1px solid rgba(34, 211, 238, 0.3);
+  border-radius: 1rem;
+  color: var(--text-light);
+  transition: all 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: var(--accent);
+  box-shadow: 0 0 15px rgba(67, 174, 190, 0.3);
+}
 
 /* Footer */
 footer {
