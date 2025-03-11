@@ -112,11 +112,17 @@ body {
   position: fixed;
   top: 0;
   width: 100%;
-  background-color: rgb(12, 178, 32);
+  background: -webkit-linear-gradient(90deg, rgb(4, 141, 89) 0%, rgba(73,255,0,1) 48%, rgb(97, 235, 168) 100%);
   backdrop-filter: blur(50px);
   border-bottom: 2px solid rgb(255, 255, 255);
   z-index: 1000;
-  
+  border-bottom-left-radius: 20px; /* Arredonda o canto inferior esquerdo */
+  border-bottom-right-radius: 20px; /* Arredonda o canto inferior direito */
+  overflow: hidden; /* Garantir que o conteúdo da navbar não ultrapasse os cantos arredondados */
+}
+
+.navbar::before {
+  background: -webkit-linear-gradient(90deg, rgb(4, 141, 89) 0%, rgba(73,255,0,1) 48%, rgb(97, 235, 168) 100%);
 }
 
 .nav-content {
@@ -124,8 +130,8 @@ body {
   justify-content: space-between;
   align-items: center;
   height: 4rem;
-  
 }
+
 /***************************LOGOMARCA***********************************/
 
 .logo img{
@@ -299,7 +305,7 @@ body {
 
 /* Hero Section */
 .hero {
-  padding: 8rem 0 4rem;
+  padding: 2rem 0 4rem;
 }
 
 .hero-content {
@@ -313,14 +319,15 @@ body {
   .hero-content {
     flex-direction: row;
     justify-content: space-between;
+    position: relative; /* Para permitir o deslocamento da imagem */
   }
 }
 
-
+/* Estilos para a imagem */
 .hero-image img {
   position: relative; /* ou absolute, se necessário */
-  width: 12rem;
-  height: 12rem;
+  width: 15rem;
+  height: 15rem;
   border-radius: 50%;
   object-fit: cover;
   border: 4px solid var(--accent);
@@ -328,18 +335,31 @@ body {
   bottom: -75px; /* Ajuste o valor negativo para descer mais */
 }
 
+/* Texto */
 .hero-text {
   position: relative;
   max-width: 35rem;
   text-align: center;
-  bottom: -50px;
+  bottom: -75px;
+}
+
+@media (max-width: 1280px) {
+  .hero-image img {
+    left: 0; /* Imagem centralizada na tela para telas menores */
+  }
 }
 
 @media (min-width: 768px) {
   .hero-text {
     text-align: left;
   }
+
+  /* Para telas grandes, mover a imagem para a direita */
+  .hero-image img {
+    left: 150px; /* Ajuste conforme necessário */
+  }
 }
+
 
 .hero-text h1 {
   font-family: 'Poppins', sans-serif;
@@ -579,7 +599,7 @@ body {
 footer {
   background-color: rgba(30, 58, 138, 0.9);
   border-top: 1px solid rgba(59, 130, 246, 0.2);
-  padding: 2rem 0;
+  padding: 1rem 0;
 }
 
 .container p{
@@ -588,7 +608,7 @@ footer {
 .social-links {
   display: flex;
   justify-content: center;
-  gap: 1.5rem;
+  gap: 1.2rem;
   margin-bottom: 1.5rem;
 }
 
@@ -599,7 +619,7 @@ footer {
   color: rgba(243, 244, 246, 0.7);
   transition: all 0.3s ease;
   text-decoration: none;
-  bottom: 10px;
+  bottom: 15px;
 }
 
 .social-icon:hover {
