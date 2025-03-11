@@ -1,0 +1,210 @@
+/************************************** Variáveis CSS COLORS **********************************************************************/
+
+:root {
+    --color-primary: #3b82f6;
+    --color-primary-dark: #2563eb;
+    --color-background: #111827;
+    --color-background-light: #1f2937;
+    --color-text: #f3f4f6;
+    --color-text-muted: #9ca3af;
+    --transition-speed: 0.3s;
+    --color-shadow: rgba(0, 255, 157, 0.3);
+    --color-accent: #00ff9d;
+}
+
+
+/*************************************** Reset e Estilos Base ******************************************************/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/*************************************** COMANDO PARA UP ******************************************************/
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+/*************************************** CORPO DA PAGINA ******************************************************/
+
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    line-height: 1.6;
+    color: var(--color-text);
+    background: linear-gradient(to bottom right, var(--color-background), var(--color-background-light));
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+
+/*************************************** LAYOUT E ESTRUTURA ******************************************************/
+.conclusoes
+{
+    text-align: justify;
+    position:relative;
+    left: 10px;
+    
+}
+.hero {
+    padding: 8rem 0 4rem;
+}
+.hero img
+{
+width: 300px;
+height: 300px;
+}
+
+.hero-content {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    align-items: center;
+}
+
+@media (min-width: 768px) {
+    .hero-content {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+.content-section {
+    padding: 4rem 0;
+    background-color: rgba(31, 41, 55, 0.5);
+}
+
+
+/*************************************** TIPOGRAFIA ******************************************************/
+
+h1 {
+    font-size: 3rem;
+    font-weight: 800;
+    margin-bottom: 2rem;
+}
+
+@media (min-width: 768px) {
+    h1 {
+        font-size: 4rem;
+    }
+}
+
+h2 {
+    font-size: 2rem;
+    color: var(--color-primary);
+    margin-bottom: 1rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+    color: var(--color-primary);
+    margin-bottom: 1rem;
+}
+
+p {
+    margin-bottom: 1.5rem;
+    color: var(--color-text-muted);
+}
+
+
+/*************************************** NAV-BAR ******************************************************/
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(17, 24, 39, 0.8);
+    backdrop-filter: blur(8px);
+    z-index: 1000;
+    padding: 1rem 0;
+}
+
+.button-home {
+    width: 75px;
+    height: 35px;
+    text-align: center;
+    position: fixed;
+    top: 9px;
+    left: 25px;
+    padding: 12px -10px;
+    background: transparent;
+    border: 2px solid var(--color-accent);
+    color: var(--color-accent);
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all var(--transition-normal);
+    z-index: 100;
+}
+
+.button-home:hover {
+    background: rgba(0, 255, 157, 0.1);
+    box-shadow: 0 0 15px var(--color-shadow);
+    transform: translateY(-2px);
+}
+
+
+/*************************************** CARDS ******************************************************/
+
+.analysis-cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+@media (min-width: 768px) {
+    .analysis-cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+.card {
+    background-color: rgba(31, 41, 55, 0.5);
+    border-radius: 1rem;
+    padding: 2rem;
+    transition: transform var(--transition-speed), background-color var(--transition-speed);
+}
+
+.card:hover {
+    transform: translateY(-4px);
+    background-color: rgba(31, 41, 55, 0.7);
+}
+
+.card img {
+    width: 100%;
+    border-radius: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+
+
+/*************************************** BOTÃO DE UP MENU ******************************************************/
+
+.back-to-top {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    background-color: var(--color-primary);
+    color: white;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color var(--transition-speed);
+    z-index: 1000;
+}
+
+.back-to-top:hover {
+    background-color: var(--color-primary-dark);
+}

@@ -1,28 +1,126 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
-    <title>Contato</title>
-    <link rel="stylesheet" href="../css/estilo-global.css">
-    <link rel="stylesheet" href="/estilos/contato.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Análise do Bitcoin - Portfolio02</title>
+    <link rel="stylesheet" href="/estilos/portifoleo-6.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
+
 <body>
-    <header>
-        <h1>Contato</h1>
-    </header>
-    <section id="contato-content">
-        <form action="#" method="post">
-            <label for="nome">Nome</label>
-            <input type="text" id="nome" name="nome" required>
-            
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" required>
-            
-            <label for="mensagem">Mensagem</label>
-            <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
-            
-            <button type="submit">Enviar</button>
-        </form>
+    <!-- Navegação -->
+    <nav class="navbar">
+        <div class="container">
+            <button class="button-home" onclick="location.href = '/index.html';">Home</button>
+        </div>
+    </nav>
+
+    <!-- Seção Hero -->
+    <section class="hero" id="topo">
+        <div class="container">
+            <h1 class="gradient-text">Análise do Bitcoin</h1>
+
+            <div class="hero-content">
+                <div class="hero-text">
+                    <p>
+                        Esta análise tem como objetivo explorar os principais fatores que influenciam o preço e a volatilidade do Bitcoin, incluindo eventos como o halving, além de indicadores de sentimento como medo e ganância.
+                    </p>
+                    <a href="#desc" class="button-gradient">Ler Mais</a>
+                </div>
+
+                <div class="hero-image">
+                    <img src="/Dados-Portifoleo/Projeto-6/cbbi.png" alt="Analise-Bitcoin">
+                    <a href="https://www.coindesk.com/price/bitcoin" target="_blank" class="source-link">
+                        Fonte: CoinDesk
+                    </a>
+                </div>
+            </div>
+        </div>
     </section>
+
+    <!-- Seção de Conteúdo -->
+    <section id="desc" class="content-section">
+        <div class="container">
+            <div class="content-header">
+                <h2>Resumo da Análise do Bitcoin</h2>
+                <p>
+                    A análise do comportamento do Bitcoin envolve a observação de fatores técnicos e emocionais do mercado. Este estudo destaca eventos como o halving, além dos índices de medo e ganância, que são essenciais para entender a dinâmica de preço da criptomoeda.
+                </p>
+
+                <img class="ResumoInicial" src="/Dados-Portifoleo/Projeto-6/resumo.png" alt="Analise-Bitcoin">
+
+                <p>*Linha preta: Preço do Bitcoin ao longo do tempo (em escala logarítmica).</p>
+                <p>*Pontos coloridos: Bull Run Index, variando do verde (mercado frio) ao vermelho (mercado superaquecido).</p>
+            </div>
+
+            <!-- Cards de Análise -->
+            <div class="analysis-cards">
+                <div class="card">
+                    <h3>1. Halving do Bitcoin</h3>
+                    <img src="/imagens/bitcoin-halving.png" alt="Grafico-Halving">
+                    <ul class="bullet-list">
+                        <li><strong>O que é Halving:</strong> Evento que ocorre a cada quatro anos, reduzindo pela metade a recompensa dos mineradores, diminuindo a oferta de novos bitcoins.</li>
+                        <li><strong>Impacto no Preço:</strong> Historicamente, o halving tem sido seguido por altas expressivas no valor do Bitcoin devido à escassez gerada.</li>
+                    </ul>
+                </div>
+
+                <div class="card">
+                    <h3>2. Índice de Medo e Ganância</h3>
+                    <img src="/imagens/bitcoin-medo-ganancia.png" alt="Grafico-Medo-Ganancia">
+                    <ul class="bullet-list">
+                        <li><strong>Medo Extremo:</strong> Indica uma possível subvalorização do Bitcoin, criando oportunidades de compra.</li>
+                        <li><strong>Ganância Extrema:</strong> Sinaliza uma possível bolha, sugerindo cautela para evitar compras em topo.</li>
+                    </ul>
+                </div>
+
+                <div class="card">
+                    <h3>3. Desempenho Histórico</h3>
+                    <img src="/imagens/bitcoin-historico.png" alt="Grafico-Historico">
+                    <ul class="bullet-list">
+                        <li><strong>Volatilidade:</strong> O Bitcoin é conhecido por sua alta volatilidade, influenciada por notícias globais, adoção institucional e políticas econômicas.</li>
+                        <li><strong>Recordes de Preço:</strong> Máximas históricas foram frequentemente atingidas após eventos de halving.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <p>
+                Correlação entre Bull Run Index e Preço do BTC 📈
+
+Mostra como o preço do Bitcoin se comporta em diferentes níveis do índice.
+Tons verdes indicam mercados frios, enquanto tons vermelhos indicam picos de mercado.
+Histograma do Bull Run Index 📊
+
+Exibe a distribuição dos valores do índice ao longo do tempo.
+Podemos ver a frequência com que o BRI atinge níveis elevados.
+Mapa de calor do Bull Run Index ao longo do tempo 🔥
+
+Representação temporal do índice, destacando períodos de baixa e alta.
+            </p>
+
+            <!-- Conclusão -->
+            <h3>Conclusões e Recomendações</h3>
+            <p>
+                A análise do Bitcoin revela a importância de monitorar eventos como o halving e indicadores de sentimento para tomar decisões informadas. Recomenda-se:
+            </p>
+            <ol class="conclusoes">
+                <li><strong>Acompanhar o Halving:</strong> Preparar-se para movimentos expressivos de preço próximos a esse evento.</li>
+                <li><strong>Observar o Sentimento do Mercado:</strong> Usar o índice de medo e ganância como ferramenta auxiliar na estratégia de compra e venda.</li>
+                <li><strong>Gestão de Risco:</strong> Dada a volatilidade, é crucial ter uma estratégia de stop loss e diversificação de portfólio.</li>
+            </ol>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/seu-perfil" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/seu-perfil" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </footer>
 </body>
+
 </html>
