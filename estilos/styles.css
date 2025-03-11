@@ -112,9 +112,9 @@ body {
   position: fixed;
   top: 0;
   width: 100%;
-  background: -webkit-linear-gradient(90deg, rgb(4, 141, 89) 0%, rgba(73,255,0,1) 48%, rgb(97, 235, 168) 100%);
-  backdrop-filter: blur(50px);
-  border-bottom: 2px solid rgb(255, 255, 255);
+  background: -webkit-linear-gradient(90deg, rgb(46, 194, 137) 0%, rgb(8, 52, 100) 48%, rgb(0, 157, 255) 100%);
+  backdrop-filter: blur(20px);
+  border-bottom: 1.2px solid rgb(255, 255, 255);
   z-index: 1000;
   border-bottom-left-radius: 20px; /* Arredonda o canto inferior esquerdo */
   border-bottom-right-radius: 20px; /* Arredonda o canto inferior direito */
@@ -356,7 +356,7 @@ body {
 
   /* Para telas grandes, mover a imagem para a direita */
   .hero-image img {
-    left: 150px; /* Ajuste conforme necessário */
+    left: 90px; /* Ajuste conforme necessário */
   }
 }
 
@@ -366,9 +366,18 @@ body {
   font-size: 5rem;
   margin-bottom: 1rem;
   font-size: 72px;
-  background: -webkit-linear-gradient(#c6ffbf, #afffa0, #00ff66);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent
+  background: linear-gradient(to right, #60a5fa, #2dd4bf);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.hero-text p {
+  font-family: 'Poppins', sans-serif;
+  font-size: 5rem;
+  margin-bottom: 1rem;
+  font-size: 20px;
+  color: white !important;
 }
 
 /* Timeline */
@@ -438,9 +447,10 @@ body {
   font-size: 3.5em;
   margin-bottom: 2rem;
   font-family: 'Poppins', sans-serif;
-  background: -webkit-linear-gradient(#c6ffbf, #afffa0, #00ff66);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent
+  background: linear-gradient(to right, #60a5fa, #2dd4bf);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
 }
 
 .portfolio-grid {
@@ -495,9 +505,10 @@ body {
   font-size: 3.5rem;
   margin-bottom: 2rem;
   font-family: 'Poppins', sans-serif;
-  background: -webkit-linear-gradient(#c6ffbf, #afffa0, #00ff66);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent
+  background: linear-gradient(to right, #60a5fa, #2dd4bf);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
 }
 
 .contact-form {
@@ -537,9 +548,10 @@ body {
   font-size: 3.5rem;
   margin-bottom: 2rem;
   font-family: 'Poppins', sans-serif;
-  background: -webkit-linear-gradient(#c6ffbf, #afffa0, #00ff66);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent
+  background: linear-gradient(to right, #60a5fa, #2dd4bf);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
 }
 
 /* Botões */
@@ -598,12 +610,18 @@ body {
 /* Footer */
 footer {
   background-color: rgba(30, 58, 138, 0.9);
-  border-top: 1px solid rgba(59, 130, 246, 0.2);
+  border-top: 2px solid #013a63;
   padding: 1rem 0;
+  background-color: #001d3d;
 }
 
 .container p{
   align-items: center;
+  color: transparent;
+  background: linear-gradient(to right, #60a5fa, #2dd4bf);
+    -webkit-background-clip: text;
+    background-clip: text;
+
 }
 .social-links {
   display: flex;
@@ -623,7 +641,7 @@ footer {
 }
 
 .social-icon:hover {
-  color: var(--accent);
+  color: turquoise;
 }
 
 .instagram-icon {
@@ -632,8 +650,10 @@ footer {
 }
 
 .instagram-text {
-  color: rgba(243, 244, 246, 0.7); /* Cor específica pro Instagram */
-  
+  color: transparent;
+  background: linear-gradient(to right, #60a5fa, #2dd4bf);
+    -webkit-background-clip: text;
+    background-clip: text;
 }
 
 
