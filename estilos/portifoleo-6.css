@@ -1,4 +1,4 @@
-/************************************** Variáveis CSS COLORS **********************************************************************/
+/* Variáveis CSS */
 
 :root {
     --color-primary: #3b82f6;
@@ -13,7 +13,7 @@
 }
 
 
-/*************************************** Reset e Estilos Base ******************************************************/
+/* Reset e Estilos Base */
 
 * {
     margin: 0;
@@ -21,15 +21,9 @@
     box-sizing: border-box;
 }
 
-
-/*************************************** COMANDO PARA UP ******************************************************/
-
 html {
     scroll-behavior: smooth;
 }
-
-
-/*************************************** CORPO DA PAGINA ******************************************************/
 
 body {
     font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
@@ -46,21 +40,21 @@ body {
 }
 
 
-/*************************************** LAYOUT E ESTRUTURA ******************************************************/
-.conclusoes
-{
+/* Layout e Estrutura */
+
+.conclusoes {
     text-align: justify;
-    position:relative;
+    position: relative;
     left: 10px;
-    
 }
+
 .hero {
     padding: 8rem 0 4rem;
 }
-.hero img
-{
-width: 300px;
-height: 300px;
+
+.hero img {
+    width: 300px;
+    height: 300px;
 }
 
 .hero-content {
@@ -82,7 +76,7 @@ height: 300px;
 }
 
 
-/*************************************** TIPOGRAFIA ******************************************************/
+/* Tipografia */
 
 h1 {
     font-size: 3rem;
@@ -114,7 +108,7 @@ p {
 }
 
 
-/*************************************** NAV-BAR ******************************************************/
+/* Navbar */
 
 .navbar {
     position: fixed;
@@ -140,7 +134,7 @@ p {
     color: var(--color-accent);
     border-radius: 8px;
     cursor: pointer;
-    transition: all var(--transition-normal);
+    transition: all var(--transition-speed);
     z-index: 100;
 }
 
@@ -151,7 +145,7 @@ p {
 }
 
 
-/*************************************** CARDS ******************************************************/
+/* Cards */
 
 .analysis-cards {
     display: grid;
@@ -185,7 +179,93 @@ p {
 }
 
 
-/*************************************** BOTÃO DE UP MENU ******************************************************/
+/* Bullet List */
+
+.bullet-list {
+    list-style: none;
+}
+
+.bullet-list li {
+    display: flex;
+    align-items: start;
+    margin-bottom: 0.75rem;
+    color: var(--color-text-muted);
+}
+
+.bullet-list li::before {
+    content: '';
+    display: inline-block;
+    width: 0.5rem;
+    height: 0.5rem;
+    background-color: var(--color-primary);
+    border-radius: 50%;
+    margin-right: 0.75rem;
+    margin-top: 0.5rem;
+}
+/* Link Medo Botão */
+.linkmedo {
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 9999px;
+    text-decoration: none;
+    font-size: 0.875rem;
+    backdrop-filter: blur(4px);
+    transition: background-color var(--transition-speed);
+}
+
+.linkmedo:hover {
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+/* Caso o linkmedo precise ser usado em uma lista, removemos os estilos de lista anteriores */
+.linkmedo li {
+    list-style: none;
+    display: inline;
+}
+
+.linkmedo li::before {
+    content: none;
+}
+
+.ResumoInicial
+{
+    height: 500px;
+    width: 700px;
+    border-radius: 20px;
+}
+
+
+/* Footer */
+
+.footer {
+    background-color: var(--color-background);
+    padding: 3rem 0;
+    text-align: center;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.social-icons a {
+    color: var(--color-text-muted);
+    font-size: 1.5rem;
+    transition: color var(--transition-speed);
+}
+
+.social-icons a:hover {
+    color: var(--color-primary);
+}
+
+
+/* Back to Top Button */
 
 .back-to-top {
     position: fixed;
@@ -207,4 +287,86 @@ p {
 
 .back-to-top:hover {
     background-color: var(--color-primary-dark);
+}
+
+
+/* Gradientes e Efeitos de Texto */
+
+.gradient-text {
+    background: linear-gradient(to right, #60a5fa, #2dd4bf);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.button-gradient {
+    display: inline-block;
+    padding: 0.75rem 2rem;
+    background: linear-gradient(to right, #3b82f6, #2dd4bf);
+    color: white;
+    text-decoration: none;
+    border-radius: 9999px;
+    font-weight: 500;
+    transition: transform var(--transition-speed);
+}
+
+.button-gradient:hover {
+    transform: translateY(-2px);
+}
+
+
+/* Animações de Entrada */
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.hero,
+.card {
+    animation: fadeIn 0.6s ease-out;
+}
+
+
+/* Efeitos de Hover */
+
+.hero-image {
+    position: relative;
+    overflow: hidden;
+    border-radius: 1rem;
+    transition: transform var(--transition-speed);
+}
+
+.hero-image:hover {
+    transform: scale(1.02);
+}
+
+.hero-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 1rem;
+}
+
+.source-link {
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 9999px;
+    text-decoration: none;
+    font-size: 0.875rem;
+    backdrop-filter: blur(4px);
+    transition: background-color var(--transition-speed);
+}
+
+.source-link:hover {
+    background-color: rgba(0, 0, 0, 0.9);
 }
