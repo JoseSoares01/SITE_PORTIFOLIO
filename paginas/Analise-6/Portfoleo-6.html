@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Análise do Bitcoin - Portfolio02</title>
+    <!-- Importação de estilos externos -->
     <link rel="stylesheet" href="/estilos/portifoleo-6.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
@@ -13,25 +14,39 @@
     <!-- Navegação -->
     <nav class="navbar">
         <div class="container">
-            <button class="button-home" onclick="location.href = '/index.html';">Home</button>
+            <!-- Botão de navegação para home -->
+            <button class="button-home" onclick="location.href = '/index.html';"><i class="fas fa-home"></i> Home</button>
+            <!-- Botões de navegação adicionais -->
+            <div class="nav-buttons">
+                <!-- Botão para alternar entre temas claro/escuro -->
+                <button class="theme-toggle" id="theme-toggle" aria-label="Alternar tema">
+                    <i class="fas fa-moon"></i>
+                </button>
+            </div>
         </div>
     </nav>
 
-    <!-- Seção Hero -->
+    <!-- Seção Hero - Introdução da página -->
     <section class="hero" id="topo">
         <div class="container">
+            <!-- Título principal com efeito gradiente -->
             <h1 class="gradient-text">Análise do Bitcoin</h1>
 
+            <!-- Conteúdo da seção hero dividido em duas colunas -->
             <div class="hero-content">
+                <!-- Coluna de texto -->
                 <div class="hero-text">
                     <p>
                         Esta análise tem como objetivo explorar os principais fatores que influenciam o preço e a volatilidade do Bitcoin, incluindo eventos como o halving, além de indicadores de sentimento como medo e ganância.
                     </p>
+                    <!-- Botão de ação para continuar leitura -->
                     <a href="#desc" class="button-gradient">Ler Mais</a>
                 </div>
 
+                <!-- Coluna de imagem -->
                 <div class="hero-image">
-                    <img src="/Dados-Portifoleo/Projeto-6/cbbi.png" alt="Analise-Bitcoin">
+                    <img src="/Dados-Portifoleo/Projeto-6/cbbi.png" alt="Análise Bitcoin">
+                    <!-- Link para a fonte da imagem -->
                     <a href="https://www.coindesk.com/price/bitcoin" target="_blank" class="source-link">
                         Fonte: CoinDesk
                     </a>
@@ -40,36 +55,41 @@
         </div>
     </section>
 
-    <!-- Seção de Conteúdo -->
+    <!-- Seção de Conteúdo Principal -->
     <section id="desc" class="content-section">
         <div class="container">
+            <!-- Cabeçalho da seção de conteúdo -->
             <div class="content-header">
                 <h2>Resumo da Análise do Bitcoin</h2>
                 <p>
                     A análise do comportamento do Bitcoin envolve a observação de fatores técnicos e emocionais do mercado. Este estudo destaca eventos como o halving, além dos índices de medo e ganância, que são essenciais para entender a dinâmica de preço da criptomoeda.
                 </p>
 
-                <img class="ResumoInicial" src="/Dados-Portifoleo/Projeto-6/resumo.png" alt="Analise-Bitcoin">
+                <!-- Imagem principal do resumo -->
+                <img class="ResumoInicial" src="/Dados-Portifoleo/Projeto-6/resumo.png" alt="Análise Bitcoin">
 
+                <!-- Legendas da imagem -->
                 <p>*Linha preta: Preço do Bitcoin ao longo do tempo (em escala logarítmica).</p>
                 <p>*Pontos coloridos: Bull Run Index, variando do verde (mercado frio) ao vermelho (mercado superaquecido).</p>
             </div>
 
-            <!-- Cards de Análise -->
+            <!-- Cards de Análise - Conjunto de cards informativos -->
             <div class="analysis-cards">
+                <!-- Card 1: Halving do Bitcoin -->
                 <div class="card">
                     <h3>1. Halving do Bitcoin</h3>
-                    <img src="/Dados-Portifoleo/Projeto-6/having.png" alt="Grafico-Halving">
+                    <img src="/Dados-Portifoleo/Projeto-6/having.png" alt="Gráfico Halving">
                     <ul class="bullet-list">
                         <li><strong>O que é Halving:</strong> Evento que ocorre a cada quatro anos, reduzindo pela metade a recompensa dos mineradores, diminuindo a oferta de novos bitcoins.</li>
                         <li><strong>Impacto no Preço:</strong> Historicamente, o halving tem sido seguido por altas expressivas no valor do Bitcoin devido à escassez gerada.</li>
                     </ul>
                 </div>
 
+                <!-- Card 2: Índice de Medo e Ganância -->
                 <div class="card">
                     <h3>2. Índice de Medo e Ganância</h3>
                     <div class="hero-image">
-                        <img src="/Dados-Portifoleo/Projeto-6/indice-medo.png" alt="Grafico-Medo-Ganancia">
+                        <img src="/Dados-Portifoleo/Projeto-6/indice-medo.png" alt="Gráfico Medo e Ganância">
                         <a href="https://coinmarketcap.com/pt-br/charts/fear-and-greed-index/" target="_blank" class="source-link">
                             Fonte: CoinMarketingCap
                         </a>
@@ -80,65 +100,101 @@
                     </ul>
                 </div>
 
+                <!-- Card 3: Desempenho Histórico -->
                 <div class="card">
                     <h3>3. Desempenho Histórico</h3>
                     <div class="hero-image">
-                    <img src="/Dados-Portifoleo/Projeto-6/dados-historicos.png" alt="Grafico-Historico">
+                        <img src="/Dados-Portifoleo/Projeto-6/dados-historicos.png" alt="Gráfico Histórico">
+                        <a href="https://pt.investing.com/crypto/bitcoin/historical-data" target="_blank" class="source-link">
+                            Fonte: Investing.com
+                        </a>
+                    </div>
+                    <ul class="bullet-list">
+                        <li><strong>Volatilidade:</strong> O Bitcoin é conhecido por sua alta volatilidade, influenciada por notícias globais, adoção institucional e políticas econômicas.</li>
+                        <!-- Imagem ilustrativa de volatilidade -->
+                        <img src="/Dados-Portifoleo/Projeto-6/volatilidade.png" alt="Gráfico de Volatilidade">
+                        <li><strong>Recordes de Preço:</strong> Máximas históricas foram frequentemente atingidas após eventos de halving.</li>
+                        <!-- Imagem ilustrativa de recordes -->
+                        <img src="/Dados-Portifoleo/Projeto-6/recordes.png" alt="Gráfico de Recordes">
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Card 4: Comparação de Preço Diário do Bitcoin -->
+            <div class="card">
+                <h3>4. Comparação de Preço Diário do Bitcoin</h3>
+                <div class="hero-image">
+                    <img src="/Dados-Portifoleo/Projeto-6/preço-diario.png" alt="Gráfico de Preço Diário">
                     <a href="https://pt.investing.com/crypto/bitcoin/historical-data" target="_blank" class="source-link">
                         Fonte: Investing.com
                     </a>
                 </div>
                 <ul class="bullet-list">
                     <li><strong>Volatilidade:</strong> O Bitcoin é conhecido por sua alta volatilidade, influenciada por notícias globais, adoção institucional e políticas econômicas.</li>
-                        <img src="/Dados-Portifoleo/Projeto-6/volatilidade.png" alt="Grafico-Medo-Ganancia">
-                        <li><strong>Recordes de Preço:</strong> Máximas históricas foram frequentemente atingidas após eventos de halving.</li>
-                        <img src="/Dados-Portifoleo/Projeto-6/recordes.png" alt="Grafico-Medo-Ganancia">
-                    </ul>
-                </div>
+                    <li><strong>Recordes de Preço:</strong> Máximas históricas foram frequentemente atingidas após eventos de halving.</li>
+                    <!-- Imagem ilustrativa de variação -->
+                    <img src="/Dados-Portifoleo/Projeto-6/variação.png" alt="Gráfico de Variação">
+                </ul>
             </div>
-            <p></p>
-            <p></p>
-            <p></p>
-            <p></p>
-            <p></p>
-            <p></p>
-            <p></p>
-            <p>
-                Correlação entre Bull Run Index e Preço do BTC 📈
 
-    Mostra como o preço do Bitcoin se comporta em diferentes níveis do índice.
-    Tons verdes indicam mercados frios, enquanto tons vermelhos indicam picos de mercado.
-    Histograma do Bull Run Index 📊
+            <!-- Seção de informações adicionais -->
+            <div class="additional-info">
+                <p>
+                    <!-- Correlação entre índices -->
+                    Correlação entre Bull Run Index e Preço do BTC 📈
+                </p>
+                <p>
+                    Mostra como o preço do Bitcoin se comporta em diferentes níveis do índice.
+                    Tons verdes indicam mercados frios, enquanto tons vermelhos indicam picos de mercado.
+                </p>
+                <p>
+                    <!-- Histograma do Bull Run Index -->
+                    Histograma do Bull Run Index 📊
+                </p>
+                <p>
+                    Exibe a distribuição dos valores do índice ao longo do tempo.
+                    Podemos ver a frequência com que o BRI atinge níveis elevados.
+                </p>
+                <p>
+                    <!-- Mapa de calor -->
+                    Mapa de calor do Bull Run Index ao longo do tempo 🔥
+                </p>
+                <p>
+                    Representação temporal do índice, destacando períodos de baixa e alta.
+                </p>
+            </div>
 
-    Exibe a distribuição dos valores do índice ao longo do tempo.
-    Podemos ver a frequência com que o BRI atinge níveis elevados.
-    Mapa de calor do Bull Run Index ao longo do tempo 🔥
-
-    Representação temporal do índice, destacando períodos de baixa e alta.
-            </p>
-
-            <!-- Conclusão -->
-            <h3>Conclusões e Recomendações</h3>
-            <p>
-                A análise do Bitcoin revela a importância de monitorar eventos como o halving e indicadores de sentimento para tomar decisões informadas. Recomenda-se:
-            </p>
-            <ol class="conclusoes">
-                <li><strong>Acompanhar o Halving:</strong> Preparar-se para movimentos expressivos de preço próximos a esse evento.</li>
-                <li><strong>Observar o Sentimento do Mercado:</strong> Usar o índice de medo e ganância como ferramenta auxiliar na estratégia de compra e venda.</li>
-                <li><strong>Gestão de Risco:</strong> Dada a volatilidade, é crucial ter uma estratégia de stop loss e diversificação de portfólio.</li>
-            </ol>
+            <!-- Conclusão e Recomendações -->
+            <div class="conclusion">
+                <h3>Conclusões e Recomendações</h3>
+                <p>
+                    A análise do Bitcoin revela a importância de monitorar eventos como o halving e indicadores de sentimento para tomar decisões informadas. Recomenda-se:
+                </p>
+                <ol class="conclusoes">
+                    <li><strong>Acompanhar o Halving:</strong> Preparar-se para movimentos expressivos de preço próximos a esse evento.</li>
+                    <li><strong>Observar o Sentimento do Mercado:</strong> Usar o índice de medo e ganância como ferramenta auxiliar na estratégia de compra e venda.</li>
+                    <li><strong>Gestão de Risco:</strong> Dada a volatilidade, é crucial ter uma estratégia de stop loss e diversificação de portfólio.</li>
+                </ol>
+            </div>
         </div>
     </section>
 
-    <!-- Footer -->
+    <!-- Botão Voltar ao Topo -->
+    <button id="backToTop" class="back-to-top" aria-label="Voltar ao topo">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Rodapé da página -->
     <footer class="footer">
         <div class="container">
+            <!-- Ícones de redes sociais -->
             <div class="social-icons">
                 <a href="https://www.linkedin.com/in/seu-perfil" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
                 <a href="https://github.com/seu-perfil" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
             </div>
         </div>
     </footer>
+    <script src="/script/SCRIPT-PORTFOLIO6.JS"></script>
 </body>
 
 </html>
