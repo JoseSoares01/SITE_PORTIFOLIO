@@ -334,8 +334,8 @@ background: linear-gradient(90deg, #0580A9 0%, rgba(30, 58, 138, 0.721) 25%, #00
   height: 15rem;
   border-radius: 50%;
   object-fit: cover;
-  border: 4px solid var(--accent);
-  box-shadow: 0 0 15px var(--accent);
+  border: 4px solid rgba(17, 43, 92, 0.652);
+  box-shadow: 0 0 15px #059eccde;
   bottom: -75px; /* Ajuste o valor negativo para descer mais */
 }
 
@@ -446,6 +446,12 @@ background: linear-gradient(90deg, #0580A9 0%, rgba(30, 58, 138, 0.721) 25%, #00
   border-radius: 16px;
 }
 
+#portfolio p {
+  color: #ffffff; /* A cor que você escolher */
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif 'Times New Roman', Times, serif;
+}
+
+
 .portfolio h2 {
   text-align: center;
   font-size: 3.5em;
@@ -464,12 +470,16 @@ background: linear-gradient(90deg, #0580A9 0%, rgba(30, 58, 138, 0.721) 25%, #00
 }
 
 .portfolio-card {
-  background-color: rgba(19, 30, 105, 0.885);
+  background: linear-gradient(90deg, #0580A9 0%, rgba(30, 58, 138, 0.721) 50%, #000000 100%);
   border-radius: 24px;
   overflow: hidden;
-  border: 2px solid rgba(34, 211, 238, 0.2);
+  border-top: 2px solid rgba(4, 54, 147, 0.652);  /* Borda superior */
+  border-right: 2px solid rgba(4, 54, 147, 0.652);  /* Borda direita */
+  border-bottom: 2px solid rgba(4, 54, 147, 0.652);  /* Borda inferior */
+  border-right: none;  /* Remove a borda da direita */
   transition: all 0.3s ease;
 }
+
 
 .portfolio-card:hover {
   transform: translateY(-0.25rem);
@@ -494,7 +504,7 @@ background: linear-gradient(90deg, #0580A9 0%, rgba(30, 58, 138, 0.721) 25%, #00
 }
 
 .card-content p {
-  color: rgba(243, 244, 246, 0.8);
+  color: rgb(255, 255, 255);
   margin-bottom: 1rem;
 }
 
