@@ -255,8 +255,7 @@
         </div>
         <p class="copyright">&copy; <span id="currentYear"></span> José Soares. Todos os direitos reservados.</p>
       </div>
-      <!-- <div id="map" style="height: 400px; width: 100%;"></div> -->
-
+      <div id="map" style="height: 400px; width: 100%;"></div>
     </footer>
 
     <!--###################################### SCRIPTS ############################################################ -->
@@ -264,8 +263,18 @@
     <script src="/script/script_email.js"></script>
     <script src="/script/script-index.js"></script>
     <script src="/estilos/script.js"></script>
-    <!--<link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
-    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script> -->
-  
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        var map = L.map('map').setView([38.9954378, -9.1411938], 10);
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+          attribution: '© OpenStreetMap contributors'
+        }).addTo(map);
+        L.marker([38.9954378, -9.1411938]).addTo(map)
+          .bindPopup('Lisboa, Portugal')
+          .openPopup();
+      });
+    </script>
   </body>
 </html>
