@@ -554,18 +554,20 @@ background: linear-gradient(90deg, #0580A9 0%, rgba(30, 58, 138, 0.721) 25%, #00
   justify-content: center;
   gap: 0.5rem;
   padding: 0.6rem 1rem;
-  background-color: #3b82f6;
+  background: linear-gradient(to right, #60a5fa, #2dd4bf);
   color: var(--text-light);
   border: none;
-  border-radius: 2rem;
+  border-radius: 0.8rem;
   cursor: pointer;
   transition: all 0.3s ease;
   font-family: 'poppins' sans-serif;
   text-decoration: none;
+  position: relative;
+  left: 3px;
 }
 
 .btn-primary:hover {
-  background-color:  rgba(11, 171, 59, 0.9);;
+  background-color:  rgba(13, 49, 24, 0.9);;
 }
 
 /* Ícones dentro dos botões */
