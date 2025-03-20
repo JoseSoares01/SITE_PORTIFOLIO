@@ -532,6 +532,35 @@ background: linear-gradient(90deg, #0580A9 0%, rgba(30, 58, 138, 0.721) 25%, #00
   margin-bottom: 1rem;
 }
 
+.tags {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 0.5rem;
+  padding: 0 1.5rem 1.5rem;
+  overflow-x: auto;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.tags::-webkit-scrollbar {
+  display: none;
+}
+
+.tags span {
+  background: var(--primary-dark);
+  color: var(--accent);
+  padding: 0.25rem 0.75rem;
+  border-radius: 9999px;
+  font-size: 0.875rem;
+  transition: all 0.3s ease;
+  white-space: nowrap;
+}
+
+.tags span:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 0 10px var(--accent);
+}
+
 .Services.title
 {
   text-align: center;
@@ -567,7 +596,7 @@ background: linear-gradient(90deg, #0580A9 0%, rgba(30, 58, 138, 0.721) 25%, #00
 }
 
 .btn-primary:hover {
-  background-color:  rgba(13, 49, 24, 0.9);;
+  background-color:  rgba(11, 171, 59, 0.9);;
 }
 
 /* Ícones dentro dos botões */
