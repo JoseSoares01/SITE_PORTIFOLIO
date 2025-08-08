@@ -5,130 +5,123 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Análise de Vendas - Portfólio</title>
-    <link rel="stylesheet" href="/estilos/portifolio-2.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="/estilos/portifoleo-3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/fontawesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/brands.min.css">
 </head>
 
 <body>
-    <!-- Navegação -->
-    <nav class="navbar">
-        <div class="container">
-            <button class="button-home" onclick="location.href = '/index.html';">Home</button>
+    <button class="button-home" onclick="location.href = '/index.html';">Home</button>
+    <section>
+        <h1 id="topo">Análise de Vendas</h1>
+        <div class="content">
+            <p>Esta análise foi realizada com o objetivo de identificar os pontos de maior potencial de vendas na região de Porto Alegre, Rio Grande do Sul - BR. Através do mapeamento detalhado das áreas comerciais e análise de tendências de consumo, conseguimos identificar os dias da semana e horários de pico para vendas, proporcionando uma estratégia mais eficiente e direcionada.</p>
+            <a href="#desc" class="btn">Ler Mais</a>
         </div>
-    </nav>
-
-    <!-- Seção Hero -->
-    <section class="hero" id="topo">
-        <div class="container">
-            <h1 class="gradient-text">Análise de Vendas</h1>
-
-            <div class="hero-content">
-                <div class="hero-text">
-                    <p>
-                        Esta análise foi realizada com o objetivo de identificar os pontos de maior potencial de vendas na região de Porto Alegre, Rio Grande do Sul - BR. Através do mapeamento detalhado das áreas comerciais e análise de tendências de consumo, conseguimos identificar
-                        os dias da semana e horários de pico para vendas, proporcionando uma estratégia mais eficiente e direcionada.
-                    </p>
-                    <a href="#desc" class="button-gradient">Ler Mais</a>
-                </div>
-
-                <div class="hero-image">
-                    <img src="/Dados-Portifoleo/Projeto-2/image-capa-vendas.jpeg" alt="Análise-Vendas">
-                    <a href="https://dadosabertos.poa.br/dataset/acidentes-de-transito-acidentes/resource/b56f8123-716a-4893-9348-23945f1ea1b9" target="_blank" class="source-link">
-                        Fonte: Dados Abertos POA
-                    </a>
-                </div>
-            </div>
+        </div>
+        <div class="img">
+            <img class="portifolio-2" src="/Dados-Portifoleo/Projeto-2/image-capa-vendas.jpeg" alt="Análise-Vendas">
+            <a href="https://dadosabertos.poa.br/dataset/acidentes-de-transito-acidentes/resource/b56f8123-716a-4893-9348-23945f1ea1b9" target="_blank" class="unsplash-link" title="Análise Realizada em 10/10/2024">
+                <span>Fonte: Dados Abertos POA</span>
+            </a>
         </div>
     </section>
 
-    <!-- Seção de Conteúdo -->
-    <section id="desc" class="content-section">
-        <div class="container">
-            <div class="content-header">
-                <h2>Resumo das Análises de Vendas em Porto Alegre - RS</h2>
-                <p>
-                    A análise dos dados de vendas em Porto Alegre, Rio Grande do Sul, foi realizada com o objetivo de identificar padrões de consumo, tendências sazonais, e os principais fatores que influenciam o desempenho do mercado na região.
-                </p>
-            </div>
+    <div id="desc" class="descrição">
+        <h3>Resumo das Análises de Vendas em Porto Alegre - RS</h3>
+        <p>
+            A análise dos dados de vendas em Porto Alegre, Rio Grande do Sul, foi realizada com o objetivo de identificar padrões de consumo, tendências sazonais, e os principais fatores que influenciam o desempenho do mercado na região.
+        </p>
 
-            <!-- Cards de Análise -->
-            <div class="analysis-cards">
-                <div class="card">
-                    <h3>1. Tendências de Consumo</h3>
-                    <img src="/Dados-Portifoleo/Projeto-1/Analise_Acidentes.png" alt="Gráfico Tendências">
-                    <ul class="bullet-list">
-                        <li>Análise detalhada dos padrões de venda</li>
-                        <li>Identificação de tendências sazonais</li>
-                        <li>Recomendações estratégicas</li>
-                    </ul>
-                </div>
+        <hr>
 
-                <div class="card">
-                    <h3>2. Sazonalidade</h3>
-                    <img src="/Dados-Portifoleo/Projeto-1/Analise_Acidentes.png" alt="Gráfico Sazonalidade">
-                    <ul class="bullet-list">
-                        <li>Análise de períodos de alta e baixa</li>
-                        <li>Impacto de eventos sazonais</li>
-                        <li>Planejamento estratégico</li>
-                    </ul>
-                </div>
+        <h3>Principais Resultados</h3>
 
-                <div class="card">
-                    <h3>3. Desempenho por Região</h3>
-                    <img src="/Dados-Portifoleo/Projeto-1/Analise_Acidentes.png" alt="Gráfico Regional">
-                    <ul class="bullet-list">
-                        <li>Mapeamento de áreas de alto desempenho</li>
-                        <li>Análise de potencial por bairro</li>
-                        <li>Oportunidades de expansão</li>
-                    </ul>
-                </div>
+        <h4>1. Tendências de Consumo</h4>
+        <ul>
+            <div class="grafico"></div>
+            <img class="grafico-1" src="/Dados-Portifoleo/Projeto-1/Analise_Acidentes.png" alt="gráfico-tendências">
+            <li><strong>Análise detalhada:</strong> Dos padrões de venda identificados na região.</li>
+            <li><strong>Identificação:</strong> De tendências sazonais importantes.</li>
+            <li><strong>Recomendações:</strong> Estratégicas baseadas nos dados.</li>
+        </ul>
 
-                <div class="card">
-                    <h3>4. Perfil do Consumidor</h3>
-                    <img src="/Dados-Portifoleo/Projeto-1/Analise_Acidentes.png" alt="Gráfico Perfil">
-                    <ul class="bullet-list">
-                        <li>Segmentação de público</li>
-                        <li>Comportamento de compra</li>
-                        <li>Preferências por região</li>
-                    </ul>
-                </div>
-            </div>
+        <h4>2. Sazonalidade</h4>
+        <ul>
+            <div class="grafico"></div>
+            <img class="grafico-1" src="/Dados-Portifoleo/Projeto-1/Analise_Acidentes.png" alt="gráfico-sazonalidade">
+            <li><strong>Análise de períodos:</strong> De alta e baixa temporada.</li>
+            <li><strong>Impacto de eventos:</strong> Sazonais no comportamento de compra.</li>
+            <li><strong>Planejamento estratégico:</strong> Baseado em dados históricos.</li>
+        </ul>
+
+        <h4>3. Desempenho por Região</h4>
+        <ul>
+            <div class="grafico"></div>
+            <img class="grafico-1" src="/Dados-Portifoleo/Projeto-1/Analise_Acidentes.png" alt="gráfico-regional">
+            <li><strong>Mapeamento de áreas:</strong> De alto desempenho comercial.</li>
+            <li><strong>Análise de potencial:</strong> Por bairro e região.</li>
+            <li><strong>Oportunidades de expansão:</strong> Identificadas através dos dados.</li>
+        </ul>
+
+        <h4>4. Perfil do Consumidor</h4>
+        <ul>
+            <div class="grafico"></div>
+            <img class="grafico-1" src="/Dados-Portifoleo/Projeto-1/Analise_Acidentes.png" alt="gráfico-perfil">
+            <li><strong>Segmentação de público:</strong> Baseada em comportamento de compra.</li>
+            <li><strong>Comportamento de compra:</strong> Análise detalhada dos padrões.</li>
+            <li><strong>Preferências por região:</strong> Identificação de tendências locais.</li>
+        </ul>
+
+        <hr>
+
+        <h3>Conclusões e Recomendações</h3>
+        <p>
+            A análise dos dados de vendas revelou padrões importantes que podem orientar estratégias comerciais mais eficientes na região de Porto Alegre:
+        </p>
+        <ol>
+            <li><strong>1- Foco em Períodos de Alta:</strong> Concentrar esforços de marketing nos períodos identificados como de maior potencial de vendas.</li>
+            <li><strong>2- Segmentação Geográfica:</strong> Desenvolver estratégias específicas para cada região com base no perfil identificado.</li>
+            <li><strong>3- Personalização de Ofertas:</strong> Adaptar produtos e serviços de acordo com as preferências regionais.</li>
+            <li><strong>4- Otimização de Recursos:</strong> Alocar investimentos de forma mais eficiente baseado nos dados de desempenho.</li>
+        </ol>
+        <p>
+            Esta análise fornece uma base sólida para tomada de decisões estratégicas no mercado de Porto Alegre, permitindo maior eficiência e resultados mais positivos.
+        </p>
+    </div>
+    <div class="up">
+        <a href="#topo">
+            <img src="/imagens-globais/upp.png" alt="Subir">
+        </a>
+    </div>
+    <!-- Footer Social -->
+    <div class="social-footer">
+        <div class="social">
+            <a class="social-icon" data-tooltip="Facebook" href="https://www.facebook.com/profile.php?id=100082196296824">
+                <i class="fa fa-facebook" aria-hidden="true"></i>
+            </a>
+            <a class="social-icon" data-tooltip="Twitter" href="https://twitter.com/colorlib">
+                <i class="fa fa-twitter" aria-hidden="true"></i>
+            </a>
+            <a class="social-icon" data-tooltip="YouTube" href="https://www.youtube.com/@joseSoaresainvest">
+                <i class="fa fa-youtube" aria-hidden="true"></i>
+            </a>
+            <a class="social-icon" data-tooltip="LinkedIn" href="https://www.linkedin.com/in/janyel-rodrigues-1b998a190/">
+                <i class="fa fa-linkedin" aria-hidden="true"></i>
+            </a>
+            <a class="social-icon" data-tooltip="Instagram" href="https://www.instagram.com/janyel.rodrigues/">
+                <i class="fa fa-instagram" aria-hidden="true"></i>
+            </a>
+            <a class="social-icon" data-tooltip="GitHub" href="https://github.com/JoseSoares01/">
+                <i class="fa fa-github" aria-hidden="true"></i>
+            </a>
         </div>
-    </section>
+    </div>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="social-icons">
-                <a href="https://www.facebook.com/profile.php?id=100082196296824" target="_blank" aria-label="Facebook">
-                    <i class="fab fa-facebook"></i>
-                </a>
-                <a href="https://twitter.com/colorlib" target="_blank" aria-label="Twitter">
-                    <i class="fab fa-twitter"></i>
-                </a>
-                <a href="https://www.youtube.com/@joseSoaresainvest" target="_blank" aria-label="YouTube">
-                    <i class="fab fa-youtube"></i>
-                </a>
-                <a href="https://www.linkedin.com/in/janyel-rodrigues-1b998a190/" target="_blank" aria-label="LinkedIn">
-                    <i class="fab fa-linkedin"></i>
-                </a>
-                <a href="https://www.instagram.com/janyel.rodrigues/" target="_blank" aria-label="Instagram">
-                    <i class="fab fa-instagram"></i>
-                </a>
-                <a href="https://github.com/JoseSoares01/" target="_blank" aria-label="GitHub">
-                    <i class="fab fa-github"></i>
-                </a>
-            </div>
-            <p class="copyright">&copy; José Soares <span id="year"></span></p>
-        </div>
+    <!-- Rodapé -->
+    <footer class="bg-dark text-white">
+        <p class="m-0">&copy; José Soares 2024</p>
     </footer>
-
-    <!-- Botão Voltar ao Topo -->
-    <button id="backToTop" class="back-to-top" aria-label="Voltar ao topo">
-        <i class="fas fa-arrow-up"></i>
-    </button>
-
-    <script src="/script/script_page02.js"></script>
 </body>
 
 </html>

@@ -5,157 +5,131 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Análise de Acidentes - Portfólio 01</title>
-    <link rel="stylesheet" href="/estilos/portifolio-1.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="/estilos/portifoleo-3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/fontawesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/brands.min.css">
 </head>
 
 <body>
-    <!-- Navegação -->
-    <nav class="navbar">
-        <div class="container">
-            <button class="button-home" onclick="location.href = '/index.html';">Home</button>
+    <button class="button-home" onclick="location.href = '/index.html';">Home</button>
+    <section>
+        <h1 id="topo">Análise de Acidentes</h1>
+        <div class="content">
+            <p>Esta análise foi realizada com o objetivo de distinguir os pontos mais perigosos da região de POA - Santa Catarina-BR, levando ao reconhecimento de áreas. Podemos perceber quais os dias da semana e horário mais propensos a acidentes, prevenindo em 10% de chance.</p>
+            <a href="#desc" class="btn">Ler Mais</a>
         </div>
-    </nav>
-    <!--###################################### INÍCIO COM CARD ############################################################ -->
-
-    <!-- Seção Hero -->
-    <section class="hero" id="topo">
-        <div class="container">
-            <h1 class="gradient-text">Análise de Acidentes</h1>
-
-            <div class="hero-content">
-                <div class="hero-text">
-                    <p>
-                        Esta análise foi realizada com o objetivo de distinguir os pontos mais perigosos da região de POA - Santa Catarina-BR, levando ao reconhecimento de áreas. Podemos perceber quais os dias da semana e horário mais propensos a acidentes, prevenindo em 10% de
-                        chance.
-                    </p>
-                    <a href="#desc" class="button-gradient">Ler Mais</a>
-                </div>
-
-                <div class="hero-image">
-                    <img src="/Dados-Portifoleo/Projeto-2/image-capa-vendas.jpeg" alt="Análise-Vendas">
-                    <a href="https://dadosabertos.poa.br/dataset/acidentes-de-transito-acidentes/resource/b56f8123-716a-4893-9348-23945f1ea1b9" target="_blank" class="source-link">
-                        Fonte: Dados Abertos POA
-                    </a>
-                </div>
-            </div>
+        </div>
+        <div class="img">
+            <img class="portifolio-2" src="/Dados-Portifoleo/Projeto-1/image-capa-acide.jpeg" alt="Análise-Acidentes">
+            <a href="https://dadosabertos.poa.br/dataset/acidentes-de-transito-acidentes/resource/b56f8123-716a-4893-9348-23945f1ea1b9" target="_blank" class="unsplash-link" title="Análise Realizada em 10/10/2024">
+                <span>Fonte: Dados Abertos POA</span>
+            </a>
         </div>
     </section>
-    <!--###################################### DESCRIÇÃO ############################################################ -->
 
-    <!-- Seção de Conteúdo -->
-    <section id="desc" class="content-section">
-        <div class="container">
-            <div class="content-header">
-                <h2>Resumo das Análises de Acidentes em Porto Alegre - RS</h2>
-                <p>
-                    A análise do dataset de acidentes em Porto Alegre, Rio Grande do Sul, foi conduzida com o objetivo de identificar padrões, tendências e fatores relacionados aos acidentes registrados na cidade. Este estudo abrangeu informações como data, horário, local,
-                    gravidade, tipo de acidente e condições climáticas, fornecendo insights valiosos para a gestão pública e políticas de segurança viária.
-                </p>
-            </div>
-            <!--###################################### RESUMO DOS RESULTADOS ############################################################ -->
+    <div id="desc" class="descrição">
+        <h3>Resumo das Análises de Acidentes em Porto Alegre - RS</h3>
+        <p>
+            A análise do dataset de acidentes em Porto Alegre, Rio Grande do Sul, foi conduzida com o objetivo de identificar padrões, tendências e fatores relacionados aos acidentes registrados na cidade. Este estudo abrangeu informações como data, horário, local,
+            gravidade, tipo de acidente e condições climáticas, fornecendo insights valiosos para a gestão pública e políticas de segurança viária.
+        </p>
 
-            <!-- Cards de Análise -->
-            <div class="analysis-cards">
-                <div class="card">
-                    <h3>1. Principais Resultados</h3>
-                    <h4>1. Distribuição Temporal</h4>
-                    <img src="/Dados-Portifoleo/Projeto-1/Analise_Acidentes.png" alt="Gráfico Tendências">
-                    <ul class="bullet-list">
-                        <li><strong>Dias da Semana:</strong> A maioria dos acidentes ocorreu durante os dias úteis, com picos significativos nas sextas-feiras, indicando um aumento no fluxo de veículos devido ao final da semana.</li>
-                        <li><strong>Horários:</strong> O maior volume de acidentes foi registrado nos horários de pico (entre 7h-9h e 17h-19h), alinhado ao deslocamento de trabalhadores e estudantes.</li>
-                        <li><strong>Meses do Ano:</strong> O dataset indicou maior ocorrência de acidentes em meses de clima mais ameno, como setembro e outubro, possivelmente relacionados à maior movimentação nas ruas.</li>
-                    </ul>
-                </div>
+        <hr>
 
-                <div class="card">
-                    <h3>2. Localização e Geografia</h3>
-                    <div class="grafico"></div>
-                    <img class="grafico-2" src="/Dados-Portifoleo/Projeto-1/Mapa_de_Distribuição.png" alt="gráfico-calor">
-                    <ul class="bullet-list">
-                        <li><strong>Zonas Críticas:</strong> Áreas centrais e vias de alta velocidade, como avenidas movimentadas, apresentaram maior incidência de acidentes. Esses locais concentram alta densidade de veículos e pedestres.</li>
-                        <li><strong>Bairros:</strong> Os bairros com maior número de registros incluem Centro Histórico, Partenon e Menino Deus, evidenciando necessidade de intervenções específicas nestas regiões.</li>
-                    </ul>
-                </div>
+        <h3>Principais Resultados</h3>
 
-                <div class="card">
-                    <h3>3. Desempenho por Região</h3>
-                    <img class="grafico-3" src="/Dados-Portifoleo/Projeto-1/Distribuição-semanal.png" alt="distribuição-semanal">
-                    <ul class="bullet-list">
-                        <li><strong>Acidentes Fatais:</strong> Embora em menor quantidade, as colisões fatais ocorreram com maior frequência em rodovias e durante a madrugada, frequentemente associadas ao consumo de álcool e alta velocidade.</li>
-                        <li><strong>Acidentes com Feridos:</strong> A maioria dos acidentes envolveu vítimas com ferimentos leves a moderados, destacando a importância do uso de dispositivos de segurança, como cintos e capacetes.</li>
-                        <li><strong>Acidentes Sem Vítimas:</strong> Batidas leves ou colisões sem feridos foram predominantes, refletindo a alta densidade do trânsito urbano.</li>
-                    </ul>
-                </div>
+        <h4>1. Distribuição Temporal</h4>
+        <ul>
+            <div class="grafico"></div>
+            <img class="grafico-1" src="/Dados-Portifoleo/Projeto-1/Analise_Acidentes.png" alt="gráfico-temporal">
+            <li><strong>Dias da Semana:</strong> A maioria dos acidentes ocorreu durante os dias úteis, com picos significativos nas sextas-feiras, indicando um aumento no fluxo de veículos devido ao final da semana.</li>
+            <li><strong>Horários:</strong> O maior volume de acidentes foi registrado nos horários de pico (entre 7h-9h e 17h-19h), alinhado ao deslocamento de trabalhadores e estudantes.</li>
+            <li><strong>Meses do Ano:</strong> O dataset indicou maior ocorrência de acidentes em meses de clima mais ameno, como setembro e outubro, possivelmente relacionados à maior movimentação nas ruas.</li>
+        </ul>
 
-                <div class="card">
-                    <h4>4. Distribuição por Regiões Gerais</h4>
-                    <ul class="bullet-list">
-                        <img class="grafico-4" src="/Dados-Portifoleo/Projeto-1/mapa-calor.png" alt="Mapa-Distribuição">
-                        <li>Acidentes em dias chuvosos apresentaram maior gravidade, com aumento significativo em colisões traseiras e derrapagens, devido à visibilidade reduzida e condições escorregadias das vias.</li>
-                        <li>Em dias ensolarados, houve maior volume de acidentes leves, possivelmente pelo aumento do tráfego.</li>
-                    </ul>
-                </div>
+        <h4>2. Localização e Geografia</h4>
+        <ul>
+            <div class="grafico"></div>
+            <img class="grafico-1" src="/Dados-Portifoleo/Projeto-1/Mapa_de_Distribuição.png" alt="gráfico-calor">
+            <li><strong>Zonas Críticas:</strong> Áreas centrais e vias de alta velocidade, como avenidas movimentadas, apresentaram maior incidência de acidentes. Esses locais concentram alta densidade de veículos e pedestres.</li>
+            <li><strong>Bairros:</strong> Os bairros com maior número de registros incluem Centro Histórico, Partenon e Menino Deus, evidenciando necessidade de intervenções específicas nestas regiões.</li>
+        </ul>
 
-                <div class="card">
-                    <h4>5. Tipo de Acidente</h4>
-                    <ul class="bullet-list">
-                        <img class="grafico-5" src="/Dados-Portifoleo/Projeto-1/distribuição_tipo.png" alt="distribuição-tipo">
-                        <li><strong>Colisões:</strong> Colisões traseiras e laterais foram as mais comuns, muitas vezes atribuídas à falta de atenção dos condutores e ao desrespeito à distância segura entre veículos.</li>
-                        <li><strong>Atropelamentos:</strong> Embora em menor número, destacaram-se como eventos graves, com maior incidência em cruzamentos sem sinalização adequada.</li>
-                        <li><strong>Capotamentos:</strong> Registrados em alta velocidade e em curvas, os capotamentos destacam a importância de campanhas educativas sobre direção defensiva.</li>
-                    </ul>
-                </div>
-                <!--###################################### CONCLUSÃO ############################################################ -->
-                <h3>Conclusões e Recomendações</h3>
-                <p>
-                    A análise revelou que os acidentes em Porto Alegre estão concentrados em horários e locais previsíveis, muitas vezes associados a comportamentos de risco. Para mitigar o impacto, recomenda-se:
-                </p>
-                <ol class="conclusoes">
-                    <li><strong>Melhorias na Infraestrutura:</strong> Investimento em sinalização, iluminação pública e manutenção das vias, especialmente em zonas críticas.</li>
-                    <li><strong>Campanhas Educativas:</strong> Promover conscientização sobre direção defensiva, uso de dispositivos de segurança e os perigos de dirigir sob efeito de álcool.</li>
-                    <li><strong>Aprimoramento da Fiscalização:</strong> Ampliar a presença de agentes de trânsito em horários de pico e em áreas com alta concentração de acidentes.</li>
-                    <li><strong>Uso de Tecnologia:</strong> Implementar sistemas inteligentes de monitoramento para identificar condições de risco em tempo real.</li>
-                </ol>
-                <p>
-                    Esta análise reforça a importância de iniciativas coordenadas entre órgãos públicos e sociedade para reduzir o número de acidentes e promover maior segurança no trânsito de Porto Alegre.
-                </p>
-            </div>
+        <h4>3. Desempenho por Região</h4>
+        <ul>
+            <div class="grafico"></div>
+            <img class="grafico-1" src="/Dados-Portifoleo/Projeto-1/Distribuição-semanal.png" alt="distribuição-semanal">
+            <li><strong>Acidentes Fatais:</strong> Embora em menor quantidade, as colisões fatais ocorreram com maior frequência em rodovias e durante a madrugada, frequentemente associadas ao consumo de álcool e alta velocidade.</li>
+            <li><strong>Acidentes com Feridos:</strong> A maioria dos acidentes envolveu vítimas com ferimentos leves a moderados, destacando a importância do uso de dispositivos de segurança, como cintos e capacetes.</li>
+            <li><strong>Acidentes Sem Vítimas:</strong> Batidas leves ou colisões sem feridos foram predominantes, refletindo a alta densidade do trânsito urbano.</li>
+        </ul>
 
-            <!--###################################### RODAPÉ COM MÍDIA SOCIAL ############################################################ -->
-            <!-- Footer -->
-            <footer class="footer">
-                <div class="container">
-                    <div class="social-icons">
-                        <a href="https://www.facebook.com/profile.php?id=100082196296824" target="_blank" aria-label="Facebook">
-                            <i class="fab fa-facebook"></i>
-                        </a>
-                        <a href="https://twitter.com/colorlib" target="_blank" aria-label="Twitter">
-                            <i class="fab fa-twitter"></i>
-                        </a>
-                        <a href="https://www.youtube.com/@joseSoaresainvest" target="_blank" aria-label="YouTube">
-                            <i class="fab fa-youtube"></i>
-                        </a>
-                        <a href="https://www.linkedin.com/in/janyel-rodrigues-1b998a190/" target="_blank" aria-label="LinkedIn">
-                            <i class="fab fa-linkedin"></i>
-                        </a>
-                        <a href="https://www.instagram.com/janyel.rodrigues/" target="_blank" aria-label="Instagram">
-                            <i class="fab fa-instagram"></i>
-                        </a>
-                        <a href="https://github.com/JoseSoares01/" target="_blank" aria-label="GitHub">
-                            <i class="fab fa-github"></i>
-                        </a>
-                    </div>
-                    <p class="copyright">&copy; José Soares <span id="year"></span></p>
-                </div>
-            </footer>
+        <h4>4. Distribuição por Regiões Gerais</h4>
+        <ul>
+            <div class="grafico"></div>
+            <img class="grafico-1" src="/Dados-Portifoleo/Projeto-1/mapa-calor.png" alt="Mapa-Distribuição">
+            <li>Acidentes em dias chuvosos apresentaram maior gravidade, com aumento significativo em colisões traseiras e derrapagens, devido à visibilidade reduzida e condições escorregadias das vias.</li>
+            <li>Em dias ensolarados, houve maior volume de acidentes leves, possivelmente pelo aumento do tráfego.</li>
+        </ul>
 
-            <!--###################################### BOTÃO VOLTAR AO TOPO ############################################################ -->
-            <button id="backToTop" class="back-to-top" aria-label="Voltar ao topo">
-        <i class="fas fa-arrow-up"></i>
-    </button>
+        <h4>5. Tipo de Acidente</h4>
+        <ul>
+            <div class="grafico"></div>
+            <img class="grafico-1" src="/Dados-Portifoleo/Projeto-1/distribuição_tipo.png" alt="distribuição-tipo">
+            <li><strong>Colisões:</strong> Colisões traseiras e laterais foram as mais comuns, muitas vezes atribuídas à falta de atenção dos condutores e ao desrespeito à distância segura entre veículos.</li>
+            <li><strong>Atropelamentos:</strong> Embora em menor número, destacaram-se como eventos graves, com maior incidência em cruzamentos sem sinalização adequada.</li>
+            <li><strong>Capotamentos:</strong> Registrados em alta velocidade e em curvas, os capotamentos destacam a importância de campanhas educativas sobre direção defensiva.</li>
+        </ul>
 
-            <script src="/script/script_page02.js"></script>
+        <hr>
+
+        <h3>Conclusões e Recomendações</h3>
+        <p>
+            A análise revelou que os acidentes em Porto Alegre estão concentrados em horários e locais previsíveis, muitas vezes associados a comportamentos de risco. Para mitigar o impacto, recomenda-se:
+        </p>
+        <ol>
+            <li><strong>1- Melhorias na Infraestrutura:</strong> Investimento em sinalização, iluminação pública e manutenção das vias, especialmente em zonas críticas.</li>
+            <li><strong>2- Campanhas Educativas:</strong> Promover conscientização sobre direção defensiva, uso de dispositivos de segurança e os perigos de dirigir sob efeito de álcool.</li>
+            <li><strong>3- Aprimoramento da Fiscalização:</strong> Ampliar a presença de agentes de trânsito em horários de pico e em áreas com alta concentração de acidentes.</li>
+            <li><strong>4- Uso de Tecnologia:</strong> Implementar sistemas inteligentes de monitoramento para identificar condições de risco em tempo real.</li>
+        </ol>
+        <p>
+            Esta análise reforça a importância de iniciativas coordenadas entre órgãos públicos e sociedade para reduzir o número de acidentes e promover maior segurança no trânsito de Porto Alegre.
+        </p>
+    </div>
+    <div class="up">
+        <a href="#topo">
+            <img src="/imagens-globais/upp.png" alt="Subir">
+        </a>
+    </div>
+    <!-- Footer Social -->
+    <div class="social-footer">
+        <div class="social">
+            <a class="social-icon" data-tooltip="Facebook" href="https://www.facebook.com/profile.php?id=100082196296824">
+                <i class="fa fa-facebook" aria-hidden="true"></i>
+            </a>
+            <a class="social-icon" data-tooltip="Twitter" href="https://twitter.com/colorlib">
+                <i class="fa fa-twitter" aria-hidden="true"></i>
+            </a>
+            <a class="social-icon" data-tooltip="YouTube" href="https://www.youtube.com/@joseSoaresainvest">
+                <i class="fa fa-youtube" aria-hidden="true"></i>
+            </a>
+            <a class="social-icon" data-tooltip="LinkedIn" href="https://www.linkedin.com/in/janyel-rodrigues-1b998a190/">
+                <i class="fa fa-linkedin" aria-hidden="true"></i>
+            </a>
+            <a class="social-icon" data-tooltip="Instagram" href="https://www.instagram.com/janyel.rodrigues/">
+                <i class="fa fa-instagram" aria-hidden="true"></i>
+            </a>
+            <a class="social-icon" data-tooltip="GitHub" href="https://github.com/JoseSoares01/">
+                <i class="fa fa-github" aria-hidden="true"></i>
+            </a>
+        </div>
+    </div>
+
+    <!-- Rodapé -->
+    <footer class="bg-dark text-white">
+        <p class="m-0">&copy; José Soares 2024</p>
+    </footer>
 </body>
 
 </html>
