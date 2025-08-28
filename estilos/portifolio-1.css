@@ -264,6 +264,25 @@ main {
     transform: translateY(-5px);
 }
 
+/* Dashboard responsivo */
+.dashboard-iframe-container {
+    position: relative;
+    width: 100%;
+    /* Truque do Padding para manter a proporção 16:9 */
+    padding-top: 56.25%; 
+    overflow: hidden;
+}
+
+.dashboard-iframe-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+    display: block;
+}
+
 .wide-widget {
     grid-column: span 2;
 }
@@ -620,22 +639,6 @@ footer p {
 
 .project-dashboard {
     margin-bottom: 3rem;
-}
-
-.dashboard-iframe-container {
-    background: var(--bg-dark);
-    border: 1px solid var(--border-color);
-    border-radius: 8px;
-    overflow: hidden;
-    padding: 1rem;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
-}
-
-.dashboard-iframe-container iframe {
-    width: 100%;
-    min-height: 700px;
-    border: none;
-    display: block;
 }
 
 .project-narrative {
