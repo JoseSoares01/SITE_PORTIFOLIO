@@ -2,9 +2,11 @@
 <html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>José Soares | Portfólio</title>
-    <link rel="stylesheet" href="/estilos/styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DataVision - Data Analytics Expert</title>
+    <link rel="stylesheet" href="/estilos/styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RSmXnL6o2B6P9VjC8R3c8k4lWz2y1z2a6m4h4V4f1f2W6V3V2f1V3p3g2r3Q3F3e4e1e1e4k4t2a2d4h4v3j2k2" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
     <!--###################################### FAVICON ############################################################ -->
     <link rel="icon" type="image/png" sizes="20x20" href="/imagens-globais/fivicon-192x192.png">
     <meta name="msapplication-TileColor" content="#ffffff">
@@ -19,313 +21,322 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:wght@600&display=swap" rel="stylesheet">
 </head>
-  <body>
-  <!--###################################### GRID BACKGROUND CURSOR EFFECT ############################################################ -->
-  <div id="grid-background">
-    <div id="container"></div>
-    <div id="cursor"></div>
-  </div>
-    <nav class="navbar">
-      <div class="nav-container">
-        <div class="nav-content">
-          <div class="logo" ><img src="/imagens-globais/logomarca.png" alt="Perfil" />
-          </div>
-          <div class="desktop-menu">
-            <div class="menu-items">
-              <a href="/paginas/cv.html">CV</a>
-              <a href="#portfolio">Portfólio</a>
-              <a href="#servicos">Serviços</a>
-              <a href="#contato">Contato</a>
-            </div>
-          </div>
-  <!--###################################### BOTÃO HAMBÚRGUER ############################################################ -->
-          <button class="mobile-menu-button" onclick="toggleMenu()">
-            <div class="hamburger">
-              <span></span>
-              <span></span>
-              <span></span>
-            </div>
-          </button>
-        </div>
-      </div>
-  <!--###################################### ITENS DO MENU ############################################################ -->
-      <div class="mobile-menu" id="mobileMenu">
-        <a href="/paginas/cv.html" onclick="toggleMenu()">CV</a>
-        <a href="#portfolio" onclick="toggleMenu()">Portfólio</a>
-        <a href="#servicos" onclick="toggleMenu()">Serviços</a>
-        <a href="#contato" onclick="toggleMenu()">Contato</a>
-      </div>
-    </nav>
-  <!--###################################### SEÇÃO MEU HERO ############################################################ -->    
-    <section class="hero">
-          <div class="hero-text">
-            <h1>
-                Olá<br> Sou José Soares
-            </h1>
-            <p>Profissional com mais de 8 anos de experiência em gestão pública, formado em Direito e Ciências de Dados,
-              com foco em otimização de processos e automação, em análise e visualização de dados com storytelling.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-  <!--###################################### LINHA DO TEMPO ############################################################ -->
-  <section id="sobre" class="about">
-    <div class="container">
-        <h2>Sobre mim</h2>
-        <div class="about-grid">
-            <div class="about-content">
-                <p>
-                    Atuo na interseção entre gestão pública e tecnologia, 
-                    utilizando dados para otimizar processos e tomar decisões 
-                    baseadas em evidências.
-                </p>
-                <p>Minha jornada inclui experiências em:</p>
-                <ul class="skills-list">
-                    <li>Análise de dados e Business Intelligence</li>
-                    <li>Gestão de projetos públicos</li>
-                    <li>Desenvolvimento web</li>
-                </ul>
-            </div>
-            <div class="about-image">
-                <img src="/imagens-globais/photo_5954253187424830818_y.jpg" alt="José Soares">
-            </div>
-        </div>
+<body>
+  <!-- NAVBAR -->
+<header class="navbar">
+<div class="container nav-inner">
+  <div class="brand">
+    <div class="logo-icon">
+      <img src="/imagens-globais/LOGO-INICIAL.PNG" alt="BigData Logo" />
     </div>
+    </div>
+
+  <div class="menu-toggle" id="menu-toggle">
+    <div class="bar"></div>
+    <div class="bar"></div>
+    <div class="bar"></div>
+  </div>
+
+  <nav class="nav-menu">
+    <a href="#curriculum" class="nav-item active">Curriculum V.</a>
+    <a href="#portfolio" class="nav-item">Portfólio</a>
+    <a href="#servicos" class="nav-item">Serviços</a>
+    <a href="#contacto" class="nav-item">Contacto</a>
+  </nav>
+  <a class="btn btn-primary" href="#contact">Contratar Serviços</a>
+</div>
+</header>
+
+
+<!-- Hero Section -->
+<section id="hero" class="hero">
+  <div class="floating-icons">
+      <div class="floating-icon">📊</div>
+      <div class="floating-icon">📈</div>
+      <div class="floating-icon">🎯</div>
+  </div>
+  <div class="hero-content">
+      <h1>Transforme dados em <em>insights estratégicos</em></h1>
+      <p>Especialista em análise de dados com foco em Business Intelligence, visualização de dados e analytics. Ajudo empresas a tomar decisões baseadas em dados com relatórios precisos e dashboards interativos.</p>
+      <a href="#portfolio" class="hero-btn">Ver Portfolio</a>
+  </div>
 </section>
-  <section class="timeline">
-    <h2>Experiência</h2>
-      <div class="container">
-        <div class="timeline-line"></div>
-        <div class="timeline-events">
-          <div class="event">
-            <div class="event-dot"></div>
-            <div class="event-content">
-              <div class="event-year">2015</div>
-              <div class="event-role">Secretário Executivo</div>
-              <div class="event-company">Univ. Estadual do Piauí</div>
-            </div>
-          </div>
-          <div class="event">
-            <div class="event-dot"></div>
-            <div class="event-content">
-              <div class="event-year">2019</div>
-              <div class="event-role">Supervisor Setorial</div>
-              <div class="event-company">Gestão Pública</div>
-            </div>
-          </div>
-          <div class="event">
-            <div class="event-dot"></div>
-            <div class="event-content">
-              <div class="event-year">2022</div>
-              <div class="event-role">Gestor Backoffice</div>
-              <div class="event-company">Iberdrola-PT</div>
-            </div>
-          </div>
-          <div class="event">
-            <div class="event-dot"></div>
-            <div class="event-content">
-              <div class="event-year">2024</div>
-              <div class="event-role">Consultor IT</div>
-              <div class="event-company">Servinform-PT</div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-<!--###################################### SEÇÃO-PORTFÓLIO ############################################################ -->
-    </p><section id="portfolio" class="portfolio">
-      <div class="container">
-        <h2>Portfólio</h2>
-        <div class="portfolio-grid">
-          <div class="portfolio-card">
-            <img src="/Dados-Portifoleo/Projeto-1/image-capa-acide.jpeg" alt="Análise de Acidentes" />
-            <div class="card-content">
-              <h3>Análise de Acidentes</h3>
-              <p>Análise detalhada de dados de acidentes para insights de segurança.</p>
-              <div class="tags">
-              <span>Python</span>
-              <span>Pandas</span>
-              <span>Visualização</span><br>
-            </div>
-              <a href="/paginas/Analise-1/portifolio.html" class="btn-primary">Saiba Mais<span class="chevron-right"></span></a> 
-            </div>
-          </div>
-          <div class="portfolio-card">
-            <img src="Dados-Portifoleo/Projeto-2/image-capa-vendas.jpeg" alt="Análise de Vendas" />
-            <div class="card-content">
-              <h3>Análise de Vendas</h3>
-              <p>Visualização e análise de dados de vendas para otimização de negócios.</p>
-              <div class="tags">
-              <span>Power BI</span>
-              <span>SQL</span>
-              <span>Analytics</span><br>
-              </div>
-              <a href="/paginas/Analise-2/portifolio-2.html" class="btn-primary">Saiba Mais<span class="chevron-right"></span></a><br>
-              
-            </div>
-          </div>
-          <div class="portfolio-card">
-            <img src="Dados-Portifoleo/Projeto-3/capa-IBM.jpg" alt="Análise Funcionários IBM" />
-            <div class="card-content">
-              <h3>Análise Funcionários IBM</h3>
-              <p>Estudo de dados de RH para melhorar a gestão de talentos.</p>
-              <div class="tags">
-              <span>R</span>
-              <span>Machine Learning</span>
-              <span>HR Analytics</span><br>
-            </div>
-              <a href="/paginas/Analise-3/Portfoleo-3.html" class="btn-primary">Saiba Mais<span class="chevron-right"></span></a><br>
-            </div>
-          </div>
-          <div class="portfolio-card">
-            <img src="Dados-Portifoleo/Projeto-4/capa-saude.jpg" alt="Análise de Saúde" />
-            <div class="card-content">
-              <h3>Análise de Saúde de Forma Geral</h3>
-            <p>Insights sobre dados de saúde e bem-estar social das pessoas.</p>
-            <div class="tags">
-              <span>Power BI</span>
-              <span>SQL</span>
-              <span>Analytics</span><br>
-            </div>
-              <a href="" class="btn-primary">Saiba Mais<span class="chevron-right"></span></a>
-            </div>
-          </div>
-          <div class="portfolio-card">
-            <img src="Dados-Portifoleo/Projeto-5/capa-socialmidia (2).jpg" alt="Análise de Mídia Social" />
-            <div class="card-content">
-              <h3>Análise de Mídia Social e Impactos</h3>
-            <p>Análise de tendências e engajamento em redes sociais.</p>
-            <div class="tags">
-              <span>Python</span>
-              <span>Pandas</span>
-              <span>Visualização</span><br>
-            </div>
-              <a class="btn-primary">Saiba Mais<span class="chevron-right"></span></a>
-            </div>
-          </div>
-          <div class="portfolio-card">
-            <img src="Dados-Portifoleo/Projeto-6/capa-investi.jpg" alt="Análise do Mercado Financeiro" />
-            <div class="card-content">
-              <h3>Análise do Mercado Financeiro</h3>
-              <p>Análise de dados financeiros e tendências de mercado.</p>
-              <div class="tags">
-              <span>Power BI</span>
-              <span>SQL</span>
-              <span>Analytics</span><br>
-            </div>
-              <a href="/paginas/Analise-6/Portfoleo-6.html" class="btn-primary">Saiba Mais<span class="chevron-right"></span></a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!--###################################### SEÇÃO-SERVIÇOS ############################################################ -->
-    <section id="services-buttons" class="py-5">
-      <div class="container text-center">
-          <h2 class="Services title">Serviços</h2>
-          <div class="row justify-content-center">
+<!-- Trust Section -->
+<section class="trust-section">
+  <!-- SKILLS SECTION -->
+<div class="skills-container fade-section">
+  <div class="skills-scroll" aria-label="Habilidades requeridas">
+    <div class="skills-track">
+      <span class="pill"><i class="fa-solid fa-database"></i> SQL <small>(PostgreSQL/MySQL)</small></span>
+      <span class="pill"><i class="fa-solid fa-chart-pie"></i> Power BI <small>(DAX/Modelagem)</small></span>
+      <span class="pill"><i class="fa-brands fa-python"></i> Python <small>(Pandas/NumPy)</small></span>
+      <span class="pill"><i class="fa-solid fa-gears"></i> ETL <small>(Airflow/DBT)</small></span>
+      <span class="pill"><i class="fa-solid fa-table"></i> Excel <small>(PowerQuery)</small></span>
+      <span class="pill"><i class="fa-solid fa-chart-column"></i> Visualização <small>(Storytelling)</small></span>
+      <!-- Duplicar para scroll infinito -->
+      <span class="pill"><i class="fa-solid fa-database"></i> SQL <small>(PostgreSQL/MySQL)</small></span>
+      <span class="pill"><i class="fa-solid fa-database"></i> SQL <small>(PostgreSQL/MySQL)</small></span>
+      <span class="pill"><i class="fa-solid fa-chart-pie"></i> Power BI <small>(DAX/Modelagem)</small></span>
+      <span class="pill"><i class="fa-brands fa-python"></i> Python <small>(Pandas/NumPy)</small></span>
+      <span class="pill"><i class="fa-solid fa-gears"></i> ETL <small>(Airflow/DBT)</small></span>
+      <span class="pill"><i class="fa-solid fa-table"></i> Excel <small>(PowerQuery)</small></span>
+      <span class="pill"><i class="fa-solid fa-chart-column"></i> Visualização <small>(Storytelling)</small></span>
+      <!-- Triplica para scroll infinito -->
+      <span class="pill"><i class="fa-solid fa-database"></i> SQL <small>(PostgreSQL/MySQL)</small></span>
+      <span class="pill"><i class="fa-solid fa-chart-pie"></i> Power BI <small>(DAX/Modelagem)</small></span>
+      <span class="pill"><i class="fa-brands fa-python"></i> Python <small>(Pandas/NumPy)</small></span>
+      <span class="pill"><i class="fa-solid fa-gears"></i> ETL <small>(Airflow/DBT)</small></span>
+      <span class="pill"><i class="fa-solid fa-table"></i> Excel <small>(PowerQuery)</small></span>
+      <span class="pill"><i class="fa-solid fa-chart-column"></i> Visualização <small>(Storytelling)</small></span>
 
-              <!--###################################### BOTÃO-1 ############################################################ -->
-              <div class="col-md-4 mb-4">
-                  <div class="service-button">
-                      <button class="btn-circle">
-                  <img src="/imagens-globais/icon-1.png" alt="Consultoria" class="btn-icon">
-                  Consultoria
-              </button>
-                      <p class="mt-3">Contrate-me para falar sobre programação ou visualização de dados. Eu ❤️ isso!</p>
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- Services Section -->
+<section class="services-section">
+  <div class="services-content">
+      <div class="services-badge">Serviços</div>
+      <h2>Cada projeto de dados é único e requer uma abordagem personalizada. Ofereço soluções completas em análise de dados que geram resultados reais para o seu negócio.</h2>
+  </div>
+</section>
+
+<!-- Portfolio Section -->
+<section id="portfolio" class="portfolio-section">
+  <div class="portfolio-header">
+      <h2>Meu <em>portfólio</em> de projetos<br>em análise de dados</h2>
+      <p>Projetos desenvolvidos utilizando as melhores práticas em ciência de dados, machine learning e business intelligence para diferentes indústrias.</p>
+      <a href="#contact" class="hero-btn">Solicitar Orçamento</a>
+  </div>
+  
+  <div class="portfolio-grid">
+      <div class="portfolio-card">
+          <div class="portfolio-icon">📊</div>
+          <h3>Dashboard de Vendas E-commerce</h3>
+          <p>Desenvolvimento de dashboard interativo para análise de performance de vendas, métricas de conversão e comportamento do cliente. Resultou em aumento de 35% na eficiência das decisões comerciais.</p>
+      </div>
+      
+      <div class="portfolio-card">
+          <div class="portfolio-icon">🎯</div>
+          <h3>Modelo Preditivo de Churn</h3>
+          <p>Criação de modelo de machine learning para predição de cancelamento de clientes, utilizando algoritmos de classificação. Permitiu redução de 28% na taxa de churn da empresa.</p>
+      </div>
+      
+      <div class="portfolio-card">
+          <div class="portfolio-icon">📈</div>
+          <h3>Análise de ROI Marketing</h3>
+          <p>Sistema completo de análise de retorno sobre investimento em campanhas digitais, incluindo attribution modeling e análise de lifetime value. Otimizou budget em 40%.</p>
+      </div>
+      
+      <div class="portfolio-card">
+          <div class="portfolio-icon">🔍</div>
+          <h3>Data Mining para Fraudes</h3>
+          <p>Implementação de algoritmos de detecção de anomalias para identificar transações fraudulentas em tempo real. Sistema processou mais de 1M de transações/dia com 99.2% de precisão.</p>
+      </div>
+      
+      <div class="portfolio-card">
+          <div class="portfolio-icon">📋</div>
+          <h3>ETL e Data Warehouse</h3>
+          <p>Arquitetura completa de data warehouse com processos ETL automatizados, integrando múltiplas fontes de dados. Reduziu tempo de geração de relatórios em 80%.</p>
+      </div>
+      
+      <div class="portfolio-card">
+          <div class="portfolio-icon">🏥</div>
+          <h3>Analytics para Saúde</h3>
+          <p>Dashboard de monitoramento de KPIs hospitalares, análise de ocupação de leitos e previsão de demanda. Melhorou eficiência operacional em 25% e satisfação do paciente.</p>
+      </div>
+  </div>
+</section>
+
+<!-- About Me Section -->
+<section id="about" class="about-section">
+  <div class="about-container">
+      <div class="about-content">
+          <h2>Sobre Mim</h2>
+          <p class="about-description">Sou um analista de dados apaixonado por transformar números em histórias que impulsionam negócios. Com mais de 6 anos de experiência, especializo-me em Business Intelligence, Machine Learning e Data Science, sempre focado em entregar insights acionáveis.</p>
+          
+          <div class="skills-list">
+              <div class="skill-item">Python & R para Data Science</div>
+              <div class="skill-item">SQL & NoSQL Databases</div>
+              <div class="skill-item">Power BI & Tableau</div>
+              <div class="skill-item">Machine Learning & AI</div>
+              <div class="skill-item">AWS & Google Cloud</div>
+              <div class="skill-item">Apache Spark & Hadoop</div>
+          </div>
+          
+          <p style="color: rgba(255, 255, 255, 0.6);">Certificado em Google Data Analytics, AWS Machine Learning e Microsoft Power BI. Mestrado em Estatística Aplicada pela USP.</p>
+      </div>
+      
+      <div class="experience-section">
+          <h3 style="color: #9AFF8A; margin-bottom: 25px; font-size: 1.3rem;">Experiência Profissional</h3>
+          
+          <div class="experience-item">
+              <div class="experience-title">Senior Data Analyst</div>
+              <div class="experience-company">Tech Solutions Inc.</div>
+              <div class="experience-period">Jan 2022 - Presente</div>
+              <div class="experience-description">Liderança de projetos de analytics para clientes Fortune 500. Desenvolvimento de modelos preditivos e dashboards estratégicos. Gestão de equipe de 4 analistas júniores.</div>
+          </div>
+          
+          <div class="experience-item">
+              <div class="experience-title">Data Scientist</div>
+              <div class="experience-company">E-commerce Dynamics</div>
+              <div class="experience-period">Mar 2020 - Dez 2021</div>
+              <div class="experience-description">Implementação de algoritmos de recomendação e análise de comportamento do usuário. Desenvolvimento de sistema de precificação dinâmica utilizando ML.</div>
+          </div>
+          
+          <div class="experience-item">
+              <div class="experience-title">Business Intelligence Analyst</div>
+              <div class="experience-company">Financial Corp</div>
+              <div class="experience-period">Jun 2018 - Fev 2020</div>
+              <div class="experience-description">Criação de relatórios executivos e KPIs financeiros. Automação de processos de ETL e manutenção de data warehouse corporativo.</div>
+          </div>
+          
+          <div class="experience-item">
+              <div class="experience-title">Data Analyst Jr.</div>
+              <div class="experience-company">Startup Analytics</div>
+              <div class="experience-period">Jan 2018 - Mai 2018</div>
+              <div class="experience-description">Análise exploratória de dados e criação de visualizações. Suporte na implementação de ferramentas de analytics e monitoramento de métricas.</div>
+          </div>
+      </div>
+  </div>
+</section>
+
+<!-- Visualization Demo -->
+<section class="about-section" style="background: linear-gradient(135deg, #1a4d3a 0%, #0d2818 100%);">
+  <div class="about-container">
+      <div class="about-content">
+          <div class="services-badge">Demonstração</div>
+          <h2>Exemplos de visualizações que desenvolvo</h2>
+          <p class="about-description">Dashboards interativos, relatórios executivos e análises preditivas personalizadas para cada necessidade do negócio. Utilizo as melhores práticas de UX/UI para tornar os dados acessíveis a todos os stakeholders.</p>
+          
+          <div class="skills-list">
+              <div class="skill-item">Dashboards Executivos em Tempo Real</div>
+              <div class="skill-item">Relatórios Automatizados</div>
+              <div class="skill-item">Análises Preditivas</div>
+              <div class="skill-item">Visualizações Interativas</div>
+              <div class="skill-item">KPIs e Métricas Customizadas</div>
+          </div>
+      </div>
+      
+      <div class="dashboard-visualization">
+          <div class="viz-header">Dashboard Analytics - Exemplo Interativo</div>
+          
+          <div class="chart-container">
+              <div class="chart-item">
+                  <div class="chart-title">Vendas por Região</div>
+                  <div class="chart-visual">
+                      <div class="chart-bars">
+                          <div class="chart-bar"></div>
+                          <div class="chart-bar"></div>
+                          <div class="chart-bar"></div>
+                          <div class="chart-bar"></div>
+                          <div class="chart-bar"></div>
+                      </div>
                   </div>
               </div>
-              <!--###################################### BOTÃO-2 ############################################################ -->
-              <div class="col-md-4 mb-4">
-                  <div class="service-button">
-                      <button class="btn-circle">
-                  <img src="/imagens-globais/icon-2.png" alt="Desenvolvimento" class="btn-icon">
-                  Desenvolvimento
-              </button>
-                      <p class="mt-3">Clique e entre em contato para desenvolver uma página interativa em React/HTML e CSS.</p>
-                  </div>
-              </div>
-
-              <!--###################################### BOTÃO-3 ############################################################ -->
-              <div class="col-md-4 mb-4">
-                  <div class="service-button">
-                      <button class="btn-circle">
-                  <img src="/imagens-globais/icon-3.png" alt="Análise de Dados" class="btn-icon">
-                  Análise de Dados
-              </button>
-                      <p class="mt-3">Precisa de uma análise para sua empresa? Com melhores insights e dashboards interativos com BI.</p>
+              <div class="chart-item">
+                  <div class="chart-title">Tendência de Crescimento</div>
+                  <div class="chart-visual">
+                      <div class="chart-line"></div>
                   </div>
               </div>
           </div>
-      </div>
-  </section>
-<!--###################################### SEÇÃO-CONTATO ############################################################ -->
-    <section id="contato" class="contact">
-      <div class="container">
-        <h2>Contato</h2>
-        <p class="text-center">Entre em contato para colaborações e oportunidades.</p>
-        <form class="contact-form" id="contactForm">
-          <div class="form-group">
-            <input type="email" placeholder="Seu e-mail" required />
+          
+          <div class="metrics-grid">
+              <div class="metric-card">
+                  <div class="metric-number">150K</div>
+                  <div class="metric-label">Usuários Ativos</div>
+              </div>
+              <div class="metric-card">
+                  <div class="metric-number">R$ 2.5M</div>
+                  <div class="metric-label">Receita Mensal</div>
+              </div>
+              <div class="metric-card">
+                  <div class="metric-number">94.2%</div>
+                  <div class="metric-label">Accuracy Modelo</div>
+              </div>
+              <div class="metric-card">
+                  <div class="metric-number">1.2M</div>
+                  <div class="metric-label">Registros/Dia</div>
+              </div>
+              <div class="metric-card">
+                  <div class="metric-number">35%</div>
+                  <div class="metric-label">ROI Increase</div>
+              </div>
+              <div class="metric-card">
+                  <div class="metric-number">24/7</div>
+                  <div class="metric-label">Monitoramento</div>
+              </div>
           </div>
-          <div class="form-group">
-            <textarea rows="4" placeholder="Sua mensagem" required></textarea>
-          </div>
-          <button type="submit" class="btn-primary">Enviar Mensagem</button>
-        </form>
       </div>
-    </section>
-  <!--###################################### RODAPÉ + MÍDIA SOCIAL ############################################################ -->
-    <footer>
-      <div class="container">
-        <div class="social-links">
-          <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="social-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
-            <p>Facebook</p>          
-          </a>
-          <a href="https://x.com/jose_janyel?s=21" target="_blank" rel="noopener noreferrer" class="social-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"/></svg>
-            <p>X</p>
-          </a>
-          <a href="https://www.youtube.com/@Ze_dos_Dados" target="_blank" rel="noopener noreferrer" class="social-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"/><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"/></svg>
-            <p>YouTube</p>
-          </a>
-          <a href="https://pt.linkedin.com/in/janyel-rodrigues-1b998a190" target="_blank" rel="noopener noreferrer" class="social-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
-            <p>LinkedIn</p>
-          </a>
-          <a href="https://www.instagram.com/janyel.rodrigues?igsh=OGxhbjlqZ3FvMWM1&utm_source=qr" target="_blank" rel="noopener noreferrer" class="social-icon">
-            <svg class="instagram-icon"xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
-            <p class="instagram-text">Instagram</p>
-          </a>
-          <a href="https://github.com/JoseSoares01" target="_blank" rel="noopener noreferrer" class="social-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
-            <p>GitHub</p>
-          </a>
-        </div>
-        <p class="copyright">&copy; <span id="currentYear"></span> José Soares. Todos os direitos reservados.</p>
-      </div>
-      <div id="map" style="height: 120px; width: 100%;"></div>
-    </footer>
+  </div>
+</section>
 
-    <!--###################################### SCRIPTS ############################################################ -->
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-    <script src="/script/script_email.js"></script>
-    <script src="/script/script-index.js"></script>
-    <script src="/estilos/script.js"></script>
-    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
-    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
-    <script>
-      document.addEventListener('DOMContentLoaded', function() {
-        var map = L.map('map').setView([38.9954378, -9.1411938], 10);
-        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-          attribution: '© OpenStreetMap contributors'
-        }).addTo(map);
-        L.marker([38.9954378, -9.1411938]).addTo(map)
-          .bindPopup('Lisboa, Portugal')
-          .openPopup();
-      });
-    </script>
-  </body>
+<!-- Tools Section -->
+<section id="tools" class="tools-section">
+  <div class="tools-header">
+      <h2>Ferramentas e <em>tecnologias</em><br>que domino</h2>
+      <p>Stack completo de tecnologias modernas para análise de dados, desde coleta e processamento até visualização e deploy de modelos em produção.</p>
+      <a href="#contact" class="tools-btn">Iniciar Projeto</a>
+  </div>
+  
+  <div class="tools-icons">
+      <div class="tool-icon">🐍</div>
+      <div class="tool-icon">📊</div>
+      <div class="tool-icon">☁️</div>
+      <div class="tool-icon">🗄️</div>
+      <div class="tool-icon">🧠</div>
+      <div class="tool-icon">⚡</div>
+  </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="contact-section">
+  <div class="contact-content">
+      <h2>Vamos trabalhar juntos?</h2>
+      <p style="color: rgba(255, 255, 255, 0.7); margin-bottom: 20px;">Entre em contato para discutir seu projeto de dados</p>
+      <form class="contact-form">
+          <input type="email" class="contact-input" placeholder="Seu email profissional">
+          <button type="submit" class="contact-submit">Contratar</button>
+      </form>
+      
+      <div style="margin-top: 40px; color: rgba(255, 255, 255, 0.6);">
+          <p>📧 dataanalyst@email.com | 📱 (11) 99999-9999</p>
+          <p>🔗 LinkedIn: /in/data-analyst | 💻 GitHub: /data-expert</p>
+      </div>
+  </div>
+</section>
+<div class="card">
+<h2>Scroll Now<br>Thank Yourself Later</h2>
+<button><a href="#footer">Scroll</a></button>
+</div>
+<!-- Footer -->
+<footer id="footer">
+<div class="col col1">
+  <h3>CoolSite</h3>
+  <p>Made with <span style="color: #BA6573;">❤</span> by Jux</p>
+  <div class="social">
+    <a href="https://codepen.io/Juxtopposed" target="_blank" class="link"><img src="https://assets.codepen.io/9051928/codepen_1.png" alt="" /></a>
+    <a href="https://twitter.com/juxtopposed" target="_blank" class="link"><img src="https://assets.codepen.io/9051928/x.png" alt="" /></a>
+    <a href="https://youtube.com/@juxtopposed" target="_blank" class="link"><img src="https://assets.codepen.io/9051928/youtube_1.png" alt="" /></a>
+  </div>
+  <p style="color: #818181; font-size: smaller">2024 © All Rights Reserved</p>
+</div>
+<div class="col col2">
+  <p>About</p>
+  <p>Our mission</p>
+  <p>Privacy Policy</p>
+  <p>Terms of service</p>
+</div>
+<div class="col col3">
+  <p>Services</p>
+  <p>Products</p>
+  <p>Join our team</p>
+  <p>Partner with us</p>
+</div>
+<div class="backdrop"></div>
+</footer>
+    <script src="/JAVASCRIPT/scripttest.js"></script>
+</body>
 </html>
