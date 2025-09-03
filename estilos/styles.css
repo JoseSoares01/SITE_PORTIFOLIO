@@ -34,7 +34,7 @@ body {
 
 /* NAVBAR */
 .navbar {
-  height: auto;
+  height: 1px;
   min-height: 80px; /* Adicionado um min-height para garantir que a barra não suma */
   position: fixed;
   top: 0;
