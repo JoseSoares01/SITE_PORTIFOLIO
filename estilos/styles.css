@@ -88,52 +88,67 @@ body {
   color: var(--text);
 }
 
-/* Botão hambúrguer customizado */
-.nav-toggle {
-  display: none;
-  background: none;
-  border: none;
-  cursor: pointer;
-  padding: 8px;
-  z-index: 1100;
+/* Mobile Menu */
+.mobile-menu-btn {
+  display: none; /* Esconde o botão por padrão em telas grandes */
+  flex-direction: column;
+  cursor: pointer;
+  padding: 5px;
 }
 
-.hamburger {
-  display: block;
-  width: 40px;
-  height: 32px;
-  position: relative;
+.mobile-menu-btn span {
+  width: 25px;
+  height: 3px;
+  background: white;
+  margin: 3px 0;
+  transition: 0.3s;
+  border-radius: 2px;
 }
 
-.hamburger span {
-  display: block;
-  position: absolute;
-  height: 5px;
-  width: 100%;
-  background: #fff;
-  border-radius: 3px;
-  opacity: 1;
-  left: 0;
-  transition: 0.4s;
-}
-/* Efeito animado ao abrir */
-.nav-toggle.active .hamburger span:nth-child(1) {
-  transform: translateY(8px) rotate(45deg);
-}
-.nav-toggle.active .hamburger span:nth-child(2) {
-  opacity: 0;
-}
-.nav-toggle.active .hamburger span:nth-child(3) {
-  transform: translateY(-8px) rotate(-45deg);
+.mobile-menu-btn.active span:nth-child(1) {
+  transform: rotate(-45deg) translate(-5px, 6px);
 }
 
-/* Só aparece em telas pequenas */
-@media (max-width: 768px) {
-  .nav-toggle {
-    display: block;
-    margin-right: 10px;
-  }
+.mobile-menu-btn.active span:nth-child(2) {
+  opacity: 0;
 }
+
+.mobile-menu-btn.active span:nth-child(3) {
+  transform: rotate(45deg) translate(-5px, -6px);
+}
+
+.mobile-nav {
+  position: fixed;
+  top: 70px;
+  left: -100%;
+  width: 100%;
+  height: calc(100vh - 70px);
+  background: rgba(10, 10, 10, 0.98);
+  backdrop-filter: blur(20px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  transition: left 0.3s ease;
+  z-index: 999;
+}
+
+.mobile-nav.active {
+  left: 0;
+}
+
+.mobile-nav a {
+  color: rgba(255, 255, 255, 0.8);
+  text-decoration: none;
+  font-size: 18px;
+  transition: color 0.3s ease;
+}
+
+.mobile-nav a:hover {
+  color: #9AFF8A;
+}
+
 
 /* NAVIGATION MENU */
 .nav-menu {
@@ -174,7 +189,7 @@ body {
   align-items: center;
   justify-content: center;
   padding: 18px 36px;
-  border-radius: 35px;
+  border-radius: 50px;
   font-weight: 600;
   text-decoration: none;
   border: none;
@@ -184,10 +199,10 @@ body {
 }
 
 .btn-primary {
-  background: linear-gradient(135deg, var(--primary), var(--primary-dark));
-  color: var(--text);
+  background: linear-gradient(135deg, #CAFF08, var(--primary-dark));
+  color: #000;
   box-shadow: var(--glow);
-  padding: 10px 20px;
+  padding: 15px 50px;
   font-size: 1rem;
   margin-right: 0; /* Remove a margem para telas grandes */
 }
@@ -302,8 +317,8 @@ body {
 
 .floating-icon {
   position: absolute;
-  width: 100px;
-  height: 100px;
+  width: 80px;
+  height: 80px;
   background: rgba(154, 255, 138, 0.1);
   border-radius: 50%;
   display: flex;
@@ -318,6 +333,7 @@ body {
   width: 50px;
   height: 50px;
   object-fit: contain;
+  z-index: 1;
 }
 
 .floating-icon::after {
@@ -326,9 +342,10 @@ body {
   left: 50%;
   top: 65px;
   transform: translateX(-50%);
-  width: 30px;
+  width: 24px;
   height: 150px;
-  background: linear-gradient(180deg, #9AFF8A88 0%, transparent 80%);
+  border-radius: 50%;
+  background: linear-gradient(180deg, #7bc7b056 0%, transparent 80%);
   filter: blur(12px);
   z-index: 0;
   pointer-events: none;
