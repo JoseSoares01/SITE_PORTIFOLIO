@@ -105,18 +105,18 @@
     });
 
     // Add parallax effect to grid decorations
-    window.addEventListener('scroll', () => {
-        const scrolled = window.pageYOffset;
-        const gridTop = document.querySelector('.grid-top-left');
-        const gridBottom = document.querySelector('.grid-bottom-right');
+    //window.addEventListener('scroll', () => {
+        //const scrolled = window.pageYOffset;
+        //const gridTop = document.querySelector('.grid-top-left');
+        //const gridBottom = document.querySelector('.grid-bottom-right');
         
-        if (gridTop) {
-            gridTop.style.transform = `translateY(${scrolled * 0.1}px)`;
-        }
-        if (gridBottom) {
-            gridBottom.style.transform = `translateY(${scrolled * -0.1}px)`;
-        }
-    });
+        //if (gridTop) {
+           // gridTop.style.transform = `translateY(${scrolled * 0.1}px)`;
+        //}
+        //if (gridBottom) {
+           // gridBottom.style.transform = `translateY(${scrolled * -0.1}px)`;
+       // }
+    //});
 
     // Contact form handling
     document.querySelector('.contact-form').addEventListener('submit', function(e) {

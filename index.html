@@ -1,336 +1,343 @@
 <!DOCTYPE html>
-
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DataVision - Data Analytics Expert</title>
+<html>
+  <head>
+    <title>Hello, World!</title>
     <link rel="stylesheet" href="/estilos/styles.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RSmXnL6o2B6P9VjC8R3c8k4lWz2y1z2a6m4h4V4f1f2W6V3V2f1V3p3g2r3Q3F3e4e1e1e4k4t2a2d4h4v3j2k2" crossorigin="anonymous" referrerpolicy="no-referrer" />
   </head>
-<body>
-    <!-- NAVBAR -->
-  <header class="navbar">
-  <div class="container nav-inner">
-    <div class="brand">
-      <div class="logo-icon">
-        <img src="/imagens-globais/logomarca.png" alt="BigData Logo" />
-      </div>
-    </div>
-    <div class="mobile-menu-btn">
-        <span></span>
-        <span></span>
-        <span></span>
-    </div>
+  <body>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="logo">DataVision</div>
+        <nav class="nav">
+            <a href="#hero">Home</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#about">Sobre Mim</a>
+            <a href="#contact">Ferramentas</a>
+            <a href="#contact" class="contact-btn">Contratar</a>
+        </nav>
+        <button class="mobile-menu-btn" onclick="toggleMobileMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </header>
+
     <!-- Mobile Navigation -->
-<nav class="mobile-nav">
-    <a href="#hero">Home</a>
-    <a href="#portfolio">Portfolio</a>
-    <a href="#about">Sobre Mim</a>
-    <a href="#tools">Ferramentas</a>
-    <a href="#contact">Contratar</a>
-    <!-- Desktop navegation -->
-</nav>
-    <nav class="nav-menu">
-      <a href="#curriculum" class="nav-item active">Curriculum V.</a>
-      <a href="#portfolio" class="nav-item">Portfólio</a>
-      <a href="#servicos" class="nav-item">Serviços</a>
-      <a href="#contacto" class="nav-item">Contacto</a>
+    <nav class="mobile-nav">
+        <a href="#hero" onclick="closeMobileMenu()">Home</a>
+        <a href="#portfolio" onclick="closeMobileMenu()">Portfolio</a>
+        <a href="#about" onclick="closeMobileMenu()">Sobre Mim</a>
+        <a href="#contact" onclick="closeMobileMenu()">Ferramentas</a>
+        <a href="#contact" onclick="closeMobileMenu()">Contratar</a>
     </nav>
-    <a class="btn btn-primary" href="#contact">Contratar</a>
-  </div>
-</header>
 
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <!-- Grid Decorations -->
+    <div class="grid-decoration grid-top-left"></div>
+    <div class="grid-decoration grid-bottom-right"></div>
+        <div class="floating-icons">
+            <div class="floating-icon">📊</div>
+            <div class="floating-icon">📈</div>
+            <div class="floating-icon">🎯</div>
+        </div>
+        <div class="hero-content">
+            <h1>Transforme dados em <em>insights estratégicos</em></h1>
+            <p>Especialista em análise de dados com foco em Business Intelligence, visualização de dados e analytics. Ajudo empresas a tomar decisões baseadas em dados com relatórios precisos e dashboards interativos.</p>
+            <a href="#portfolio" class="hero-btn">Ver Portfolio</a>
+        </div>
+    </section>
 
-<!-- Hero Section -->
-<section id="hero" class="hero">
-    <div class="floating-icons">
-        <div class="floating-icon"><img src="/imagens-globais/icones/database.png" alt=""></div>
-        <div class="floating-icon"><img src="/imagens-globais/icones/graph-bar.png" alt=""></div>
-        <div class="floating-icon"><img src="/imagens-globais/icones/grow-up.png" alt=""></div>
-    </div>
-    <div class="hero-content">
-        <h1>Transforme dados em <em>insights estratégicos</em></h1>
-        <p>Especialista em análise de dados com foco em Business Intelligence, visualização de dados e analytics. Ajudo empresas a tomar decisões baseadas em dados com relatórios precisos e dashboards interativos.</p>
-        <a href="#portfolio" class="hero-btn">Ver Portfolio</a>
-    </div>
-</section>
-<!-- Trust Section -->
-<section class="trust-section">
-    <!-- SKILLS SECTION -->
-  <div class="skills-container fade-section">
-    <div class="skills-scroll" aria-label="Habilidades requeridas">
-      <div class="skills-track">
-        <span class="pill"><i class="fa-solid fa-database"></i> SQL <small>(PostgreSQL/MySQL)</small></span>
-        <span class="pill"><i class="fa-solid fa-chart-pie"></i> Power BI <small>(DAX/Modelagem)</small></span>
-        <span class="pill"><i class="fa-brands fa-python"></i> Python <small>(Pandas/NumPy)</small></span>
-        <span class="pill"><i class="fa-solid fa-gears"></i> ETL <small>(Airflow/DBT)</small></span>
-        <span class="pill"><i class="fa-solid fa-table"></i> Excel <small>(PowerQuery)</small></span>
-        <span class="pill"><i class="fa-solid fa-chart-column"></i> Visualização <small>(Storytelling)</small></span>
-        <!-- Duplicar para scroll infinito -->
-        <span class="pill"><i class="fa-solid fa-database"></i> SQL <small>(PostgreSQL/MySQL)</small></span>
-        <span class="pill"><i class="fa-solid fa-database"></i> SQL <small>(PostgreSQL/MySQL)</small></span>
-        <span class="pill"><i class="fa-solid fa-chart-pie"></i> Power BI <small>(DAX/Modelagem)</small></span>
-        <span class="pill"><i class="fa-brands fa-python"></i> Python <small>(Pandas/NumPy)</small></span>
-        <span class="pill"><i class="fa-solid fa-gears"></i> ETL <small>(Airflow/DBT)</small></span>
-        <span class="pill"><i class="fa-solid fa-table"></i> Excel <small>(PowerQuery)</small></span>
-        <span class="pill"><i class="fa-solid fa-chart-column"></i> Visualização <small>(Storytelling)</small></span>
-        <!-- Triplica para scroll infinito -->
-        <span class="pill"><i class="fa-solid fa-database"></i> SQL <small>(PostgreSQL/MySQL)</small></span>
-        <span class="pill"><i class="fa-solid fa-chart-pie"></i> Power BI <small>(DAX/Modelagem)</small></span>
-        <span class="pill"><i class="fa-brands fa-python"></i> Python <small>(Pandas/NumPy)</small></span>
-        <span class="pill"><i class="fa-solid fa-gears"></i> ETL <small>(Airflow/DBT)</small></span>
-        <span class="pill"><i class="fa-solid fa-table"></i> Excel <small>(PowerQuery)</small></span>
-        <span class="pill"><i class="fa-solid fa-chart-column"></i> Visualização <small>(Storytelling)</small></span>
+    <!-- Trust Section -->
+    <section class="trust-section">
+        <div class="trust-text">Experiência comprovada com empresas de diversos setores</div>
+        <div class="trust-logos">
+            <div class="trust-logo">Fintech</div>
+            <div class="trust-logo">E-commerce</div>
+            <div class="trust-logo">Saúde</div>
+            <div class="trust-logo">Educação</div>
+            <div class="trust-logo">Varejo</div>
+            <div class="trust-logo">Logística</div>
+        </div>
+    </section>
 
-      </div>
-    </div>
-  </div>
-</section>
+    <!-- Services Section -->
+    <section class="services-section">
+        <div class="services-content">
+            <div class="services-badge">Serviços</div>
+            <h2>Cada projeto de dados é único e requer uma abordagem personalizada. Ofereço soluções completas em análise de dados que geram resultados reais para o seu negócio.</h2>
+        </div>
+    </section>
 
-<!-- Services Section -->
-<section class="services-section">
-    <div class="services-content">
-        <div class="services-badge">Serviços</div>
-        <h2>Cada projeto de dados é único e requer uma abordagem personalizada. Ofereço soluções completas em análise de dados que geram resultados reais para o seu negócio.</h2>
-    </div>
-</section>
-
-<!-- Portfolio Section -->
-<section id="portfolio" class="portfolio-section">
-    <div class="portfolio-header">
-        <h2>Meu <em>portfólio</em> de projetos<br>em análise de dados</h2>
-        <p>Projetos desenvolvidos utilizando as melhores práticas em ciência de dados, machine learning e business intelligence para diferentes indústrias.</p>
-        <a href="#contact" class="hero-btn">Solicitar Orçamento</a>
-    </div>
-    
-    <div class="portfolio-grid">
-        <div class="portfolio-card">
-            <div class="portfolio-icon">📊</div>
-            <h3>Dashboard de Vendas E-commerce</h3>
-            <p>Desenvolvimento de dashboard interativo para análise de performance de vendas, métricas de conversão e comportamento do cliente. Resultou em aumento de 35% na eficiência das decisões comerciais.</p>
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio-section">
+        <div class="portfolio-header">
+            <h2>Meu <em>portfólio</em> de projetos<br>em análise de dados</h2>
+            <p>Projetos desenvolvidos utilizando as melhores práticas em ciência de dados, machine learning e business intelligence para diferentes indústrias.</p>
+            <a href="#contact" class="hero-btn">Solicitar Orçamento</a>
         </div>
         
-        <div class="portfolio-card">
-            <div class="portfolio-icon">🎯</div>
-            <h3>Modelo Preditivo de Churn</h3>
-            <p>Criação de modelo de machine learning para predição de cancelamento de clientes, utilizando algoritmos de classificação. Permitiu redução de 28% na taxa de churn da empresa.</p>
-        </div>
-        
-        <div class="portfolio-card">
-            <div class="portfolio-icon">📈</div>
-            <h3>Análise de ROI Marketing</h3>
-            <p>Sistema completo de análise de retorno sobre investimento em campanhas digitais, incluindo attribution modeling e análise de lifetime value. Otimizou budget em 40%.</p>
-        </div>
-        
-        <div class="portfolio-card">
-            <div class="portfolio-icon">🔍</div>
-            <h3>Data Mining para Fraudes</h3>
-            <p>Implementação de algoritmos de detecção de anomalias para identificar transações fraudulentas em tempo real. Sistema processou mais de 1M de transações/dia com 99.2% de precisão.</p>
-        </div>
-        
-        <div class="portfolio-card">
-            <div class="portfolio-icon">📋</div>
-            <h3>ETL e Data Warehouse</h3>
-            <p>Arquitetura completa de data warehouse com processos ETL automatizados, integrando múltiplas fontes de dados. Reduziu tempo de geração de relatórios em 80%.</p>
-        </div>
-        
-        <div class="portfolio-card">
-            <div class="portfolio-icon">🏥</div>
-            <h3>Analytics para Saúde</h3>
-            <p>Dashboard de monitoramento de KPIs hospitalares, análise de ocupação de leitos e previsão de demanda. Melhorou eficiência operacional em 25% e satisfação do paciente.</p>
-        </div>
-    </div>
-</section>
-
-<!-- About Me Section -->
-<section id="about" class="about-section">
-    <div class="about-container">
-        <div class="about-content">
-            <h2>Sobre Mim</h2>
-            <p class="about-description">Sou um analista de dados apaixonado por transformar números em histórias que impulsionam negócios. Com mais de 6 anos de experiência, especializo-me em Business Intelligence, Machine Learning e Data Science, sempre focado em entregar insights acionáveis.</p>
-            
-            <div class="skills-list">
-                <div class="skill-item">Python & R para Data Science</div>
-                <div class="skill-item">SQL & NoSQL Databases</div>
-                <div class="skill-item">Power BI & Tableau</div>
-                <div class="skill-item">Machine Learning & AI</div>
-                <div class="skill-item">AWS & Google Cloud</div>
-                <div class="skill-item">Apache Spark & Hadoop</div>
-            </div>
-            
-            <p style="color: rgba(255, 255, 255, 0.6);">Certificado em Google Data Analytics, AWS Machine Learning e Microsoft Power BI. Mestrado em Estatística Aplicada pela USP.</p>
-        </div>
-        
-        <div class="experience-section">
-            <h3 style="color: #9AFF8A; margin-bottom: 25px; font-size: 1.3rem;">Experiência Profissional</h3>
-            
-            <div class="experience-item">
-                <div class="experience-title">Senior Data Analyst</div>
-                <div class="experience-company">Tech Solutions Inc.</div>
-                <div class="experience-period">Jan 2022 - Presente</div>
-                <div class="experience-description">Liderança de projetos de analytics para clientes Fortune 500. Desenvolvimento de modelos preditivos e dashboards estratégicos. Gestão de equipe de 4 analistas júniores.</div>
-            </div>
-            
-            <div class="experience-item">
-                <div class="experience-title">Data Scientist</div>
-                <div class="experience-company">E-commerce Dynamics</div>
-                <div class="experience-period">Mar 2020 - Dez 2021</div>
-                <div class="experience-description">Implementação de algoritmos de recomendação e análise de comportamento do usuário. Desenvolvimento de sistema de precificação dinâmica utilizando ML.</div>
-            </div>
-            
-            <div class="experience-item">
-                <div class="experience-title">Business Intelligence Analyst</div>
-                <div class="experience-company">Financial Corp</div>
-                <div class="experience-period">Jun 2018 - Fev 2020</div>
-                <div class="experience-description">Criação de relatórios executivos e KPIs financeiros. Automação de processos de ETL e manutenção de data warehouse corporativo.</div>
-            </div>
-            
-            <div class="experience-item">
-                <div class="experience-title">Data Analyst Jr.</div>
-                <div class="experience-company">Startup Analytics</div>
-                <div class="experience-period">Jan 2018 - Mai 2018</div>
-                <div class="experience-description">Análise exploratória de dados e criação de visualizações. Suporte na implementação de ferramentas de analytics e monitoramento de métricas.</div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- Visualization Demo -->
-<section class="about-section" style="background: linear-gradient(135deg, #1a4d3a 0%, #0d2818 100%);">
-    <div class="about-container">
-        <div class="about-content">
-            <div class="services-badge">Demonstração</div>
-            <h2>Exemplos de visualizações que desenvolvo</h2>
-            <p class="about-description">Dashboards interativos, relatórios executivos e análises preditivas personalizadas para cada necessidade do negócio. Utilizo as melhores práticas de UX/UI para tornar os dados acessíveis a todos os stakeholders.</p>
-            
-            <div class="skills-list">
-                <div class="skill-item">Dashboards Executivos em Tempo Real</div>
-                <div class="skill-item">Relatórios Automatizados</div>
-                <div class="skill-item">Análises Preditivas</div>
-                <div class="skill-item">Visualizações Interativas</div>
-                <div class="skill-item">KPIs e Métricas Customizadas</div>
-            </div>
-        </div>
-        
-        <div class="dashboard-visualization">
-            <div class="viz-header">Dashboard Analytics - Exemplo Interativo</div>
-            
-            <div class="chart-container">
-                <div class="chart-item">
-                    <div class="chart-title">Vendas por Região</div>
-                    <div class="chart-visual">
-                        <div class="chart-bars">
-                            <div class="chart-bar"></div>
-                            <div class="chart-bar"></div>
-                            <div class="chart-bar"></div>
-                            <div class="chart-bar"></div>
-                            <div class="chart-bar"></div>
+        <div class="portfolio-grid">
+            <div class="portfolio-card">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <div class="portfolio-icon">📊</div>
+                        <h3>Dashboard de Vendas E-commerce</h3>
+                        <p>Desenvolvimento de dashboard interativo para análise de performance de vendas, métricas de conversão e comportamento do cliente.</p>
+                    </div>
+                    <div class="card-back">
+                        <h3>Tecnologias Utilizadas</h3>
+                        <div class="tech-stack">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Power BI</span>
+                            <span class="tech-tag">SQL Server</span>
+                            <span class="tech-tag">Azure</span>
                         </div>
-                    </div>
-                </div>
-                <div class="chart-item">
-                    <div class="chart-title">Tendência de Crescimento</div>
-                    <div class="chart-visual">
-                        <div class="chart-line"></div>
+                        <div class="project-stats">
+                            <strong>Resultados:</strong><br>
+                            • 35% aumento na eficiência<br>
+                            • 50+ KPIs monitorados<br>
+                            • Tempo real de dados
+                        </div>
+                        <a href="#" class="project-link">Ver Detalhes</a>
                     </div>
                 </div>
             </div>
             
-            <div class="metrics-grid">
-                <div class="metric-card">
-                    <div class="metric-number">150K</div>
-                    <div class="metric-label">Usuários Ativos</div>
+            <div class="portfolio-card">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <div class="portfolio-icon">🎯</div>
+                        <h3>Modelo Preditivo de Churn</h3>
+                        <p>Criação de modelo de machine learning para predição de cancelamento de clientes, utilizando algoritmos de classificação.</p>
+                    </div>
+                    <div class="card-back">
+                        <h3>Tecnologias Utilizadas</h3>
+                        <div class="tech-stack">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Scikit-learn</span>
+                            <span class="tech-tag">Pandas</span>
+                            <span class="tech-tag">AWS</span>
+                        </div>
+                        <div class="project-stats">
+                            <strong>Resultados:</strong><br>
+                            • 28% redução no churn<br>
+                            • 94% precisão do modelo<br>
+                            • 10K+ clientes analisados
+                        </div>
+                        <a href="#" class="project-link">Ver Detalhes</a>
+                    </div>
                 </div>
-                <div class="metric-card">
-                    <div class="metric-number">R$ 2.5M</div>
-                    <div class="metric-label">Receita Mensal</div>
-                </div>
-                <div class="metric-card">
-                    <div class="metric-number">94.2%</div>
-                    <div class="metric-label">Accuracy Modelo</div>
-                </div>
-                <div class="metric-card">
-                    <div class="metric-number">1.2M</div>
-                    <div class="metric-label">Registros/Dia</div>
-                </div>
-                <div class="metric-card">
-                    <div class="metric-number">35%</div>
-                    <div class="metric-label">ROI Increase</div>
-                </div>
-                <div class="metric-card">
-                    <div class="metric-number">24/7</div>
-                    <div class="metric-label">Monitoramento</div>
+            </div>
+            
+            <div class="portfolio-card">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <div class="portfolio-icon">📈</div>
+                        <h3>Análise de ROI Marketing</h3>
+                        <p>Sistema completo de análise de retorno sobre investimento em campanhas digitais, incluindo attribution modeling.</p>
+                    </div>
+                    <div class="card-back">
+                        <h3>Tecnologias Utilizadas</h3>
+                        <div class="tech-stack">
+                            <span class="tech-tag">R</span>
+                            <span class="tech-tag">Tableau</span>
+                            <span class="tech-tag">Google Analytics</span>
+                            <span class="tech-tag">BigQuery</span>
+                        </div>
+                        <div class="project-stats">
+                            <strong>Resultados:</strong><br>
+                            • 40% otimização de budget<br>
+                            • 15+ canais integrados<br>
+                            • Análise em tempo real
+                        </div>
+                        <a href="#" class="project-link">Ver Detalhes</a>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
-<!-- Tools Section -->
-<section id="tools" class="tools-section">
-    <div class="tools-header">
-        <h2>Ferramentas e <em>tecnologias</em><br>que domino</h2>
-        <p>Stack completo de tecnologias modernas para análise de dados, desde coleta e processamento até visualização e deploy de modelos em produção.</p>
-        <a href="#contact" class="tools-btn">Iniciar Projeto</a>
-    </div>
-    
-    <div class="tools-icons">
-        <div class="tool-icon">🐍</div>
-        <div class="tool-icon">📊</div>
-        <div class="tool-icon">☁️</div>
-        <div class="tool-icon">🗄️</div>
-        <div class="tool-icon">🧠</div>
-        <div class="tool-icon">⚡</div>
-    </div>
-</section>
-
-<!-- Contact Section -->
-<section id="contact" class="contact-section">
-    <div class="contact-content">
-        <h2>Vamos trabalhar juntos?</h2>
-        <p style="color: rgba(255, 255, 255, 0.7); margin-bottom: 20px;">Entre em contato para discutir seu projeto de dados</p>
-        <form class="contact-form">
-            <input type="email" class="contact-input" placeholder="Seu email profissional">
-            <button type="submit" class="contact-submit">Contratar</button>
-        </form>
-        
-        <div style="margin-top: 40px; color: rgba(255, 255, 255, 0.6);">
-            <p>📧 dataanalyst@email.com | 📱 (11) 99999-9999</p>
-            <p>🔗 LinkedIn: /in/data-analyst | 💻 GitHub: /data-expert</p>
+    <!-- Languages Infinite Scroll -->
+    <section class="languages-scroll-section">
+        <div class="languages-scroll-container">
+            <div class="language-item">
+                <div class="language-icon">🐍</div>
+                <span>Python</span>
+            </div>
+            <div class="language-item">
+                <div class="language-icon">📊</div>
+                <span>R</span>
+            </div>
+            <div class="language-item">
+                <div class="language-icon">🗄️</div>
+                <span>SQL</span>
+            </div>
+            <div class="language-item">
+                <div class="language-icon">☁️</div>
+                <span>AWS</span>
+            </div>
+            <div class="language-item">
+                <div class="language-icon">📈</div>
+                <span>Tableau</span>
+            </div>
+            <div class="language-item">
+                <div class="language-icon">🔧</div>
+                <span>Power BI</span>
+            </div>
+            <div class="language-item">
+                <div class="language-icon">🧠</div>
+                <span>TensorFlow</span>
+            </div>
+            <div class="language-item">
+                <div class="language-icon">⚡</div>
+                <span>Apache Spark</span>
+            </div>
+            <div class="language-item">
+                <div class="language-icon">🐙</div>
+                <span>Git</span>
+            </div>
+            <div class="language-item">
+                <div class="language-icon">🐳</div>
+                <span>Docker</span>
+            </div>
+            <!-- Duplicate for seamless loop -->
+            <div class="language-item">
+                <div class="language-icon">🐍</div>
+                <span>Python</span>
+            </div>
+            <div class="language-item">
+                <div class="language-icon">📊</div>
+                <span>R</span>
+            </div>
+            <div class="language-item">
+                <div class="language-icon">🗄️</div>
+                <span>SQL</span>
+            </div>
+            <div class="language-item">
+                <div class="language-icon">☁️</div>
+                <span>AWS</span>
+            </div>
+            <div class="language-item">
+                <div class="language-icon">📈</div>
+                <span>Tableau</span>
+            </div>
+            <div class="language-item">
+                <div class="language-icon">🔧</div>
+                <span>Power BI</span>
+            </div>
         </div>
-    </div>
-</section>
-<div class="card">
-  <h2>Scroll Now<br>Thank Yourself Later</h2>
-  <button><a href="#footer">Scroll</a></button>
-</div>
-<!-- Footer -->
-<footer id="footer">
-  <div class="col col1">
-    <h3>Conect-se comigo</h3>
-    <p>Minhas redes</p>
-    <div class="social">
-      <a href="https://codepen.io/Juxtopposed" target="_blank" class="link"><img src="https://assets.codepen.io/9051928/codepen_1.png" alt="" /></a>
-      <a href="https://twitter.com/juxtopposed" target="_blank" class="link"><img src="https://assets.codepen.io/9051928/x.png" alt="" /></a>
-      <a href="https://youtube.com/@juxtopposed" target="_blank" class="link"><img src="https://assets.codepen.io/9051928/youtube_1.png" alt="" /></a>
-    </div>
-    <p style="color: #818181; font-size: smaller">2024 © All Rights Reserved</p>
-  </div>
-  <div class="col col2">
-    <p>About</p>
-    <p>Our mission</p>
-    <p>Privacy Policy</p>
-    <p>Terms of service</p>
-  </div>
-  <div class="col col3">
-    <p>Services</p>
-    <p>Products</p>
-    <p>Join our team</p>
-    <p>Partner with us</p>
-  </div>
-  <div class="backdrop"></div>
-</footer>
-      <script src="/script/script-index.js"></script>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about" class="about-section">
+        <div class="about-container">
+            <div class="about-content">
+                <h2>Sobre Mim</h2>
+                <p class="about-description">Sou um analista de dados apaixonado por transformar números em histórias que impulsionam negócios. Com mais de 6 anos de experiência, especializo-me em Business Intelligence, Machine Learning e Data Science, sempre focado em entregar insights acionáveis.</p>
+                
+                <div class="skills-list">
+                    <div class="skill-item">Python & R para Data Science</div>
+                    <div class="skill-item">SQL & NoSQL Databases</div>
+                    <div class="skill-item">Power BI & Tableau</div>
+                    <div class="skill-item">Machine Learning & AI</div>
+                    <div class="skill-item">AWS & Google Cloud</div>
+                    <div class="skill-item">Apache Spark & Hadoop</div>
+                </div>
+                
+                <p style="color: rgba(255, 255, 255, 0.6);">Certificado em Google Data Analytics, AWS Machine Learning e Microsoft Power BI. Mestrado em Estatística Aplicada pela USP.</p>
+            </div>
+            
+            <div class="experience-section">
+                <h3 style="color: #9AFF8A; margin-bottom: 25px; font-size: 1.3rem;">Experiência Profissional</h3>
+                
+                <div class="experience-item">
+                    <div class="experience-title">Senior Data Analyst</div>
+                    <div class="experience-company">Tech Solutions Inc.</div>
+                    <div class="experience-period">Jan 2022 - Presente</div>
+                    <div class="experience-description">Liderança de projetos de analytics para clientes Fortune 500. Desenvolvimento de modelos preditivos e dashboards estratégicos. Gestão de equipe de 4 analistas júniores.</div>
+                </div>
+                
+                <div class="experience-item">
+                    <div class="experience-title">Data Scientist</div>
+                    <div class="experience-company">E-commerce Dynamics</div>
+                    <div class="experience-period">Mar 2020 - Dez 2021</div>
+                    <div class="experience-description">Implementação de algoritmos de recomendação e análise de comportamento do usuário. Desenvolvimento de sistema de precificação dinâmica utilizando ML.</div>
+                </div>
+                
+                <div class="experience-item">
+                    <div class="experience-title">Business Intelligence Analyst</div>
+                    <div class="experience-company">Financial Corp</div>
+                    <div class="experience-period">Jun 2018 - Fev 2020</div>
+                    <div class="experience-description">Criação de relatórios executivos e KPIs financeiros. Automação de processos de ETL e manutenção de data warehouse corporativo.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="contact-content">
+            <h2>Vamos trabalhar juntos?</h2>
+            <p style="color: rgba(255, 255, 255, 0.7); margin-bottom: 20px;">Entre em contato para discutir seu projeto de dados</p>
+            <form class="contact-form" onsubmit="submitForm(event)">
+                <input type="email" class="contact-input" placeholder="Seu email profissional" required>
+                <button type="submit" class="contact-submit">Contratar</button>
+            </form>
+            
+            <div style="margin-top: 40px; color: rgba(255, 255, 255, 0.6);">
+                <p>📧 dataanalyst@email.com | 📱 (11) 99999-9999</p>
+                <p>🔗 LinkedIn: /in/data-analyst | 💻 GitHub: /data-expert</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-about">
+                <h3>DataVision Analytics</h3>
+                <p>Especialista em transformar dados em insights estratégicos que impulsionam o crescimento dos negócios. Com foco em precisão, inovação e resultados mensuráveis.</p>
+                <p>📧 dataanalyst@email.com<br>📱 (11) 99999-9999<br>📍 São Paulo, SP</p>
+            </div>
+            
+            <div class="footer-links">
+                <h4>Links Úteis</h4>
+                <ul>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#about">Sobre Mim</a></li>
+                    <li><a href="#contact">Contato</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Recursos</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-social">
+                <h4>Redes Sociais</h4>
+                <div class="social-icons">
+                    <a href="https://linkedin.com/in/data-analyst" class="social-icon" target="_blank">💼</a>
+                    <a href="https://github.com/data-expert" class="social-icon" target="_blank">🐙</a>
+                    <a href="https://twitter.com/dataanalyst" class="social-icon" target="_blank">🐦</a>
+                    <a href="https://medium.com/@dataanalyst" class="social-icon" target="_blank">📝</a>
+                    <a href="https://kaggle.com/dataexpert" class="social-icon" target="_blank">🏆</a>
+                    <a href="mailto:dataanalyst@email.com" class="social-icon">📧</a>
+                    <a href="https://wa.me/5511999999999" class="social-icon" target="_blank">💬</a>
+                    <a href="https://instagram.com/datavisuals" class="social-icon" target="_blank">📸</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <div class="logo">DataVision</div>
+            <div class="footer-bottom-links">
+                <a href="#">Política de Privacidade</a>
+                <a href="#">Termos de Serviço</a>
+                <a href="#">Cookies</a>
+                <span>© 2024 DataVision Analytics. Todos os direitos reservados.</span>
+            </div>
+        </div>
+    </footer>
+    <script src="/script/script-index.js"></script>
   </body>
 </html>
