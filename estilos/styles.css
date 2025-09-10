@@ -50,13 +50,13 @@
             transform: translateX(-50%);
             z-index: 1000;
             padding: 15px 30px;
-            background: rgba(142, 87, 87, 0.425);
+            background: rgba(10, 10, 10, 0.411);
             backdrop-filter: blur(20px);
             display: flex;
             justify-content: space-between;
             align-items: center;
             border-radius: 50px;
-            border: 3px solid rgba(255, 255, 255, 0.3);
+            border: 2.8px solid rgba(255, 255, 255, 0.3);
             width: calc(100% - 80px);
             max-width: 1200px;
             transition: all 0.3s ease;
@@ -515,7 +515,7 @@
 
         .languages-scroll-container {
             display: flex;
-            animation: scroll-infinite 30s linear infinite;
+            animation: scroll-infinite 35s linear infinite;
             gap: 60px;
         }
 
