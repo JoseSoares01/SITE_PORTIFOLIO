@@ -23,23 +23,25 @@
         .grid-top-left {
             top: 0;
             left: 0;
-            width: 800px;
-            height: 800px;
+            width: 600px;
+            height: 600px;
             background-image: 
                 linear-gradient(rgba(154, 255, 138, 0.4) 2px, transparent 1px),
                 linear-gradient(90deg, rgba(154, 255, 138, 0.4) 1px, transparent 1px);
             background-size: 150px 150px;
+            z-index: 0;
         }
 
         .grid-bottom-right {
             bottom: 0;
             right: 0;
-            width: 800px;
-            height: 800px;
+            width: 650px;
+            height: 500px;
             background-image: 
-                linear-gradient(rgba(154, 255, 138, 0.4) 2px, transparent 1px),
-                linear-gradient(90deg, rgba(154, 255, 138, 0.4) 1px, transparent 1px);
-            background-size: 150px 150px;
+                linear-gradient(rgba(154, 255, 138, 0.4) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(154, 255, 138, 0.4) 2px, transparent 2px);
+            background-size: 200px 200px;
+            z-index: 0;
         }
 
         /* Header - FLOATING NAVBAR */
