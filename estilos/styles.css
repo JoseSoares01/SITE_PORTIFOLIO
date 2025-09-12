@@ -325,7 +325,7 @@
         /* Services Section */
         .services-section {
             background: #0a0a0a;
-            padding: 100px 40px;
+            padding: 100px 50px;
             text-align: center;
         }
 
@@ -339,7 +339,7 @@
             color: #9AFF8A;
             padding: 8px 20px;
             border-radius: 50px;
-            font-size: 12px;
+            font-size: 25px;
             font-weight: 500;
             display: inline-block;
             margin-bottom: 30px;
@@ -436,9 +436,9 @@
         }
 
         .portfolio-icon {
-            width: 60px;
-            height: 60px;
-            background: #9AFF8A;
+            width: 80px;
+            height: 80px;
+            background: #27e709;
             border-radius: 50%;
             margin: 0 auto 20px;
             display: flex;
@@ -461,7 +461,7 @@
         }
 
         .card-back h3 {
-            color: #9AFF8A;
+            color: #f4f7f3;
             font-size: 1.2rem;
             margin-bottom: 20px;
         }
@@ -532,11 +532,11 @@
         }
 
         .language-icon {
-            width: 40px;
-            height: 40px;
+            width: 60px;
+            height: 60px;
             background: rgba(154, 255, 138, 0.1);
             border: 1px solid rgba(154, 255, 138, 0.3);
-            border-radius: 8px;
+            border-radius: 16px;
             display: flex;
             align-items: center;
             justify-content: center;
