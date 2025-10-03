@@ -916,3 +916,521 @@
                 height: 250px;
             }
         }
+
+        /* Seu CSS Existente... */
+
+/* ... */
+
+/* Estilos de Card Back */
+.card-back h3 {
+    color: #9AFF8A;
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+}
+
+.tech-stack {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.tech-tag {
+    background: #0a0a0a;
+    color: #9AFF8A;
+    padding: 5px 12px;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.project-stats {
+    text-align: left;
+    margin-top: 15px;
+    padding: 15px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+.project-stats strong {
+    color: #9AFF8A;
+}
+
+.project-link {
+    display: inline-block;
+    color: #0a0a0a;
+    background: #9AFF8A;
+    padding: 8px 18px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 600;
+    margin-top: 15px;
+    transition: background 0.3s;
+}
+
+.project-link:hover {
+    background: #7ee06a;
+}
+
+/* Languages Scroll Section - FIXED */
+@keyframes scroll-left {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+.languages-scroll-section {
+    padding: 40px 0;
+    background: #0a0a0a;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.languages-scroll-container {
+    display: flex;
+    width: 200%; /* Para duplicar e simular o loop infinito */
+    animation: scroll-left 40s linear infinite;
+}
+
+.language-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 0 40px;
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 1.2rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    white-space: nowrap;
+}
+
+.language-icon {
+    font-size: 2rem;
+    line-height: 1;
+}
+
+/* About Section */
+.about-section {
+    background: #141414;
+    padding: 100px 40px;
+    position: relative;
+}
+
+.about-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    gap: 60px;
+}
+
+.about-content h2 {
+    font-size: 2.5rem;
+    color: #9AFF8A;
+    margin-bottom: 30px;
+}
+
+.about-description {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: rgba(255, 255, 255, 0.8);
+    margin-bottom: 40px;
+}
+
+.skills-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.skill-item {
+    background: rgba(154, 255, 138, 0.1);
+    color: #9AFF8A;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 0.95rem;
+    font-weight: 500;
+    text-align: center;
+}
+
+.experience-item {
+    padding: 20px 0;
+    border-left: 3px solid rgba(154, 255, 138, 0.3);
+    padding-left: 20px;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.experience-item:last-child {
+    margin-bottom: 0;
+}
+
+.experience-item::before {
+    content: '';
+    position: absolute;
+    top: 20px;
+    left: -8px;
+    width: 15px;
+    height: 15px;
+    background: #9AFF8A;
+    border-radius: 50%;
+    border: 3px solid #141414;
+}
+
+.experience-title {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: white;
+}
+
+.experience-company {
+    font-size: 1rem;
+    color: #9AFF8A;
+    margin: 5px 0;
+}
+
+.experience-period {
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.6);
+    margin-bottom: 10px;
+}
+
+.experience-description {
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.7);
+    line-height: 1.5;
+}
+
+/* Contact Section */
+.contact-section {
+    padding: 100px 40px;
+    text-align: center;
+    background: linear-gradient(135deg, #0d2818 0%, #0a0a0a 100%);
+}
+
+.contact-content {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact-content h2 {
+    font-size: 3rem;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.contact-form {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 30px;
+}
+
+.contact-input {
+    padding: 15px 25px;
+    border-radius: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    background: rgba(255, 255, 255, 0.05);
+    color: white;
+    font-size: 1rem;
+    width: 60%;
+    transition: border-color 0.3s;
+}
+
+.contact-input::placeholder {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.contact-input:focus {
+    outline: none;
+    border-color: #9AFF8A;
+}
+
+.contact-submit {
+    background: #9AFF8A;
+    color: #0a0a0a;
+    padding: 15px 35px;
+    border-radius: 50px;
+    border: none;
+    font-weight: 600;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: 40%;
+}
+
+.contact-submit:hover {
+    background: #7ee06a;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(154, 255, 138, 0.4);
+}
+
+/* Footer */
+.footer {
+    background: #000;
+    padding: 60px 40px 20px;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 40px;
+    padding-bottom: 40px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer-about h3 {
+    color: #9AFF8A;
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+}
+
+.footer-about p {
+    color: rgba(255, 255, 255, 0.6);
+    line-height: 1.6;
+    margin-bottom: 10px;
+    font-size: 0.95rem;
+}
+
+.footer-links h4, .footer-social h4 {
+    color: white;
+    margin-bottom: 15px;
+    font-size: 1.2rem;
+}
+
+.footer-links ul {
+    list-style: none;
+}
+
+.footer-links ul li a {
+    color: rgba(255, 255, 255, 0.6);
+    text-decoration: none;
+    line-height: 2.2;
+    transition: color 0.3s;
+    font-size: 0.95rem;
+}
+
+.footer-links ul li a:hover {
+    color: #9AFF8A;
+}
+
+.social-icons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.social-icon {
+    width: 40px;
+    height: 40px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: background 0.3s;
+}
+
+.social-icon:hover {
+    background: #9AFF8A;
+}
+
+.footer-bottom {
+    max-width: 1200px;
+    margin: 20px auto 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.85rem;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.footer-bottom .logo {
+    font-size: 1.2rem;
+}
+
+.footer-bottom-links {
+    display: flex;
+    gap: 20px;
+}
+
+.footer-bottom-links a {
+    color: rgba(255, 255, 255, 0.5);
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-bottom-links a:hover {
+    color: #9AFF8A;
+}
+
+
+/* ------------------------------------------- */
+/* -------- INÍCIO DA RESPONSIVIDADE (MEDIA QUERIES) -------- */
+/* ------------------------------------------- */
+
+/* Para telas até 1024px (Tablets e telas menores) */
+@media (max-width: 1024px) {
+    /* Navbar flutuante ocupa mais espaço */
+    .header {
+        width: calc(100% - 40px); /* Mais estreito */
+        padding: 12px 20px;
+    }
+
+    /* Reduz o tamanho da fonte do Hero */
+    .hero h1 {
+        font-size: 3rem;
+    }
+
+    /* O grid de portfolio começa a ficar com 1 coluna */
+    .portfolio-grid {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 30px;
+    }
+
+    /* Ajuste da seção About */
+    .about-container {
+        grid-template-columns: 1fr; /* Mudar para uma coluna */
+    }
+}
+
+
+/* Para telas até 768px (Smartphones grandes e Tablets em modo retrato) */
+@media (max-width: 768px) {
+    /* Header/Navegação para mobile */
+    .nav {
+        display: none; /* Oculta a navegação desktop */
+    }
+
+    .mobile-menu-btn {
+        display: flex; /* Mostra o botão do menu mobile */
+        margin-left: auto; /* Alinha o botão à direita */
+    }
+
+    /* Hero Section */
+    .hero {
+        min-height: 80vh;
+        padding-top: 100px;
+    }
+
+    .hero-content {
+        padding: 0 20px;
+    }
+
+    .hero h1 {
+        font-size: 2.2rem; /* Reduz o tamanho do título */
+        margin-bottom: 20px;
+    }
+
+    .hero p {
+        font-size: 1rem;
+        margin-bottom: 30px;
+    }
+
+    .floating-icon {
+        width: 50px; /* Reduz o tamanho dos ícones flutuantes */
+        height: 50px;
+        font-size: 18px;
+    }
+
+    /* Trust Section */
+    .trust-section {
+        padding: 40px 20px;
+    }
+
+    .trust-logos {
+        gap: 30px; /* Reduz o espaçamento entre logos */
+    }
+
+    /* Services Section */
+    .services-section {
+        padding: 80px 20px;
+    }
+
+    .services-content h2 {
+        font-size: 1.8rem;
+    }
+    
+    /* Portfolio Section */
+    .portfolio-section {
+        padding: 80px 20px;
+    }
+    
+    .portfolio-header h2 {
+        font-size: 2.5rem;
+    }
+    
+    .portfolio-grid {
+        grid-template-columns: 1fr; /* Força 1 coluna em telas menores */
+    }
+
+    /* About Section */
+    .about-section {
+        padding: 80px 20px;
+    }
+
+    .skills-list {
+        grid-template-columns: 1fr; /* Coloca as skills em uma coluna */
+    }
+
+    /* Contact Section */
+    .contact-form {
+        flex-direction: column; /* Input e botão de contato ficam um abaixo do outro */
+        gap: 10px;
+    }
+
+    .contact-input, .contact-submit {
+        width: 100%; /* Ocupam a largura total */
+    }
+
+    .contact-content h2 {
+        font-size: 2.5rem;
+    }
+    
+    /* Footer */
+    .footer-content {
+        grid-template-columns: 1fr; /* Todos os itens do footer ficam em 1 coluna */
+        text-align: center;
+    }
+
+    .footer-links h4, .footer-social h4 {
+        margin-top: 20px;
+    }
+
+    .footer-links ul {
+        padding: 0;
+    }
+
+    .footer-links ul li a {
+        display: block;
+    }
+
+    .social-icons {
+        justify-content: center; /* Centraliza os ícones sociais */
+    }
+    
+    .footer-bottom {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-bottom .logo {
+        margin-bottom: 15px;
+    }
+
+    .footer-bottom-links {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
