@@ -248,6 +248,63 @@
             box-shadow: 0 10px 30px rgba(154, 255, 138, 0.3);
         }
 
+        /* Scroll Down Indicator (abaixo do botão Ver Portfolio) */
+        .scrollDown {
+            width: 45px;
+            height: 70px;
+            border: #fff solid 2px;
+            border-radius: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            margin: 22px auto 0;
+            text-decoration: none;
+        }
+
+        .scrollDown span {
+            background-color: #fff;
+            width: 5px;
+            height: 10px;
+            border-radius: 30px;
+            margin-top: 10px;
+            position: relative;
+            display: block;
+        }
+
+        .scrollDown span::before,
+        .scrollDown span::after {
+            position: absolute;
+            content: '';
+            width: 15px;
+            height: 15px;
+            border-right: 2px solid #fff;
+            border-top: 2px solid #fff;
+            transform: translateY(-10px) rotate(135deg);
+            left: -6px;
+            margin-top: 10px;
+            opacity: 0;
+            animation: scroll-indicator 1.8s infinite linear;
+        }
+
+        .scrollDown span::after {
+            animation-delay: 0.8s;
+        }
+
+        @keyframes scroll-indicator {
+            0% {
+                margin-top: 10px;
+                opacity: 0;
+            }
+            50% {
+                margin-top: 25px;
+                opacity: 1;
+            }
+            100% {
+                margin-top: 40px;
+                opacity: 0;
+            }
+        }
+
         /* Floating Icons */
         .floating-icons {
             position: absolute;
@@ -449,10 +506,18 @@
         }
 
         .card-front h3 {
-            font-size: 1.4rem;
+            font-size: clamp(1.05rem, 1.2vw + 0.8rem, 1.4rem);
             margin-bottom: 15px;
             font-weight: 600;
             color: white;
+            line-height: 1.2;
+            text-align: center;
+            word-break: break-word;
+            overflow: hidden;
+            display: -webkit-box;
+            line-clamp: 2;
+            -webkit-line-clamp: 2; /* limita a 2 linhas e adiciona reticências */
+            -webkit-box-orient: vertical;
         }
 
         .card-front p {
@@ -462,8 +527,16 @@
 
         .card-back h3 {
             color: #f4f7f3;
-            font-size: 1.2rem;
+            font-size: clamp(1rem, 1vw + 0.7rem, 1.2rem);
             margin-bottom: 20px;
+            line-height: 1.2;
+            text-align: center;
+            word-break: break-word;
+            overflow: hidden;
+            display: -webkit-box;
+            line-clamp: 2;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
         }
 
         .tech-stack {
