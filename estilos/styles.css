@@ -1585,10 +1585,8 @@
 .lamp-title {
     font-size: clamp(2.5rem, 8vw, 6rem);
     font-weight: 700;
-    background: linear-gradient(135deg, #9AFF8A 0%, #4ade80 50%, #22c55e 100%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: #ffffff;
+    -webkit-text-fill-color: #ffffff;
     margin-bottom: 2rem;
     line-height: 1.1;
     opacity: 0;
@@ -1856,7 +1854,7 @@
         margin-top: 80px;
         min-height: 80vh;
     }
-
+    
     .bars-background {
         padding: 0 1rem;
         gap: 0.45rem;
