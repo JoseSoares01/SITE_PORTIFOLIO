@@ -1532,12 +1532,13 @@
     position: absolute;
     inset: 0;
     display: flex;
-    justify-content: center;
-    align-items: stretch;
-    gap: 0.12rem;
+    justify-content: stretch;
+    align-items: flex-end;
+    gap: 0;
     padding: 0;
     pointer-events: none;
     z-index: 2;
+    overflow: hidden;
 }
 
 .bars-background::before {
@@ -1562,55 +1563,89 @@
             rgba(3, 10, 7, 0.5) 42%,
             rgba(3, 10, 7, 0) 100%
         );
-    z-index: 3;
+    z-index: 30;
+    pointer-events: none;
 }
 
 .bars-background .bar {
     flex: 1 1 0;
-    max-width: 46px;
-    min-width: 14px;
-    height: 100%;
+    width: auto;
+    min-width: clamp(22px, 2.8vw, 52px);
+    max-width: none;
+    height: var(--h, 80%);
+    margin-left: -14px;
     border-radius: 0;
     background: linear-gradient(
         to bottom,
-        rgba(105, 255, 214, 0.8) 0%,
-        rgba(57, 255, 20, 0.45) 48%,
-        rgba(57, 255, 20, 0.08) 100%
+        rgba(105, 255, 214, 0.88) 0%,
+        rgba(57, 255, 20, 0.55) 45%,
+        rgba(20, 120, 40, 0.35) 100%
     );
     -webkit-mask-image: linear-gradient(
         to bottom,
         rgba(0, 0, 0, 0) 0%,
-        rgba(0, 0, 0, 0.22) 10%,
-        rgba(0, 0, 0, 0.65) 22%,
-        rgba(0, 0, 0, 1) 38%,
+        rgba(0, 0, 0, 0.18) 12%,
+        rgba(0, 0, 0, 0.72) 26%,
+        rgba(0, 0, 0, 1) 42%,
         rgba(0, 0, 0, 1) 100%
     );
     mask-image: linear-gradient(
         to bottom,
         rgba(0, 0, 0, 0) 0%,
-        rgba(0, 0, 0, 0.22) 10%,
-        rgba(0, 0, 0, 0.65) 22%,
-        rgba(0, 0, 0, 1) 38%,
+        rgba(0, 0, 0, 0.18) 12%,
+        rgba(0, 0, 0, 0.72) 26%,
+        rgba(0, 0, 0, 1) 42%,
         rgba(0, 0, 0, 1) 100%
     );
-    filter: drop-shadow(0 0 10px rgba(57, 255, 20, 0.25));
-    opacity: 0.3;
+    box-shadow:
+        10px 0 18px rgba(0, 0, 0, 0.55),
+        4px 0 10px rgba(0, 0, 0, 0.35);
+    opacity: 0.52;
     transform-origin: center bottom;
     animation: barsPulse 5.5s ease-in-out infinite;
     animation-delay: 0s;
+    position: relative;
 }
+
+.bars-background .bar:first-child {
+    margin-left: 0;
+}
+
+.bars-background .bar:nth-child(1) { --h: 97.55%; z-index: 1; }
+.bars-background .bar:nth-child(2) { --h: 92.64%; z-index: 2; }
+.bars-background .bar:nth-child(3) { --h: 87.73%; z-index: 3; }
+.bars-background .bar:nth-child(4) { --h: 82.82%; z-index: 4; }
+.bars-background .bar:nth-child(5) { --h: 77.91%; z-index: 5; }
+.bars-background .bar:nth-child(6) { --h: 73.00%; z-index: 6; }
+.bars-background .bar:nth-child(7) { --h: 68.09%; z-index: 7; }
+.bars-background .bar:nth-child(8) { --h: 63.18%; z-index: 8; }
+.bars-background .bar:nth-child(9) { --h: 58.27%; z-index: 9; }
+.bars-background .bar:nth-child(10) { --h: 53.36%; z-index: 10; }
+.bars-background .bar:nth-child(11) { --h: 48.45%; z-index: 11; }
+.bars-background .bar:nth-child(12) { --h: 48.45%; z-index: 12; }
+.bars-background .bar:nth-child(13) { --h: 53.36%; z-index: 13; }
+.bars-background .bar:nth-child(14) { --h: 58.27%; z-index: 14; }
+.bars-background .bar:nth-child(15) { --h: 63.18%; z-index: 15; }
+.bars-background .bar:nth-child(16) { --h: 68.09%; z-index: 16; }
+.bars-background .bar:nth-child(17) { --h: 73.00%; z-index: 17; }
+.bars-background .bar:nth-child(18) { --h: 77.91%; z-index: 18; }
+.bars-background .bar:nth-child(19) { --h: 82.82%; z-index: 19; }
+.bars-background .bar:nth-child(20) { --h: 87.73%; z-index: 20; }
+.bars-background .bar:nth-child(21) { --h: 92.64%; z-index: 21; }
+.bars-background .bar:nth-child(22) { --h: 97.55%; z-index: 22; }
 
 @keyframes barsPulse {
     0%,
     100% {
-        transform: scaleY(0.78);
-        opacity: 0.22;
+        transform: scaleY(0.9);
+        opacity: 0.42;
     }
     50% {
-        transform: scaleY(1.06);
-        opacity: 0.4;
+        transform: scaleY(1);
+        opacity: 0.58;
     }
 }
+
 
 
 
@@ -1909,14 +1944,9 @@
         min-height: 80vh;
     }
     
-    .bars-background {
-        gap: 0.08rem;
-        padding: 0;
-    }
-
     .bars-background .bar {
-        min-width: 8px;
-        max-width: 20px;
+        min-width: clamp(14px, 4vw, 28px);
+        margin-left: -9px;
     }
     
 
